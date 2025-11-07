@@ -1,0 +1,75 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --dark-bg: #0a0a1a;
+  --cyan: #00ffff;
+  --gold: #ffd700;
+}
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+html,
+body {
+  max-width: 100vw;
+  overflow-x: hidden;
+  background: var(--dark-bg);
+  color: #ffffff;
+}
+
+body {
+  background-image: 
+    radial-gradient(circle at 20% 50%, rgba(0, 255, 255, 0.1) 0%, transparent 50%),
+    radial-gradient(circle at 80% 80%, rgba(255, 215, 0, 0.1) 0%, transparent 50%),
+    url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%23ffffff' fill-opacity='0.03'%3E%3Ccircle cx='30' cy='30' r='1'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+  background-color: var(--dark-bg);
+  min-height: 100vh;
+}
+
+@layer utilities {
+  .glass {
+    background: rgba(255, 255, 255, 0.05);
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+  }
+  
+  .glass-strong {
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(20px);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+  }
+  
+  .glow-gold {
+    text-shadow: 0 0 20px var(--gold), 0 0 40px var(--gold), 0 0 60px var(--gold);
+    animation: pulse-glow 2s ease-in-out infinite;
+  }
+  
+  @keyframes pulse-glow {
+    0%, 100% {
+      text-shadow: 0 0 20px var(--gold), 0 0 40px var(--gold), 0 0 60px var(--gold);
+    }
+    50% {
+      text-shadow: 0 0 30px var(--gold), 0 0 60px var(--gold), 0 0 90px var(--gold);
+    }
+  }
+  
+  .pulse-cyan {
+    animation: pulse-cyan 2s ease-in-out infinite;
+  }
+  
+  @keyframes pulse-cyan {
+    0%, 100% {
+      box-shadow: 0 0 20px var(--cyan);
+    }
+    50% {
+      box-shadow: 0 0 40px var(--cyan), 0 0 60px var(--cyan);
+    }
+  }
+}
+
+
