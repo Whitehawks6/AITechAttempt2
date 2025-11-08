@@ -1,28 +1,14 @@
 // components/TimelineEmbed.tsx
 'use client';
 
-import { useState, useEffect } from 'react';
+import { useState, useEffect, useRef } from 'react';
 import Image from 'next/image';
-
-interface Source {
-  url: string;
-  title?: string;
-}
+import { ChevronLeft, ChevronRight, X } from 'lucide-react';
 
 interface Event {
-  media: {
-    url: string;
-    caption: string;
-  };
-  start_date: {
-    year: string;
-    month?: string;
-    day?: string;
-  };
-  text: {
-    headline: string;
-    text: string;
-  };
+  media: { url: string; caption: string };
+  start_date: { year: string; month?: string; day?: string };
+  text: { headline: string; text: string };
   modalImage: string;
   modalText: string;
   sources: string[];
@@ -35,140 +21,175 @@ interface TimelineData {
 
 export default function TimelineEmbed() {
   const [data, setData] = useState<TimelineData | null>(null);
-  const [loading, setLoading] = useState(true);
-  const [error, setError] = useState<string | null>(null);
-  const [selectedEvent, setSelectedEvent] = useState<Event | null>(null);
+  const [current, setCurrent] = useState(0);
+  const [isModalOpen, setIsModalOpen] = useState(false);
+  const containerRef = useRef<HTMLDivElement>(null);
 
+  // Load data
   useEffect(() => {
-    async function fetchTimeline() {
-      try {
-        const res = await fetch('/timeline.json');
-        if (!res.ok) throw new Error(`Failed to load: ${res.status}`);
-        const json: TimelineData = await res.json();
-        setData(json);
-      } catch (err) {
-        setError(err instanceof Error ? err.message : 'Failed to load timeline');
-      } finally {
-        setLoading(false);
-      }
-    }
-    fetchTimeline();
+    fetch('/timeline.json')
+      .then(r => r.json())
+      .then(setData)
+      .catch(() => alert('timeline.json not found – check /public folder'));
   }, []);
 
-  if (loading) {
-    return (
-      <div className="flex items-center justify-center h-96">
-        <div className="animate-pulse text-lg text-gray-400">Loading timeline...</div>
-      </div>
-    );
-  }
+  // Keyboard navigation
+  useEffect(() => {
+    const handleKey = (e: KeyboardEvent) => {
+      if (!data) return;
+      if (e.key === 'ArrowRight') setCurrent(c => (c + 1) % data.events.length);
+      if (e.key === 'ArrowLeft') setCurrent(c => (c - 1 + data.events.length) % data.events.length);
+      if (e.key === 'Escape') setIsModalOpen(false);
+    };
+    window.addEventListener('keydown', handleKey);
+    return () => window.removeEventListener('keydown', handleKey);
+  }, [data]);
 
-  if (error || !data) {
-    return (
-      <div className="text-red-400 text-center p-8 bg-red-900/20 rounded-lg">
-        Error: {error || 'No data'}
-      </div>
-    );
-  }
+  if (!data) return <div className="h-96 flex items-center justify-center text-cyan animate-pulse">Loading timeline…</div>;
+
+  const event = data.events[current];
+  const progress = ((current + 1) / data.events.length) * 100;
 
   return (
     <>
-      <div className="max-w-7xl mx-auto">
-        <h2 className="text-2xl md:text-3xl font-bold text-center mb-12 text-cyan">
-          {data.title}
-        </h2>
+      {/* Title */}
+      <h2 className="text-3xl md:text-4xl font-bold text-center mb-8 text-cyan">
+        {data.title}
+      </h2>
 
-        <div className="space-y-12">
-          {data.events.map((event, idx) => {
-            const date = `${event.start_date.day ? event.start_date.day + '/' : ''}${
-              event.start_date.month || ''
-            } ${event.start_date.year}`;
+      {/* Main Timeline Container */}
+      <div
+        ref={containerRef}
+        className="relative bg-dark/50 backdrop-blur border border-cyan/20 rounded-2xl overflow-hidden shadow-2xl"
+        style={{ height: '600px' }}
+      >
+        {/* Background Nebula */}
+        <div className="absolute inset-0 bg-nebula opacity-40" />
 
-            return (
-              <div
-                key={idx}
-                className="grid md:grid-cols-2 gap-6 items-center group cursor-pointer"
-                onClick={() => setSelectedEvent(event)}
-              >
-                {/* Image */}
-                <div className="relative aspect-video md:aspect-square rounded-lg overflow-hidden shadow-lg group-hover:shadow-2xl transition-shadow">
-                  <Image
-                    src={event.media.url}
-                    alt={event.media.caption}
-                    fill
-                    className="object-cover group-hover:scale-105 transition-transform duration-300"
-                  />
-                  <div className="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black/70 to-transparent p-4">
-                    <p className="text-sm text-white font-medium">{event.media.caption}</p>
-                  </div>
-                </div>
-
-                {/* Text */}
-                <div className="space-y-3">
-                  <div className="flex items-center gap-3 text-sm text-gold">
-                    <span className="font-mono">{date}</span>
-                    <span className="w-2 h-2 bg-gold rounded-full"></span>
-                  </div>
-                  <h3 className="text-xl md:text-2xl font-bold text-cyan group-hover:underline">
-                    {event.text.headline}
-                  </h3>
-                  <p className="text-gray-300 line-clamp-3">{event.text.text}</p>
-                  <button className="text-sm text-cyan hover:underline">
-                    Click to read more →
-                  </button>
-                </div>
+        {/* Slide */}
+        <div className="absolute inset-0 flex items-center justify-center p-8">
+          <div className="grid md:grid-cols-2 gap-8 max-w-6xl mx-auto items-center">
+            {/* Image */}
+            <div
+              className="relative aspect-square rounded-xl overflow-hidden cursor-zoom-in shadow-2xl"
+              onClick={() => setIsModalOpen(true)}
+            >
+              <Image
+                src={event.media.url}
+                alt={event.media.caption}
+                fill
+                className="object-cover hover:scale-105 transition-transform duration-500"
+              />
+              <div className="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black/80 p-4">
+                <p className="text-sm text-gold font-medium">{event.media.caption}</p>
               </div>
-            );
-          })}
+            </div>
+
+            {/* Text */}
+            <div className="text-left space-y-4">
+              <div className="flex items-center gap-3 text-gold text-sm font-mono">
+                <span>{event.start_date.year}</span>
+                {event.start_date.month && <span>• {event.start_date.month}{event.start_date.day && `/${event.start_date.day}`}</span>}
+              </div>
+              <h3 className="text-3xl md:text-4xl font-bold text-cyan leading-tight">
+                {event.text.headline}
+              </h3>
+              <p className="text-gray-300 text-lg leading-relaxed">
+                {event.text.text}
+              </p>
+              <button
+                onClick={() => setIsModalOpen(true)}
+                className="inline-flex items-center gap-2 text-cyan hover:text-gold transition"
+              >
+                Read full story <ChevronRight className="w-4 h-4" />
+              </button>
+            </div>
+          </div>
+        </div>
+
+        {/* Navigation Arrows */}
+        <button
+          onClick={() => setCurrent((c) => (c - 1 + data.events.length) % data.events.length)}
+          className="absolute left-4 top-1/2 -translate-y-1/2 bg-cyan/20 hover:bg-cyan/40 backdrop-blur p-3 rounded-full transition"
+        >
+          <ChevronLeft className="w-8 h-8" />
+        </button>
+        <button
+          onClick={() => setCurrent((c) => (c + 1) % data.events.length)}
+          className="absolute right-4 top-1/2 -translate-y-1/2 bg-cyan/20 hover:bg-cyan/40 backdrop-blur p-3 rounded-full transition"
+        >
+          <ChevronRight className="w-8 h-8" />
+        </button>
+
+        {/* Progress Bar */}
+        <div className="absolute bottom-0 left-0 right-0 h-2 bg-dark/50">
+          <div
+            className="h-full bg-gradient-to-r from-cyan to-gold transition-all duration-500"
+            style={{ width: `${progress}%` }}
+          />
+        </div>
+
+        {/* Dot Navigation */}
+        <div className="absolute bottom-6 left-1/2 -translate-x-1/2 flex gap-2">
+          {data.events.map((_, i) => (
+            <button
+              key={i}
+              onClick={() => setCurrent(i)}
+              className={`w-2 h-2 rounded-full transition ${
+                i === current ? 'bg-cyan w-8' : 'bg-gray-600 hover:bg-gray-400'
+              }`}
+            />
+          ))}
+        </div>
+
+        {/* Slide Counter */}
+        <div className="absolute top-6 right-8 bg-dark/70 backdrop-blur px-4 py-2 rounded-full text-sm text-cyan">
+          {current + 1} / {data.events.length}
         </div>
       </div>
 
-      {/* Modal */}
-      {selectedEvent && (
+      {/* Full-screen Modal */}
+      {isModalOpen && (
         <div
-          className="fixed inset-0 bg-black/80 backdrop-blur-sm z-50 flex items-center justify-center p-4"
-          onClick={() => setSelectedEvent(null)}
+          className="fixed inset-0 bg-black/95 z-50 flex items-center justify-center p-4"
+          onClick={() => setIsModalOpen(false)}
         >
-          <div
-            className="bg-dark border border-cyan/20 rounded-xl max-w-4xl w-full max-h-[90vh] overflow-y-auto"
-            onClick={(e) => e.stopPropagation()}
-          >
-            <div className="relative aspect-video">
+          <div className="max-w-5xl w-full max-h-full overflow-y-auto bg-dark border border-cyan/30 rounded-2xl">
+            <div className="relative">
               <Image
-                src={selectedEvent.modalImage}
-                alt={selectedEvent.text.headline}
-                fill
-                className="object-cover rounded-t-xl"
+                src={event.modalImage}
+                alt={event.text.headline}
+                width={1200}
+                height={600}
+                className="w-full object-cover rounded-t-2xl"
               />
+              <button
+                onClick={() => setIsModalOpen(false)}
+                className="absolute top-4 right-4 bg-cyan/20 hover:bg-cyan/40 p-3 rounded-full"
+              >
+                <X className="w-6 h-6" />
+              </button>
             </div>
-            <div className="p-6 space-y-4">
-              <h3 className="text-2xl font-bold text-cyan">{selectedEvent.text.headline}</h3>
-              <p className="text-gray-300">{selectedEvent.modalText}</p>
-
+            <div className="p-8 space-y-6">
+              <h3 className="text-3xl font-bold text-cyan">{event.text.headline}</h3>
+              <p className="text-gray-300 text-lg leading-relaxed">{event.modalText}</p>
               <div>
-                <h4 className="font-semibold text-gold mb-2">Sources:</h4>
-                <ul className="space-y-1">
-                  {selectedEvent.sources.map((src, i) => (
+                <h4 className="text-gold font-bold mb-3">Sources</h4>
+                <ul className="space-y-2">
+                  {event.sources.map((src, i) => (
                     <li key={i}>
                       <a
                         href={src}
                         target="_blank"
                         rel="noopener noreferrer"
-                        className="text-sm text-cyan hover:underline break-all"
+                        className="text-cyan hover:underline text-sm break-all"
                       >
-                        {src}
+                        {src.replace(/^https?:\/\//, '')}
                       </a>
                     </li>
                   ))}
                 </ul>
               </div>
-
-              <button
-                onClick={() => setSelectedEvent(null)}
-                className="mt-6 w-full py-2 bg-cyan/20 hover:bg-cyan/30 text-cyan rounded-lg transition"
-              >
-                Close
-              </button>
             </div>
           </div>
         </div>
