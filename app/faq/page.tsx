@@ -1,26 +1,25 @@
-'use client'
+// app/faq/page.tsx
 
-import { useState } from 'react'
+'use client';
+import { useState } from 'react';
 
-export default function FAQPage() {
-  const [openIndex, setOpenIndex] = useState<number | null>(null)
-
+export default function FAQ() {
   const faqs = [
     {
       question: 'What is AI?',
-      answer: 'AI (Artificial Intelligence) is computer systems that can perform tasks typically requiring human intelligence, such as understanding language, recognizing images, making decisions, and learning from experience. AI systems use algorithms and data to identify patterns, make predictions, and solve problems.',
+      answer: 'AI (Artificial Intelligence) is computer systems that can perform tasks typically requiring human intelligence, such as understanding language, recognizing images, making decisions, and learning from experience. AI systems use algorithms and data to identify patterns, make predictions, and solve problems. In 2025 terms: Software that predicts next words (chatbots), pixels (images), or actions (self-driving). Adapt by using it for daily tasks like summaries, always verify outputs.',
     },
     {
       question: 'What is a prompt?',
-      answer: 'A prompt is the text input you give to an AI system to tell it what you want it to do. For example, "Write a poem about space" or "Explain quantum computing in simple terms" are prompts that instruct the AI to generate specific content. Good prompts are clear, specific, and include relevant context.',
+      answer: 'A prompt is the text input you give to an AI system to tell it what you want it to do. For example, "Write a poem about space" or "Explain quantum computing in simple terms" are prompts that instruct the AI to generate specific content. Good prompts are clear, specific, and include relevant context. Adapt: Use pattern TASK + CONTEXT + FORMAT, e.g., "Summarize this PDF on solar energy. I\'m a homeowner. Bullet points, max 10."',
     },
     {
       question: 'Why does AI hallucinate?',
-      answer: 'AI hallucination occurs when AI systems generate information that sounds plausible but is actually incorrect or made up. This happens because AI models predict the next most likely word or phrase based on patterns in training data, not actual knowledge or facts. The AI doesn\'t "know" what it\'s saying—it\'s generating text that fits patterns it learned, which can include false information.',
+      answer: 'AI hallucination occurs when AI systems generate information that sounds plausible but is actually incorrect or made up. This happens because AI models predict the next most likely word or phrase based on patterns in training data, not actual knowledge or facts. The AI doesn\'t "know" what it\'s saying—it\'s generating text that fits patterns it learned, which can include false information. 2025 rate: 5-20% errors. Adapt: Spot-check facts with sources.',
     },
     {
       question: 'Is AI safe?',
-      answer: 'AI safety is an ongoing area of research and concern. While AI offers many benefits, it also raises issues about bias, privacy, job displacement, misuse, and control of powerful systems. Responsible AI development includes testing, oversight, ethical guidelines, and safety measures. However, AI systems can make mistakes, be biased, or be used maliciously, so careful development and regulation are important.',
+      answer: 'AI safety is an ongoing area of research and concern. While AI offers many benefits, it also raises issues about bias, privacy, job displacement, misuse, and control of powerful systems. Responsible AI development includes testing, oversight, ethical guidelines, and safety measures. However, AI systems can make mistakes, be biased, or be used maliciously, so careful development and regulation are important. For personal use: Low-risk if you verify outputs and protect data.',
     },
     {
       question: 'How does AI learn?',
@@ -36,11 +35,11 @@ export default function FAQPage() {
     },
     {
       question: 'Can AI replace human jobs?',
-      answer: 'AI can automate certain tasks and jobs, particularly those involving routine, repetitive work or data processing. However, AI also creates new jobs and can augment human capabilities rather than simply replacing them. The impact varies by industry and role. Many experts believe AI will transform jobs rather than eliminate all of them, requiring workers to adapt and learn new skills.',
+      answer: 'AI can automate certain tasks and jobs, particularly those involving routine, repetitive work or data processing. However, AI also creates new jobs and can augment human capabilities rather than simply replacing them. The impact varies by industry and role. Many experts believe AI will transform jobs rather than eliminate all of them, requiring workers to adapt and learn new skills. 2025 data: 85% of jobs evolve, not vanish (McKinsey). Adapt: Integrate tools for 2x productivity.',
     },
     {
       question: 'What is an AI agent?',
-      answer: 'An AI agent is a software tool that uses artificial intelligence to perform tasks autonomously. AI agents can complete multi-step tasks, make decisions, use software tools, and work toward goals without constant human supervision. They differ from simple chatbots by maintaining context across interactions and being able to take actions in digital environments.',
+      answer: 'An AI agent is a software tool that uses artificial intelligence to perform tasks autonomously. AI agents can complete multi-step tasks, make decisions, use software tools, and work toward goals without constant human supervision. They differ from simple chatbots by maintaining context across interactions and being able to take actions in digital environments. Adapt: Start with free ones for emails or research—see agents page.',
     },
     {
       question: 'How accurate is AI?',
@@ -60,11 +59,11 @@ export default function FAQPage() {
     },
     {
       question: 'What is AGI?',
-      answer: 'AGI (Artificial General Intelligence) refers to AI systems that can perform any intellectual task a human can do, with the same level of versatility and adaptability. Unlike narrow AI designed for specific tasks, AGI would have broad intelligence across many domains. True AGI does not yet exist, though some systems are approaching more general capabilities.',
+      answer: 'AGI (Artificial General Intelligence) refers to AI systems that can perform any intellectual task a human can do, with the same level of versatility and adaptability. Unlike narrow AI designed for specific tasks, AGI would have broad intelligence across many domains. True AGI does not yet exist, though some systems are approaching more general capabilities. See timeline for projections.',
     },
     {
       question: 'How is AI used in everyday life?',
-      answer: 'AI is used in many everyday applications: search engines, social media feeds, navigation apps, voice assistants (Siri, Alexa), recommendation systems (Netflix, Amazon), spam filters, facial recognition on phones, translation apps, and more. AI powers features we often take for granted, making technology more helpful and personalized.',
+      answer: 'AI is used in many everyday applications: search engines, social media feeds, navigation apps, voice assistants (Siri, Alexa), recommendation systems (Netflix, Amazon), spam filters, facial recognition on phones, translation apps, and more. AI powers features we often take for granted, making technology more helpful and personalized. In 2025: Offline on phones for privacy.',
     },
     {
       question: 'What is computer vision?',
@@ -92,49 +91,56 @@ export default function FAQPage() {
     },
     {
       question: 'Is AI expensive to use?',
-      answer: 'AI costs vary widely. Many consumer AI tools offer free or low-cost access, while enterprise AI solutions can be expensive. Training large AI models requires significant computational resources and can cost millions of dollars, but using pre-trained models through APIs is often affordable. Costs are generally decreasing as the technology becomes more efficient and accessible.',
+      answer: 'AI costs vary widely. Many consumer AI tools offer free or low-cost access, while enterprise AI solutions can be expensive. Training large AI models requires significant computational resources and can cost millions of dollars, but using pre-trained models through APIs is often affordable. Costs are generally decreasing as the technology becomes more efficient and accessible—2025: 10-100x cheaper than 2023.',
     },
     {
       question: 'What is the future of AI?',
-      answer: 'The future of AI likely includes more capable and general systems, better integration into daily life and work, improved safety and reliability, and ongoing challenges around ethics, regulation, and societal impact. Many experts predict AI will continue transforming industries, creating new possibilities while raising important questions about jobs, privacy, control, and the relationship between humans and intelligent machines.',
+      answer: 'The future of AI likely includes more capable and general systems, better integration into daily life and work, improved safety and reliability, and ongoing challenges around ethics, regulation, and societal impact. Many experts predict AI will continue transforming industries, creating new possibilities while raising important questions about jobs, privacy, control, and the relationship between humans and intelligent machines. See timeline for 1995-2035 milestones.',
     },
-  ]
+    {
+      question: 'How do I start with AI agents?',
+      answer: 'Pick one free like Grok or Claude. Sign up, ask simple: "Summarize this article: [paste link]". Practice daily—rewrite emails, explain concepts. From agents page: Verify 5-20% error rate. Builds skills without code.',
+    },
+    {
+      question: 'What skills do I need for the AI future?',
+      answer: 'Prompting basics, data literacy, ethical thinking. No coding required—zero-code tools (from tools page) handle rest. 2030 projection: 2x productivity for adapters (Epoch AI forecasts). Start: Daily practice, read timeline for context.',
+    },
+    {
+      question: 'How can AI help me emotionally prepare?',
+      answer: 'Use agents for scenarios: "How might AI change teaching jobs?" Gets grounded views. Timeline shows evolution—not overnight takeover. Adapt: Focus on augmentation (AI + human), build resilience via small wins (e.g., tool-assisted learning).',
+    },
+    {
+      question: 'Where are all the sources?',
+      answer: 'Every fact cited—check /sources page for full list from timeline.json and benchmarks. No unsubstantiated claims.',
+    },
+  ];
 
-  const toggleFAQ = (index: number) => {
-    setOpenIndex(openIndex === index ? null : index)
-  }
+  const [openIndex, setOpenIndex] = useState<number | null>(null);
 
   return (
-    <div className="min-h-screen container mx-auto px-4 py-12">
-      <h1 className="text-4xl md:text-5xl font-bold text-gold mb-4 text-center">
-        Frequently Asked Questions
-      </h1>
-      <p className="text-center text-gray-300 mb-12 max-w-3xl mx-auto">
-        Common questions about artificial intelligence, answered in plain English.
-      </p>
-
-      <div className="max-w-4xl mx-auto space-y-4">
-        {faqs.map((faq, index) => (
-          <div key={index} className="glass rounded-lg overflow-hidden">
-            <button
-              onClick={() => toggleFAQ(index)}
-              className="w-full p-6 text-left flex justify-between items-center hover:bg-cyan hover:bg-opacity-10 transition-colors"
-            >
-              <span className="text-xl font-semibold text-cyan pr-4">{faq.question}</span>
-              <span className="text-2xl text-gray-400 flex-shrink-0">
-                {openIndex === index ? '−' : '+'}
-              </span>
-            </button>
-            {openIndex === index && (
-              <div className="px-6 pb-6">
-                <p className="text-gold text-lg leading-relaxed">{faq.answer}</p>
-              </div>
-            )}
-          </div>
-        ))}
-      </div>
+    <div className="min-h-screen bg-spaceBlack text-crispWhite">
+      <section className="container mx-auto px-4 py-16">
+        <h1 className="text-4xl font-bold mb-8 text-electricBlue">Frequently Asked Questions</h1>
+        <p className="text-lg mb-12 text-grayText max-w-3xl">Straight answers on AI basics, adaptation, and prep. Based on 2025 facts—no speculation. If not covered, use the AI bot or check timeline/agents/tools.</p>
+        <div className="space-y-4">
+          {faqs.map((faq, i) => (
+            <div key={i} className="border border-electricBlue/20 rounded-lg">
+              <button
+                className="w-full p-6 text-left flex justify-between items-center text-neonPurple font-medium"
+                onClick={() => setOpenIndex(openIndex === i ? null : i)}
+              >
+                {faq.question}
+                <span>{openIndex === i ? '-' : '+'}</span>
+              </button>
+              {openIndex === i && (
+                <div className="p-6 pt-0 text-grayText">
+                  {faq.answer}
+                </div>
+              )}
+            </div>
+          ))}
+        </div>
+      </section>
     </div>
-  )
+  );
 }
-
-
