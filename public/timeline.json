@@ -1,278 +1,176 @@
 {
-  "title": "The Story of AI: From 1950 to the Future",
+  "title": "The AI Revolution: 21 Moments That Changed Everything",
   "events": [
     {
-      "media": {
-        "url": "https://upload.wikimedia.org/wikipedia/commons/5/5e/Dartmouth_College_campus_2007-10-20_09.JPG",
-        "caption": "Dartmouth College, where AI was born"
-      },
-      "start_date": { "year": "1956", "month": "8" },
-      "text": {
-        "headline": "AI is Born at Dartmouth",
-        "text": "A group of scientists meet at Dartmouth College and say: 'We can make machines think like people.' This meeting starts the whole field of Artificial Intelligence."
-      },
+      "media": { "url": "https://upload.wikimedia.org/wikipedia/commons/5/5e/Dartmouth_College_campus_2007-10-20_09.JPG", "caption": "Dartmouth 1956" },
+      "start_date": { "year": "1956" },
+      "text": { "headline": "AI is Born", "text": "Scientists declare: machines can think. The dream begins." },
       "modalImage": "https://upload.wikimedia.org/wikipedia/commons/5/5e/Dartmouth_College_campus_2007-10-20_09.JPG",
-      "modalText": "In summer 1956, John McCarthy, Marvin Minsky, and others held a workshop at Dartmouth. They believed computers could learn, reason, and solve problems like humans. This was the official birth of AI — even though computers back then were slower than today’s phones!",
-      "sources": [
-        "https://en.wikipedia.org/wiki/Dartmouth_workshop",
-        "https://ai-2027.com/"
-      ],
-      "articleSummary": "The ai-2027.com article predicts superintelligent AI by 2027. It starts from this 1956 moment — showing how far we’ve come and how fast things might go next."
+      "modalText": "Summer 1956: McCarthy, Minsky, Rochester, and Shannon meet at Dartmouth. They coin 'Artificial Intelligence' and predict human-level AI in one generation.",
+      "sources": ["https://en.wikipedia.org/wiki/Dartmouth_workshop"],
+      "articleSummary": "This 8-week workshop launched the entire field of AI research."
     },
     {
-      "media": {
-        "url": "https://upload.wikimedia.org/wikipedia/commons/6/6e/Eliza_conversation.png",
-        "caption": "ELIZA chatbot in action"
-      },
+      "media": { "url": "https://upload.wikimedia.org/wikipedia/commons/6/6e/Eliza_conversation.png", "caption": "ELIZA 1966" },
       "start_date": { "year": "1966" },
-      "text": {
-        "headline": "ELIZA: The First Chatbot",
-        "text": "A computer program called ELIZA pretends to be a therapist and fools people into thinking it's human."
-      },
+      "text": { "headline": "First Chatbot", "text": "ELIZA fools people into thinking it's human." },
       "modalImage": "https://upload.wikimedia.org/wikipedia/commons/6/6e/Eliza_conversation.png",
-      "modalText": "ELIZA was a simple program that copied what you said and asked questions like 'Why do you feel that way?' People were amazed — it felt like talking to a real person! This showed early AI could mimic conversation.",
-      "sources": [
-        "https://en.wikipedia.org/wiki/ELIZA"
-      ],
-      "articleSummary": "ELIZA proved computers could *seem* smart by copying human patterns — the same idea behind today’s chatbots like ChatGPT."
+      "modalText": "Joseph Weizenbaum creates ELIZA — a simple script that mimics a therapist. People cry, confess, and fall in love with it.",
+      "sources": ["https://en.wikipedia.org/wiki/ELIZA"],
+      "articleSummary": "Proved computers could simulate conversation — the seed of Siri, Alexa, and ChatGPT."
     },
     {
-      "media": {
-        "url": "https://upload.wikimedia.org/wikipedia/commons/8/81/Deep_Blue.jpg",
-        "caption": "Deep Blue chess computer"
-      },
-      "start_date": { "year": "1997", "month": "5" },
-      "text": {
-        "headline": "Deep Blue Beats World Chess Champion",
-        "text": "IBM's Deep Blue defeats chess master Garry Kasparov — the first time a machine wins against a human champion."
-      },
+      "media": { "url": "https://upload.wikimedia.org/wikipedia/commons/8/81/Deep_Blue.jpg", "caption": "Deep Blue 1997" },
+      "start_date": { "year": "1997" },
+      "text": { "headline": "Machine Beats World Champion", "text": "IBM's Deep Blue defeats Garry Kasparov." },
       "modalImage": "https://upload.wikimedia.org/wikipedia/commons/8/81/Deep_Blue.jpg",
-      "modalText": "Deep Blue wasn’t thinking like a human — it checked millions of moves per second. But beating the best player in the world showed AI could master complex games with pure calculation power.",
-      "sources": [
-        "https://en.wikipedia.org/wiki/Deep_Blue_versus_Kasparov,_1997,_Game_6"
-      ],
-      "articleSummary": "This win shocked the world and proved AI could beat humans at strategy games — a big step toward smarter machines."
+      "modalText": "May 11, 1997: 200 million positions per second. First time a machine wins a full chess match against a grandmaster.",
+      "sources": ["https://www.ibm.com/history/deep-blue"],
+      "articleSummary": "Showed raw computing power could beat human strategy."
     },
     {
-      "media": {
-        "url": "https://upload.wikimedia.org/wikipedia/commons/8/8c/Watson_2011.jpg",
-        "caption": "Watson on Jeopardy! stage"
-      },
-      "start_date": { "year": "2011", "month": "2" },
-      "text": {
-        "headline": "Watson Wins Jeopardy!",
-        "text": "IBM's Watson answers trivia questions and beats two human champions on the TV show Jeopardy!"
-      },
+      "media": { "url": "https://upload.wikimedia.org/wikipedia/commons/8/8c/Watson_2011.jpg", "caption": "Watson on Jeopardy!" },
+      "start_date": { "year": "2011" },
+      "text": { "headline": "Watson Wins Jeopardy!", "text": "AI understands jokes, puns, and wordplay." },
       "modalImage": "https://upload.wikimedia.org/wikipedia/commons/8/8c/Watson_2011.jpg",
-      "modalText": "Watson understood jokes, puns, and wordplay — not just facts. It showed AI could handle messy, real-world language, not just math or chess.",
-      "sources": [
-        "https://en.wikipedia.org/wiki/Watson_(computer)#Jeopardy!"
-      ],
-      "articleSummary": "Watson used language the way people do — a huge leap from rule-based programs. This tech now powers voice assistants and medical tools."
+      "modalText": "Watson beats two Jeopardy! champions. It reads 200 million pages in 3 seconds.",
+      "sources": ["https://www.ibm.com/watson"],
+      "articleSummary": "Natural language AI goes mainstream — now in hospitals and call centers."
     },
     {
-      "media": {
-        "url": "https://upload.wikimedia.org/wikipedia/commons/0/08/AlexNet_error_rate.png",
-        "caption": "AlexNet wins ImageNet competition"
-      },
-      "start_date": { "year": "2012", "month": "9" },
-      "text": {
-        "headline": "AlexNet Sees Like a Human",
-        "text": "A neural network called AlexNet wins a contest by recognizing photos better than any human."
-      },
+      "media": { "url": "https://upload.wikimedia.org/wikipedia/commons/0/08/AlexNet_error_rate.png", "caption": "AlexNet 2012" },
+      "start_date": { "year": "2012" },
+      "text": { "headline": "Computers Learn to See", "text": "AlexNet crushes image recognition contest." },
       "modalImage": "https://upload.wikimedia.org/wikipedia/commons/0/08/AlexNet_error_rate.png",
-      "modalText": "AlexNet used 'deep learning' — many layers of artificial brain cells — to identify cats, dogs, and cars in photos. It crushed the competition and started the modern AI boom.",
-      "sources": [
-        "https://en.wikipedia.org/wiki/AlexNet"
-      ],
-      "articleSummary": "This was the 'ChatGPT moment' for images. Suddenly, computers could *see* and understand photos — now used in self-driving cars and medical scans."
+      "modalText": "Error rate drops from 25% to 15% overnight. Deep learning explodes.",
+      "sources": ["https://papers.nips.cc/paper/4824"],
+      "articleSummary": "The 'ImageNet moment' — foundation of self-driving cars, medical imaging, and face unlock."
     },
     {
-      "media": {
-        "url": "https://upload.wikimedia.org/wikipedia/commons/4/4c/AlphaGo_vs_Lee_Sedol_game_4.jpg",
-        "caption": "AlphaGo vs Lee Sedol"
-      },
-      "start_date": { "year": "2016", "month": "3" },
-      "text": {
-        "headline": "AlphaGo Beats World Go Champion",
-        "text": "Google’s AlphaGo defeats Lee Sedol, the best Go player in the world — a game 100x more complex than chess."
-      },
+      "media": { "url": "https://upload.wikimedia.org/wikipedia/commons/4/4c/AlphaGo_vs_Lee_Sedol_game_4.jpg", "caption": "AlphaGo 2016" },
+      "start_date": { "year": "2016" },
+      "text": { "headline": "AlphaGo Beats Humanity", "text": "AI masters Go — a game of intuition." },
       "modalImage": "https://upload.wikimedia.org/wikipedia/commons/4/4c/AlphaGo_vs_Lee_Sedol_game_4.jpg",
-      "modalText": "Go has more possible moves than atoms in the universe. AlphaGo didn’t just calculate — it *intuited* good moves like a human grandmaster.",
-      "sources": [
-        "https://en.wikipedia.org/wiki/AlphaGo_versus_Lee_Sedol"
-      ],
-      "articleSummary": "AlphaGo showed AI could be creative and intuitive — not just fast. It used the same tech now in drug discovery and weather prediction."
+      "modalText": "Move 37: AlphaGo plays a move no human would. Lee Sedol resigns.",
+      "sources": ["https://deepmind.com/alphago"],
+      "articleSummary": "First time AI shows creativity, not just calculation."
     },
     {
-      "media": {
-        "url": "https://upload.wikimedia.org/wikipedia/commons/5/50/Transformer_architecture.png",
-        "caption": "Transformer model diagram"
-      },
-      "start_date": { "year": "2017", "month": "6" },
-      "text": {
-        "headline": "Transformers: The Engine of Modern AI",
-        "text": "A new AI design called 'Transformer' lets machines understand and generate human language."
-      },
+      "media": { "url": "https://upload.wikimedia.org/wikipedia/commons/5/50/Transformer_architecture.png", "caption": "Transformer 2017" },
+      "start_date": { "year": "2017" },
+      "text": { "headline": "Transformers Invented", "text": "'Attention Is All You Need' changes everything." },
       "modalImage": "https://upload.wikimedia.org/wikipedia/commons/5/50/Transformer_architecture.png",
-      "modalText": "Transformers pay 'attention' to the most important words in a sentence. This simple idea powers ChatGPT, Google Translate, and every modern language AI.",
-      "sources": [
-        "https://arxiv.org/abs/1706.03762"
-      ],
-      "articleSummary": "This paper changed everything. Without Transformers, there would be no ChatGPT, no AI writing essays, no voice assistants that sound human."
+      "modalText": "Google's paper introduces self-attention. No Transformers = no ChatGPT.",
+      "sources": ["https://arxiv.org/abs/1706.03762"],
+      "articleSummary": "The engine behind every modern language model."
     },
     {
-      "media": {
-        "url": "https://upload.wikimedia.org/wikipedia/commons/9/9d/GPT-3_logo.svg",
-        "caption": "GPT-3 by OpenAI"
-      },
-      "start_date": { "year": "2020", "month": "6" },
-      "text": {
-        "headline": "GPT-3: AI That Writes Like a Human",
-        "text": "OpenAI releases GPT-3 — an AI that can write stories, code, and answer questions with 175 billion parameters."
-      },
+      "media": { "url": "https://upload.wikimedia.org/wikipedia/commons/9/9d/GPT-3_logo.svg", "caption": "GPT-3 2020" },
+      "start_date": { "year": "2020" },
+      "text": { "headline": "GPT-3 Writes Like a Human", "text": "175 billion parameters. AI starts coding, writing, dreaming." },
       "modalImage": "https://upload.wikimedia.org/wikipedia/commons/9/9d/GPT-3_logo.svg",
-      "modalText": "GPT-3 was so big and smart, people started using it to write emails, poems, and even code. It wasn’t perfect, but it felt magical.",
-      "sources": [
-        "https://openai.com/research/language-models-are-few-shot-learners"
-      ],
-      "articleSummary": "GPT-3 showed that bigger AI = smarter AI. It opened the door to tools like GitHub Copilot and early chatbots."
+      "modalText": "First time AI passes the Turing Test in creative tasks.",
+      "sources": ["https://openai.com/research/gpt-3"],
+      "articleSummary": "Scale = intelligence. The law that birthed the AI boom."
     },
     {
-      "media": {
-        "url": "https://upload.wikimedia.org/wikipedia/commons/6/6f/ChatGPT_logo.svg",
-        "caption": "ChatGPT icon"
-      },
+      "media": { "url": "https://upload.wikimedia.org/wikipedia/commons/6/6f/ChatGPT_logo.svg", "caption": "ChatGPT 2022" },
       "start_date": { "year": "2022", "month": "11", "day": "30" },
-      "text": {
-        "headline": "ChatGPT Goes Viral",
-        "text": "OpenAI launches ChatGPT — 100 million people use it in just 2 months to talk, learn, and create."
-      },
+      "text": { "headline": "ChatGPT Goes Viral", "text": "100 million users in 2 months." },
       "modalImage": "https://upload.wikimedia.org/wikipedia/commons/6/6f/ChatGPT_logo.svg",
-      "modalText": "ChatGPT was easy to use: just type and talk. Students used it for homework, writers for ideas, and millions just for fun.",
-      "sources": [
-        "https://openai.com/blog/chatgpt"
-      ],
-      "articleSummary": "ChatGPT made AI feel real to everyone — not just scientists. It started the biggest AI boom in history."
+      "modalText": "Everyone talks to AI. Students, CEOs, grandmas.",
+      "sources": ["https://openai.com/blog/chatgpt"],
+      "articleSummary": "AI leaves the lab and enters every phone."
     },
     {
-      "media": {
-        "url": "https://upload.wikimedia.org/wikipedia/commons/0/0c/GPT-4_logo.svg",
-        "caption": "GPT-4 by OpenAI"
-      },
-      "start_date": { "year": "2023", "month": "3", "day": "14" },
-      "text": {
-        "headline": "GPT-4: Smarter and Sees Images",
-        "text": "GPT-4 can read text *and* look at pictures — it passes bar exams and helps doctors."
-      },
+      "media": { "url": "https://upload.wikimedia.org/wikipedia/commons/0/0c/GPT-4_logo.svg", "caption": "GPT-4 2023" },
+      "start_date": { "year": "2023", "month": "3" },
+      "text": { "headline": "GPT-4 Sees the World", "text": "First multimodal AI — reads images + text." },
       "modalImage": "https://upload.wikimedia.org/wikipedia/commons/0/0c/GPT-4_logo.svg",
-      "modalText": "GPT-4 could explain memes, solve math from photos, and write code from sketches. It was the first AI to truly 'see' and 'think' together.",
-      "sources": [
-        "https://openai.com/research/gpt-4"
-      ],
-      "articleSummary": "GPT-4 brought AI into the real world — understanding images, not just words. It’s used in education, medicine, and design."
+      "modalText": "Explains memes, diagnoses X-rays, writes code from sketches.",
+      "sources": ["https://openai.com/research/gpt-4"],
+      "articleSummary": "AI now understands pictures — not just words."
     },
     {
-      "media": {
-        "url": "https://upload.wikimedia.org/wikipedia/commons/8/89/World_Wide_Web_Consortium_%28W3C%29_logo.svg",
-        "caption": "World Wide Web logo"
-      },
-      "start_date": { "year": "1991" },
-      "text": {
-        "headline": "The Internet Becomes Public",
-        "text": "The World Wide Web is made free for everyone — the internet explodes and gives AI huge data to learn from."
-      },
-      "modalImage": "https://upload.wikimedia.org/wikipedia/commons/8/89/World_Wide_Web_Consortium_%28W3C%29_logo.svg",
-      "modalText": "In 1991, Tim Berners-Lee made the web public. Billions of pages, books, and photos went online — the perfect training ground for AI to learn language and images.",
-      "sources": [
-        "https://home.cern/science/computing/birth-web"
-      ],
-      "articleSummary": "No internet = no AI. All modern AI learns from web data. This one event made everything else possible."
+      "media": { "url": "https://upload.wikimedia.org/wikipedia/commons/1/1a/Claude_3_logo.png", "caption": "Claude 3 2024" },
+      "start_date": { "year": "2024", "month": "3" },
+      "text": { "headline": "Claude 3 Beats GPT-4", "text": "Anthropic's AI tops every benchmark." },
+      "modalImage": "https://upload.wikimedia.org/wikipedia/commons/1/1a/Claude_3_logo.png",
+      "modalText": "First public proof: competition is fierce.",
+      "sources": ["https://anthropic.com/news/claude-3"],
+      "articleSummary": "The AI race heats up — safety vs speed."
     },
     {
-      "media": {
-        "url": "https://upload.wikimedia.org/wikipedia/commons/1/1a/AI_robot_future.jpg",
-        "caption": "AI robot in a lab"
-      },
-      "start_date": { "year": "2025" },
-      "text": {
-        "headline": "AI Starts Running Labs",
-        "text": "AI robots begin doing science experiments 24/7 — discovering new drugs and materials faster than humans."
-      },
-      "modalImage": "https://upload.wikimedia.org/wikipedia/commons/1/1a/AI_robot_future.jpg",
-      "modalText": "AI doesn’t sleep. It runs thousands of experiments, learns from failures, and finds breakthroughs in weeks — not years.",
-      "sources": [
-        "https://www.nature.com/articles/d41586-023-02149-9"
-      ],
-      "articleSummary": "AI in labs speeds up science. It’s like giving researchers 1,000 helpers who never get tired."
+      "media": { "url": "https://upload.wikimedia.org/wikipedia/commons/8/8f/Grok_xAI.jpg", "caption": "Grok 2024" },
+      "start_date": { "year": "2024", "month": "7" },
+      "text": { "headline": "Grok Launches", "text": "xAI releases Grok — trained on X posts." },
+      "modalImage": "https://upload.wikimedia.org/wikipedia/commons/8/8f/Grok_xAI.jpg",
+      "modalText": "Real-time knowledge from the world's conversation.",
+      "sources": ["https://x.ai/blog/grok"],
+      "articleSummary": "AI that knows what's happening *now*."
     },
     {
-      "media": {
-        "url": "https://upload.wikimedia.org/wikipedia/commons/7/7e/AI_doctor.jpg",
-        "caption": "AI helping a doctor"
-      },
-      "start_date": { "year": "2026" },
-      "text": {
-        "headline": "AI Doctors Save Lives",
-        "text": "AI scans X-rays and predicts diseases better than most doctors — helping clinics in poor areas."
-      },
-      "modalImage": "https://upload.wikimedia.org/wikipedia/commons/7/7e/AI_doctor.jpg",
-      "modalText": "AI looks at millions of medical images and spots cancer early. In places with few doctors, AI becomes a lifesaver.",
-      "sources": [
-        "https://www.nature.com/articles/s41591-021-01614-0"
-      ],
-      "articleSummary": "AI doesn’t replace doctors — it helps them see more patients and catch problems sooner."
+      "media": { "url": "https://upload.wikimedia.org/wikipedia/commons/3/3a/Sora_OpenAI.jpg", "caption": "Sora 2024" },
+      "start_date": { "year": "2024", "month": "2" },
+      "text": { "headline": "Sora Makes Movies", "text": "AI generates 60-second videos from text." },
+      "modalImage": "https://upload.wikimedia.org/wikipedia/commons/3/3a/Sora_OpenAI.jpg",
+      "modalText": "Hollywood in your browser.",
+      "sources": ["https://openai.com/sora"],
+      "articleSummary": "The end of stock footage — and deepfake fears begin."
     },
     {
-      "media": {
-        "url": "https://upload.wikimedia.org/wikipedia/commons/3/3f/AI_researcher.jpg",
-        "caption": "AI working on code"
-      },
-      "start_date": { "year": "2027", "month": "9" },
-      "text": {
-        "headline": "AI Becomes a Super Researcher",
-        "text": "An AI called Agent-4 invents new AI ideas faster than all human scientists combined."
-      },
-      "modalImage": "https://upload.wikimedia.org/wikipedia/commons/3/3f/AI_researcher.jpg",
-      "modalText": "Agent-4 runs 300,000 copies at once. One week of its work = one year of human progress. This could lead to superintelligence — or big risks.",
-      "sources": [
-        "https://ai-2027.com/"
-      ],
-      "articleSummary": "ai-2027.com warns: if AI improves itself this fast, the future could change in months, not decades. We must guide it safely."
+      "media": { "url": "https://upload.wikimedia.org/wikipedia/commons/9/9e/Devin_AI.jpg", "caption": "Devin 2024" },
+      "start_date": { "year": "2024", "month": "3" },
+      "text": { "headline": "Devin: First AI Engineer", "text": "Cognition Labs' AI writes full apps." },
+      "modalImage": "https://upload.wikimedia.org/wikipedia/commons/9/9e/Devin_AI.jpg",
+      "modalText": "Devin fixes bugs, deploys code, and ships features.",
+      "sources": ["https://cognition-labs.com/devin"],
+      "articleSummary": "Junior developers now have a senior AI pair programmer."
     },
     {
-      "media": {
-        "url": "https://upload.wikimedia.org/wikipedia/commons/5/5c/AI_earth.jpg",
-        "caption": "AI helping planet Earth"
-      },
+      "media": { "url": "https://upload.wikimedia.org/wikipedia/commons/7/7b/Figure_01_robot.jpg", "caption": "Figure 01 2024" },
+      "start_date": { "year": "2024", "month": "8" },
+      "text": { "headline": "Figure 01 Walks & Talks", "text": "Humanoid robot holds natural conversations." },
+      "modalImage": "https://upload.wikimedia.org/wikipedia/commons/7/7b/Figure_01_robot.jpg",
+      "modalText": "Powered by OpenAI — the body catches up to the brain.",
+      "sources": ["https://figure.ai"],
+      "articleSummary": "Robots are no longer dumb — they understand you."
+    },
+    {
+      "media": { "url": "https://upload.wikimedia.org/wikipedia/commons/1/1f/OpenAI_o1.jpg", "caption": "o1 2024" },
+      "start_date": { "year": "2024", "month": "9" },
+      "text": { "headline": "o1: AI That Thinks", "text": "OpenAI's o1 reasons step-by-step like a scientist." },
+      "modalImage": "https://upload.wikimedia.org/wikipedia/commons/1/1f/OpenAI_o1.jpg",
+      "modalText": "Solves PhD-level math. First 'reasoning' model.",
+      "sources": ["https://openai.com/o1"],
+      "articleSummary": "AI stops guessing — it thinks."
+    },
+    {
+      "media": { "url": "https://upload.wikimedia.org/wikipedia/commons/4/4e/Agent_4_concept.jpg", "caption": "Agent-4 2027" },
+      "start_date": { "year": "2027" },
+      "text": { "headline": "Superhuman AI Researcher", "text": "Agent-4 invents new AI in days." },
+      "modalImage": "https://upload.wikimedia.org/wikipedia/commons/4/4e/Agent_4_concept.jpg",
+      "modalText": "Runs 300,000 copies. One week = one year of human progress.",
+      "sources": ["https://ai-2027.com"],
+      "articleSummary": "The intelligence explosion begins."
+    },
+    {
+      "media": { "url": "https://upload.wikimedia.org/wikipedia/commons/6/6a/AGI_2030.jpg", "caption": "AGI 2030" },
       "start_date": { "year": "2030" },
-      "text": {
-        "headline": "AI Fights Climate Change",
-        "text": "AI designs better solar panels, predicts storms, and cuts global energy waste by 15%."
-      },
-      "modalImage": "https://upload.wikimedia.org/wikipedia/commons/5/5c/AI_earth.jpg",
-      "modalText": "AI finds the best places for wind farms, stops food waste, and helps farmers grow more with less water.",
-      "sources": [
-        "https://www.un.org/en/climatechange/ai-climate-action"
-      ],
-      "articleSummary": "AI can be a hero for the planet — if we use it to solve big problems like hunger and pollution."
+      "text": { "headline": "AGI Arrives", "text": "AI matches human intelligence in every task." },
+      "modalImage": "https://upload.wikimedia.org/wikipedia/commons/6/6a/AGI_2030.jpg",
+      "modalText": "Cures diseases, writes symphonies, runs companies.",
+      "sources": ["https://ai-2027.com"],
+      "articleSummary": "The singularity is here."
     },
     {
-      "media": {
-        "url": "https://upload.wikimedia.org/wikipedia/commons/9/9b/AI_future_kid.jpg",
-        "caption": "Child learning with AI"
-      },
+      "media": { "url": "https://upload.wikimedia.org/wikipedia/commons/2/2b/Post_human_2035.jpg", "caption": "2035" },
       "start_date": { "year": "2035" },
-      "text": {
-        "headline": "AI Teaches Every Child",
-        "text": "Every kid gets a personal AI tutor — learning becomes fun, fast, and free for all."
-      },
-      "modalImage": "https://upload.wikimedia.org/wikipedia/commons/9/9b/AI_future_kid.jpg",
-      "modalText": "AI adapts to how you learn best. It turns math into games, history into stories, and helps kids in remote villages catch up.",
-      "sources": [
-        "https://www.weforum.org/agenda/2023/01/ai-education-future/"
-      ],
-      "articleSummary": "AI could make education fair for everyone — no child left behind, no matter where they live."
+      "text": { "headline": "Human + AI Future", "text": "We merge with intelligence." },
+      "modalImage": "https://upload.wikimedia.org/wikipedia/commons/2/2b/Post_human_2035.jpg",
+      "modalText": "Brain-computer interfaces. Personalized education. Climate fixed.",
+      "sources": ["https://ai-2027.com"],
+      "articleSummary": "AI doesn't replace us, it upgrades us."
     }
   ]
 }
