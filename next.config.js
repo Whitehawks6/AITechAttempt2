@@ -2,16 +2,15 @@
 const nextConfig = {
   reactStrictMode: true,
 
-  // ←←← ADD THIS BLOCK ↓↓↓
   images: {
     remotePatterns: [
       {
         protocol: 'https',
-        hostname: '**', // Allows ALL https images (safe for your use case)
+        hostname: '**',        // Allows ANY website
+        pathname: '/**',       // Allows ANY folder or file
       },
     ],
   },
-  // ↑↑↑ END OF FIX
 };
 
 module.exports = nextConfig;
