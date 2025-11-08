@@ -1,5 +1,3 @@
-// app/tools/page.tsx
-
 export default function Tools() {
   const tools = [
     {
@@ -149,3 +147,4 @@ export default function Tools() {
     </div>
   );
 }
+
