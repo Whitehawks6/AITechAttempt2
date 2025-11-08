@@ -78,7 +78,9 @@ export default function TimelineEmbed() {
                 src={event.media.url}
                 alt={event.media.caption}
                 fill
+                sizes="(max-width: 768px) 100vw, 50vw"
                 className="object-cover hover:scale-105 transition-transform duration-500"
+                priority
               />
               <div className="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black/80 p-4">
                 <p className="text-sm text-gold font-medium">{event.media.caption}</p>
@@ -161,7 +163,9 @@ export default function TimelineEmbed() {
                 alt={event.text.headline}
                 width={1200}
                 height={600}
+                sizes="100vw"
                 className="w-full object-cover rounded-t-2xl"
+                priority
               />
               <button
                 onClick={() => setIsModalOpen(false)}
