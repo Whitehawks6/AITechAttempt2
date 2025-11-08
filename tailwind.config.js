@@ -11,7 +11,7 @@ module.exports = {
       colors: {
         dark: '#0a0a1a',
         cyan: '#00ffff',
-        gold: '#ffd700',
+        gold: '#f3f6f4',
       },
       backgroundImage: {
         'nebula': 'radial-gradient(ellipse at top, #1a1a3a 0%, #0a0a1a 100%)',
@@ -20,5 +20,6 @@ module.exports = {
   },
   plugins: [],
 }
+
 
 
