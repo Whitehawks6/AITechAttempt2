@@ -44,26 +44,14 @@ body {
     border: 1px solid rgba(255, 255, 255, 0.2);
   }
   
-  .glow-gold {
-    text-shadow: 0 0 10px var(--gold), 0 0 15px var(--gold), 0 0 20px var(--gold);
-   
-  }
-  
-  @keyframes pulse-glow {
-    0%, 100% {
-      text-shadow: 0 0 20px var(--gold), 0 0 40px var(--gold), 0 0 60px var(--gold);
-    }
-    50% {
-      text-shadow: 0 0 30px var(--gold), 0 0 60px var(--gold), 0 0 90px var(--gold);
-    }
-  }
-  
+ 
+ 
   .pulse-cyan {
-    animation: pulse-cyan 2s ease-in-out infinite;
+    animation: pulse-cyan 3.5s ease-in-out infinite;
   }
   
   @keyframes pulse-cyan {
-    0%, 100% {
+    0%, 80% {
       box-shadow: 0 0 20px var(--cyan);
     }
     50% {
@@ -71,6 +59,7 @@ body {
     }
   }
 }
+
 
 
 
