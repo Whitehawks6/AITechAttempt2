@@ -1,7 +1,7 @@
 // components/TimelineEmbed.tsx
 'use client';
 
-import { useState, useEffect, useRef, useCallback } from 'react';
+import { useState, useEffect, useRef } from 'react';
 import Image from 'next/image';
 import { motion, AnimatePresence } from 'framer-motion';
 import { ChevronLeft, ChevronRight, X, ExternalLink, Sparkles } from 'lucide-react';
@@ -27,10 +27,8 @@ export default function TimelineEmbed() {
   const [paused, setPaused] = useState(false);
   const [modalOpen, setModalOpen] = useState(false);
   const timelineRef = useRef<HTMLDivElement>(null);
-  const containerRef = useRef<HTMLDivElement>(null);
   const autoRef = useRef<NodeJS.Timeout | null>(null);
 
-  // Load data
   useEffect(() => {
     fetch('/timeline.json')
       .then(r => r.json())
@@ -38,7 +36,6 @@ export default function TimelineEmbed() {
       .catch(console.error);
   }, []);
 
-  // Auto-scroll
   useEffect(() => {
     if (!data) return;
     const tick = () => !paused && setCurrent(c => (c + 1) % data.events.length);
@@ -46,7 +43,6 @@ export default function TimelineEmbed() {
     return () => { if (autoRef.current) clearInterval(autoRef.current); };
   }, [data, paused]);
 
-  // Keyboard
   useEffect(() => {
     const handle = (e: KeyboardEvent) => {
       if (!data) return;
@@ -71,11 +67,6 @@ export default function TimelineEmbed() {
   const event = data.events[current];
   const years = Array.from({ length: 86 }, (_, i) => 1950 + i);
   const currentYear = +event.start_date.year;
-
-  const scrollToYear = (year: number) => {
-    const idx = data.events.findIndex(e => +e.start_date.year === year);
-    if (idx !== -1) setCurrent(idx);
-  };
 
   return (
     <>
@@ -167,15 +158,13 @@ export default function TimelineEmbed() {
         </div>
       </motion.div>
 
-      {/* TIMELINE BAR – KNIGHT LAB STYLE */}
-      <div ref={containerRef} className="relative z-10 mb-20">
+      {/* TIMELINE BAR */}
+      <div className="relative z-10 mb-20">
         <div className="rounded-3xl bg-gradient-to-b from-dark/80 to-dark/60 p-10 shadow-2xl backdrop-blur-3xl">
           <div className="relative">
-            {/* Timeline Line */}
             <div className="absolute left-0 right-0 top-12 h-1 bg-gradient-to-r from-cyan/50 via-gold/50 to-cyan/50" />
             <div className="absolute left-0 right-0 top-12 h-1 bg-gradient-to-r from-transparent via-cyan to-transparent blur-xl" />
 
-            {/* Scroll Container */}
             <div
               ref={timelineRef}
               className="scrollbar-hide flex gap-12 overflow-x-auto py-8 px-4"
@@ -194,7 +183,6 @@ export default function TimelineEmbed() {
                     className="relative flex flex-col items-center"
                     style={{ minWidth: '80px' }}
                   >
-                    {/* FLAG */}
                     {ev && (
                       <motion.button
                         whileHover={{ scale: 1.1 }}
@@ -212,7 +200,6 @@ export default function TimelineEmbed() {
                       </motion.button>
                     )}
 
-                    {/* DOT */}
                     <motion.div
                       animate={{
                         scale: isActive ? [1, 1.3, 1] : 1,
@@ -228,7 +215,6 @@ export default function TimelineEmbed() {
                         }`}
                     />
 
-                    {/* YEAR */}
                     <p className={`mt-4 text-sm font-medium transition-all
                       ${isActive ? 'text-cyan scale-125 font-bold' : isFuture ? 'text-gray-500' : 'text-gray-400'}
                     `}>
@@ -239,7 +225,6 @@ export default function TimelineEmbed() {
               })}
             </div>
 
-            {/* ARROWS */}
             <button
               onClick={() => timelineRef.current?.scrollBy({ left: -500, behavior: 'smooth' })}
               className="absolute left-4 top-1/2 -translate-y-1/2 rounded-full bg-cyan/20 p-4 backdrop-blur-sm transition hover:bg-cyan/40 hover:scale-110"
@@ -254,7 +239,7 @@ export default function TimelineEmbed() {
             </button>
           </div>
         </div>
-      </motion.div>
+      </div>
 
       {/* MODAL */}
       <AnimatePresence>
