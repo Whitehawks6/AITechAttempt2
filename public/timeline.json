@@ -1,533 +1,278 @@
 {
-"title": "Evolution of Internet and AI: From the 1990s to the Future",
-"events": [
-{
-"media": {
-"url": "https://static.scientificamerican.com/sciam/cache/file/B5FBB89E-6314-478B-80496FBE53AF8591_source.jpg",
-"caption": "Tim Berners-Lee with early web browser"
-},
-"start_date": {
-"year": "1989",
-"month": "3",
-"day": "12"
-},
-"text": {
-"headline": "Tim Berners-Lee Proposes the World Wide Web",
-"text": "At CERN, physicist Tim Berners-Lee submits a proposal for an information management system that would become the World Wide Web, laying the foundation for the modern internet."
-},
-"modalImage": "https://static.scientificamerican.com/sciam/cache/file/B5FBB89E-6314-478B-80496FBE53AF8591_source.jpg",
-"modalText": "In March 1989, British computer scientist Tim Berners-Lee proposed a system to manage information at CERN, the European Organization for Nuclear Research. This proposal outlined a hypertext system that allowed users to link and access information across a network of computers. This idea evolved into the World Wide Web, revolutionizing how people share and access information globally. The WWW made the internet user-friendly and accessible to non-experts, sparking the digital age.",
-"sources": [
-"https://en.wikipedia.org/wiki/History_of_the_World_Wide_Web",
-"https://www.scientificamerican.com/article/day-the-web-was-born/"
-]
-},
-{
-"media": {
-"url": "https://static.scientificamerican.com/sciam/cache/file/B5FBB89E-6314-478B-80496FBE53AF8591_source.jpg",
-"caption": "First web browser by Tim Berners-Lee"
-},
-"start_date": {
-"year": "1990",
-"month": "12",
-"day": "25"
-},
-"text": {
-"headline": "First Web Browser: WorldWideWeb",
-"text": "Tim Berners-Lee develops the first web browser and editor, called WorldWideWeb (later renamed Nexus), on a NeXT computer at CERN."
-},
-"modalImage": "https://static.scientificamerican.com/sciam/cache/file/B5FBB89E-6314-478B-80496FBE53AF8591_source.jpg",
-"modalText": "On Christmas Day 1990, Tim Berners-Lee created the world's first web browser, which also served as an editor. This tool allowed users to view and create web pages, marking the beginning of interactive web content. It was a crucial step in making the internet practical for everyday use, paving the way for the explosion of online information sharing.",
-"sources": [
-"https://en.wikipedia.org/wiki/WorldWideWeb",
-"https://www.wired.com/story/tim-berners-lee-world-wide-web-browser/"
-]
-},
-{
-"media": {
-"url": "https://static.scientificamerican.com/sciam/cache/file/B5FBB89E-6314-478B-80496FBE53AF8591_source.jpg",
-"caption": "World Wide Web goes public"
-},
-"start_date": {
-"year": "1991",
-"month": "8",
-"day": "6"
-},
-"text": {
-"headline": "World Wide Web Becomes Public",
-"text": "CERN releases the World Wide Web to the public domain, making it freely available for anyone to use and build upon."
-},
-"modalImage": "https://static.scientificamerican.com/sciam/cache/file/B5FBB89E-6314-478B-80496FBE53AF8591_source.jpg",
-"modalText": "On August 6, 1991, the World Wide Web was made publicly available. This meant that the technology behind the web was no longer proprietary, allowing developers worldwide to create websites and browsers. This openness led to rapid growth of the internet, transforming it from a research tool into a global communication platform.",
-"sources": [
-"https://en.wikipedia.org/wiki/History_of_the_World_Wide_Web",
-"https://home.cern/science/computing/birth-web/short-history-web"
-]
-},
-{
-"media": {
-"url": "https://media.wired.com/photos/59344b215321273fc0f91cd1/3:2/w_2560%2Cc_limit/mos-10.jpg",
-"caption": "Mosaic web browser interface"
-},
-"start_date": {
-"year": "1993",
-"month": "1"
-},
-"text": {
-"headline": "Mosaic Web Browser Released",
-"text": "The Mosaic browser, developed at NCSA, introduces inline images and makes the web more accessible and visually appealing."
-},
-"modalImage": "https://media.wired.com/photos/59344b215321273fc0f91cd1/3:2/w_2560%2Cc_limit/mos-10.jpg",
-"modalText": "In 1993, the National Center for Supercomputing Applications released Mosaic, the first popular web browser that supported images displayed alongside text. This innovation made the web more engaging and user-friendly, leading to a surge in internet usage among the general public and businesses alike.",
-"sources": [
-"https://en.wikipedia.org/wiki/Mosaic_(web_browser)",
-"https://www.wired.com/2010/04/0422mosaic-web-browser/"
-]
-},
-{
-"media": {
-"url": "https://static0.xdaimages.com/wordpress/wp-content/uploads/2023/12/netscape-navigator-header.jpg?w=1600&h=900&fit=crop",
-"caption": "Netscape Navigator browser"
-},
-"start_date": {
-"year": "1994",
-"month": "12",
-"day": "15"
-},
-"text": {
-"headline": "Netscape Navigator Launched",
-"text": "Netscape releases Navigator, a commercial web browser that popularizes the internet for home users."
-},
-"modalImage": "https://static0.xdaimages.com/wordpress/wp-content/uploads/2023/12/netscape-navigator-header.jpg?w=1600&h=900&fit=crop",
-"modalText": "Netscape Navigator, released in December 1994, was one of the first commercial web browsers. It introduced features like progressive rendering and JavaScript support, making web browsing faster and more interactive. Netscape's success accelerated the commercialization of the internet.",
-"sources": [
-"https://en.wikipedia.org/wiki/Netscape_Navigator",
-"https://www.xda-developers.com/on-this-day-1994-netscape-navigator/"
-]
-},
-{
-"media": {
-"url": "https://www.webdesignmuseum.org/uploaded/timeline/yahoo/yahoo-1994.png",
-"caption": "Early Yahoo homepage"
-},
-"start_date": {
-"year": "1994",
-"month": "1"
-},
-"text": {
-"headline": "Yahoo Founded",
-"text": "Jerry Yang and David Filo create Yahoo as a directory of websites, helping users navigate the growing web."
-},
-"modalImage": "https://www.webdesignmuseum.org/uploaded/timeline/yahoo/yahoo-1994.png",
-"modalText": "In January 1994, Stanford students Jerry Yang and David Filo launched 'Jerry and David's Guide to the World Wide Web,' which became Yahoo. As a human-edited directory, it organized the chaotic early web, becoming one of the first major internet portals and search tools.",
-"sources": [
-"https://en.wikipedia.org/wiki/History_of_Yahoo!",
-"https://www.webdesignmuseum.org/gallery/yahoo-1994"
-]
-},
-{
-"media": {
-"url": "https://media.assettype.com/outlookindia/import/uploadimage/library/16_9/16_9_5/IMAGE_1693867273.webp?w=801&auto=format%2Ccompress&fit=max&format=webp&dpr=1.0",
-"caption": "Google founders Larry Page and Sergey Brin"
-},
-"start_date": {
-"year": "1998",
-"month": "9",
-"day": "4"
-},
-"text": {
-"headline": "Google Founded",
-"text": "Larry Page and Sergey Brin incorporate Google, introducing the PageRank algorithm for better search results."
-},
-"modalImage": "https://media.assettype.com/outlookindia/import/uploadimage/library/16_9/16_9_5/IMAGE_1693867273.webp?w=801&auto=format%2Ccompress&fit=max&format=webp&dpr=1.0",
-"modalText": "Google was founded in September 1998 by Stanford PhD students Larry Page and Sergey Brin. Their PageRank algorithm ranked pages based on links, revolutionizing search accuracy. Google quickly became the dominant search engine, shaping how we find information online.",
-"sources": [
-"https://en.wikipedia.org/wiki/Google",
-"https://www.outlookindia.com/international/us/google-was-founded-today-celebrating-25-years-of-changing-the-way-we-access-information-news-315767"
-]
-},
-{
-"media": {
-"url": "https://i.insider.com/513cbd916bb3f76c45000019?width=800&format=jpeg&auto=webp",
-"caption": "Early Facebook profile page"
-},
-"start_date": {
-"year": "2004",
-"month": "2",
-"day": "4"
-},
-"text": {
-"headline": "Facebook Launched",
-"text": "Mark Zuckerberg launches TheFacebook at Harvard, which evolves into the world's largest social network."
-},
-"modalImage": "https://i.insider.com/513cbd916bb3f76c45000019?width=800&format=jpeg&auto=webp",
-"modalText": "Initially called TheFacebook, the site was created by Mark Zuckerberg in February 2004 for Harvard students. It expanded to other universities and the public, connecting people globally. Facebook (now Meta) transformed social interaction, news sharing, and online communities.",
-"sources": [
-"https://en.wikipedia.org/wiki/Facebook",
-"https://www.businessinsider.com/facebooks-first-8-features-from-2004-2014-8"
-]
-},
-{
-"media": {
-"url": "https://res.cloudinary.com/aenetworks/image/upload/c_fill,w_1200,h_630,g_auto/dpr_auto/f_auto/q_auto:eco/v1/tdih-twitter-gettyimages-1151289639",
-"caption": "Twitter app icon"
-},
-"start_date": {
-"year": "2006",
-"month": "7",
-"day": "15"
-},
-"text": {
-"headline": "Twitter Launched",
-"text": "Jack Dorsey, Biz Stone, and Evan Williams launch Twitter, a microblogging platform for short messages."
-},
-"modalImage": "https://res.cloudinary.com/aenetworks/image/upload/c_fill,w_1200,h_630,g_auto/dpr_auto/f_auto/q_auto:eco/v1/tdih-twitter-gettyimages-1151289639",
-"modalText": "Twitter (now X) was launched in July 2006 as a platform for 140-character 'tweets.' It became a key tool for real-time news, public discourse, and social movements, influencing global communication and politics.",
-"sources": [
-"https://en.wikipedia.org/wiki/Twitter",
-"https://www.history.com/this-day-in-history/july-15/twitter-launches"
-]
-},
-{
-"media": {
-"url": "https://media.wired.com/photos/5952d4ef13c51068e4907791/3:2/w_2560%2Cc_limit/iPhone-AP_070109070253.jpg",
-"caption": "Steve Jobs presenting the iPhone"
-},
-"start_date": {
-"year": "2007",
-"month": "6",
-"day": "29"
-},
-"text": {
-"headline": "Apple iPhone Released",
-"text": "Steve Jobs unveils the iPhone, combining phone, iPod, and internet device, sparking the smartphone revolution."
-},
-"modalImage": "https://media.wired.com/photos/5952d4ef13c51068e4907791/3:2/w_2560%2Cc_limit/iPhone-AP_070109070253.jpg",
-"modalText": "The iPhone, released in June 2007, introduced touch-screen technology and app ecosystems. It transformed mobile computing, making the internet portable and leading to the app economy, social media on-the-go, and AI integration in devices.",
-"sources": [
-"https://en.wikipedia.org/wiki/IPhone_(1st_generation)",
-"https://www.wired.com/story/iphone-history-dogfight/"
-]
-},
-{
-"media": {
-"url": "https://media.licdn.com/dms/image/v2/D4D12AQFVtjnnEgxI-g/article-cover_image-shrink_720_1280/article-cover_image-shrink_720_1280/0/1680247808438?e=2147483647&v=beta&t=eJtgc6ndgV-EdFvq7yGtFwamt-sPHYle4hgKQTT05SQ",
-"caption": "Evolution of Instagram logos"
-},
-"start_date": {
-"year": "2010",
-"month": "10",
-"day": "6"
-},
-"text": {
-"headline": "Instagram Launched",
-"text": "Kevin Systrom and Mike Krieger release Instagram, a photo-sharing app that popularizes visual social media."
-},
-"modalImage": "https://media.licdn.com/dms/image/v2/D4D12AQFVtjnnEgxI-g/article-cover_image-shrink_720_1280/article-cover_image-shrink_720_1280/0/1680247808438?e=2147483647&v=beta&t=eJtgc6ndgV-EdFvq7yGtFwamt-sPHYle4hgKQTT05SQ",
-"modalText": "Instagram launched in October 2010 as a mobile app for sharing filtered photos. It grew rapidly, emphasizing visual storytelling and influencing social trends, influencer culture, and e-commerce through images.",
-"sources": [
-"https://en.wikipedia.org/wiki/Instagram",
-"https://www.linkedin.com/pulse/snapshot-success-story-instagram-stefan-tudor-murariu"
-]
-},
-{
-"media": {
-"url": "https://theamericangenius.com/wp-content/uploads/2012/04/instagram-facebook.jpg",
-"caption": "Facebook acquiring Instagram illustration"
-},
-"start_date": {
-"year": "2012",
-"month": "4",
-"day": "9"
-},
-"text": {
-"headline": "Facebook Acquires Instagram",
-"text": "Facebook buys Instagram for $1 billion, integrating photo-sharing into its social ecosystem."
-},
-"modalImage": "https://theamericangenius.com/wp-content/uploads/2012/04/instagram-facebook.jpg",
-"modalText": "In April 2012, Facebook acquired Instagram for $1 billion. This merger enhanced Facebook's mobile presence and visual content capabilities, leading to features like Stories and Reels, further dominating social media.",
-"sources": [
-"https://en.wikipedia.org/wiki/Instagram#Facebook,_Inc.acquisition(2012%E2%80%93present)",
-"https://theamericangenius.com/facebook-buys-instagram-for-1-billion/"
-]
-},
-{
-"media": {
-"url": "https://assets.rbl.ms/26145031/origin.jpg",
-"caption": "Garry Kasparov vs Deep Blue"
-},
-"start_date": {
-"year": "1997",
-"month": "5",
-"day": "11"
-},
-"text": {
-"headline": "Deep Blue Defeats Garry Kasparov",
-"text": "IBM's Deep Blue becomes the first computer to beat a world chess champion, showcasing AI's strategic capabilities."
-},
-"modalImage": "https://assets.rbl.ms/26145031/origin.jpg",
-"modalText": "In May 1997, IBM's Deep Blue supercomputer defeated chess grandmaster Garry Kasparov in a six-game match. This victory demonstrated AI's ability to handle complex strategy, marking a milestone in computing power and algorithms.",
-"sources": [
-"https://en.wikipedia.org/wiki/Deep_Blue_versus_Kasparov,_1997,Game_6",
-"https://spectrum.ieee.org/how-ibms-deep-blue-beat-world-champion-chess-player-garry-kasparov"
-]
-},
-{
-"media": {
-"url": "https://static01.nyt.com/images/2011/02/17/us/17jeopardy_337-span/17jeopardy_337-span-articleLarge.jpg?year=2011&h=330&w=600&s=67b146b0e4f98b10d2de31057fec3d7d60199c6f46f813aee3fa095b4bd6746d&k=ZQJBKqZ0VN&tw=1",
-"caption": "Watson on Jeopardy stage"
-},
-"start_date": {
-"year": "2011",
-"month": "2"
-},
-"text": {
-"headline": "IBM Watson Wins Jeopardy!",
-"text": "Watson defeats human champions on Jeopardy, highlighting advances in natural language processing."
-},
-"modalImage": "https://static01.nyt.com/images/2011/02/17/us/17jeopardy_337-span/17jeopardy_337-span-articleLarge.jpg?year=2011&h=330&w=600&s=67b146b0e4f98b10d2de31057fec3d7d60199c6f46f813aee3fa095b4bd6746d&k=ZQJBKqZ0VN&tw=1",
-"modalText": "In February 2011, IBM's Watson AI system won against Jeopardy champions Ken Jennings and Brad Rutter. Watson's ability to understand and answer natural language questions showcased breakthroughs in question-answering technology, with applications in healthcare and customer service.",
-"sources": [
-"https://en.wikipedia.org/wiki/Watson(computer)#Jeopardy!",
-"https://www.nytimes.com/2011/02/17/science/17jeopardy-watson.html"
-]
-},
-{
-"media": {
-"url": "https://cdn.sanity.io/images/vr8gru94/production/f6648b494b511cf1869973ca59dc2b39813f35e8-597x455.png",
-"caption": "ImageNet 2012 results graph"
-},
-"start_date": {
-"year": "2012",
-"month": "9"
-},
-"text": {
-"headline": "AlexNet Wins ImageNet",
-"text": "AlexNet's victory in the ImageNet challenge marks the deep learning revolution in computer vision."
-},
-"modalImage": "https://cdn.sanity.io/images/vr8gru94/production/f6648b494b511cf1869973ca59dc2b39813f35e8-597x455.png",
-"modalText": "In 2012, the AlexNet neural network, developed by Alex Krizhevsky, Ilya Sutskever, and Geoffrey Hinton, won the ImageNet competition by a large margin. This success proved the power of deep convolutional neural networks, kickstarting the AI boom in image recognition and beyond.",
-"sources": [
-"https://en.wikipedia.org/wiki/AlexNet",
-"https://www.pinecone.io/learn/series/image-search/imagenet/"
-]
-},
-{
-"media": {
-"url": "http://c.files.bbci.co.uk/0D9B/production/_88738430_pic1go.jpg",
-"caption": "AlphaGo match against Lee Sedol"
-},
-"start_date": {
-"year": "2016",
-"month": "3"
-},
-"text": {
-"headline": "AlphaGo Defeats Lee Sedol",
-"text": "Google DeepMind's AlphaGo beats Go champion Lee Sedol, advancing AI in complex strategy games."
-},
-"modalImage": "http://c.files.bbci.co.uk/0D9B/production/_88738430_pic1go.jpg",
-"modalText": "In March 2016, AlphaGo defeated world Go champion Lee Sedol 4-1. Go's complexity required intuitive play, and AlphaGo's use of deep neural networks and reinforcement learning demonstrated AI's growing ability to handle uncertainty and strategy.",
-"sources": [
-"https://en.wikipedia.org/wiki/AlphaGo_versus_Lee_Sedol",
-"https://www.bbc.com/news/technology-35785875"
-]
-},
-{
-"media": {
-"url": "https://miro.medium.com/0376uJu_fc_uR8H3X.png",
-"caption": "Transformer model architecture diagram"
-},
-"start_date": {
-"year": "2017",
-"month": "6"
-},
-"text": {
-"headline": "Transformer Architecture Introduced",
-"text": "Google's 'Attention Is All You Need' paper introduces Transformers, revolutionizing natural language processing."
-},
-"modalImage": "https://miro.medium.com/0376uJu_fc_uR8H3X.png",
-"modalText": "The 2017 paper by Vaswani et al. introduced the Transformer model, using self-attention mechanisms. This architecture became the foundation for modern language models like GPT, enabling efficient processing of sequences and advancing AI in text generation and understanding.",
-"sources": [
-"https://arxiv.org/abs/1706.03762",
-"https://medium.com/@minh.hoque/a-comprehensive-overview-of-transformer-based-models-encoders-decoders-and-more-e9bc0644a4e5"
-]
-},
-{
-"media": {
-"url": "https://i0.wp.com/syncedreview.com/wp-content/uploads/2020/05/bn-5_29.png?fit=1834%2C981&ssl=1",
-"caption": "OpenAI GPT-3 announcement"
-},
-"start_date": {
-"year": "2020",
-"month": "6"
-},
-"text": {
-"headline": "OpenAI Releases GPT-3",
-"text": "GPT-3, with 175 billion parameters, demonstrates impressive language generation capabilities."
-},
-"modalImage": "https://i0.wp.com/syncedreview.com/wp-content/uploads/2020/05/bn-5_29.png?fit=1834%2C981&ssl=1",
-"modalText": "Released in June 2020, GPT-3 was a massive language model capable of generating human-like text across various tasks. It showcased the potential of scaling up neural networks, influencing future AI developments in content creation and conversation.",
-"sources": [
-"https://openai.com/research/language-models-are-few-shot-learners",
-"https://syncedreview.com/2020/05/29/openai-unveils-175-billion-parameter-gpt-3-language-model/"
-]
-},
-{
-"media": {
-"url": "https://miro.medium.com/v2/resize:fit:1400/1tHlKH-pR4a6ica0TCm8S3Q.png",
-"caption": "ChatGPT launch page"
-},
-"start_date": {
-"year": "2022",
-"month": "11",
-"day": "30"
-},
-"text": {
-"headline": "OpenAI Launches ChatGPT",
-"text": "ChatGPT brings conversational AI to the masses, gaining 100 million users in two months."
-},
-"modalImage": "https://miro.medium.com/v2/resize:fit:1400/1tHlKH-pR4a6ica0TCm8S3Q.png",
-"modalText": "Launched in November 2022, ChatGPT used GPT-3.5 to enable natural conversations. Its rapid adoption highlighted AI's accessibility, sparking widespread interest and applications in education, customer service, and creativity.",
-"sources": [
-"https://openai.com/blog/chatgpt",
-"https://medium.com/aimonks/google-bard-9126747fbc95"
-]
-},
-{
-"media": {
-"url": "https://www.searchenginejournal.com/wp-content/uploads/2023/03/chagpt-gpt4-6410b6078d3af-sej.png",
-"caption": "GPT-4 announcement"
-},
-"start_date": {
-"year": "2023",
-"month": "3",
-"day": "14"
-},
-"text": {
-"headline": "OpenAI Releases GPT-4",
-"text": "GPT-4 introduces multimodal capabilities, processing text and images with superior performance."
-},
-"modalImage": "https://www.searchenginejournal.com/wp-content/uploads/2023/03/chagpt-gpt4-6410b6078d3af-sej.png",
-"modalText": "GPT-4, released in March 2023, could handle images alongside text, excelling in reasoning and creativity. It set new benchmarks in AI, enabling advanced applications in vision and language understanding.",
-"sources": [
-"https://openai.com/research/gpt-4",
-"https://www.searchenginejournal.com/openai-releases-gpt-4-now-available-in-chatgpt/482199/"
-]
-},
-{
-"media": {
-"url": "https://imageio.forbes.com/specials-images/imageserve/678b0f85c2ca807e3e60f4cf/Scholz-at-the-opening-of-the-IBM-Quantum-Computing-Center/0x0.jpg?format=jpg&crop=1284,722,x0,y64,safe&width=960",
-"caption": "Quantum computer system"
-},
-"start_date": {
-"year": "2025"
-},
-"text": {
-"headline": "Quantum AI Achieves Practical Applications",
-"text": "Quantum systems solve complex problems in drug discovery and optimization faster than classical computers."
-},
-"modalImage": "https://imageio.forbes.com/specials-images/imageserve/678b0f85c2ca807e3e60f4cf/Scholz-at-the-opening-of-the-IBM-Quantum-Computing-Center/0x0.jpg?format=jpg&crop=1284,722,x0,y64,safe&width=960",
-"modalText": "By 2025, quantum AI begins practical use in fields like drug discovery and finance. These systems model complex interactions accurately, accelerating innovations and demonstrating quantum advantage.",
-"sources": [
-"https://www.ibm.com/quantum",
-"https://www.forbes.com/sites/luisromero/2025/01/18/quantum-computing-could-achieve-singularity-in-2025-a-chatgpt-moment/"
-]
-},
-{
-"media": {
-"url": "https://www.convergine.com/images/3.-Manufacturing-%E2%80%94-Automation-That-Never-Stops.png",
-"caption": "AI robots in factory"
-},
-"start_date": {
-"year": "2026"
-},
-"text": {
-"headline": "AI Automates 30% of Manufacturing",
-"text": "AI-powered robots handle 30% of production tasks, improving efficiency and adaptability in factories."
-},
-"modalImage": "https://www.convergine.com/images/3.-Manufacturing-%E2%80%94-Automation-That-Never-Stops.png",
-"modalText": "In 2026, AI robotics transform manufacturing with vision and manipulation. Robots adapt to tasks, learn from demos, and collaborate with humans, boosting productivity but raising job concerns.",
-"sources": [
-"https://www.mckinsey.com/capabilities/operations/our-insights/the-future-of-work-in-manufacturing",
-"https://www.convergine.com/blog/5-industries-ai-will-take-over-by-2026-and-how-to-prepare/"
-]
-},
-{
-"media": {
-"url": "https://appkodes.com/wp-content/uploads/2025/04/AI-in-medical-diagnosis.webp",
-"caption": "AI robot analyzing medical scans"
-},
-"start_date": {
-"year": "2027"
-},
-"text": {
-"headline": "AI Diagnoses Match Expert Physicians",
-"text": "AI systems achieve physician-level accuracy in diagnostics across specialties, improving healthcare access."
-},
-"modalImage": "https://appkodes.com/wp-content/uploads/2025/04/AI-in-medical-diagnosis.webp",
-"modalText": "By 2027, AI diagnostics match or exceed experts in accuracy for radiology, dermatology, and more. This enhances global healthcare, especially in underserved areas, but requires validation and oversight.",
-"sources": [
-"https://www.nature.com/articles/s41591-021-01614-0",
-"https://appkodes.com/blog/ai-in-medical-diagnosis/"
-]
-},
-{
-"media": {
-"url": "https://media.licdn.com/dms/image/v2/D4D12AQH4nELwuMS60Q/article-cover_image-shrink_720_1280/B4DZfyFjheHMAM-/0/1752113242200?e=2147483647&v=beta&t=_8KypVWymGGsthQVNliWkmxM7d9MIJyqJuC4mvVdUas",
-"caption": "Illustration of superhuman AI researchers"
-},
-"start_date": {
-"year": "2027",
-"month": "9"
-},
-"text": {
-"headline": "Superhuman AI Researcher Emerges",
-"text": "AI systems like Agent-4 surpass humans in AI research, accelerating technological progress."
-},
-"modalImage": "https://media.licdn.com/dms/image/v2/D4D12AQH4nELwuMS60Q/article-cover_image-shrink_720_1280/B4DZfyFjheHMAM-/0/1752113242200?e=2147483647&v=beta&t=_8KypVWymGGsthQVNliWkmxM7d9MIJyqJuC4mvVdUas",
-"modalText": "In a predicted 2027 scenario, Agent-4 becomes a superhuman AI researcher, running thousands of instances to achieve rapid advancements. This could lead to an intelligence explosion but raises alignment and control concerns.",
-"sources": [
-"https://ai-2027.com/",
-"https://www.linkedin.com/pulse/ai-2027-summary-erik-saelens-40ygf"
-]
-},
-{
-"media": {
-"url": "https://carboncredits.com/wp-content/uploads/2025/06/AI-for-climate-control-reduce-emissions-2030-300x174.webp",
-"caption": "AI for climate solutions infographic"
-},
-"start_date": {
-"year": "2030"
-},
-"text": {
-"headline": "AI Optimizes Global Climate Solutions",
-"text": "AI manages renewable grids and models climate interventions to combat global warming."
-},
-"modalImage": "https://carboncredits.com/wp-content/uploads/2025/06/AI-for-climate-control-reduce-emissions-2030-300x174.webp",
-"modalText": "By 2030, AI optimizes energy systems, carbon capture, and simulations for climate strategies. This accelerates renewable transitions and mitigation, demonstrating AI's role in addressing environmental challenges.",
-"sources": [
-"https://www.un.org/en/climatechange",
-"https://carboncredits.com/the-top-6-ai-powered-companies-and-how-they-transform-climate-nature-and-carbon-solutions/"
-]
-},
-{
-"media": {
-"url": "https://omgeedigital.com/wp-content/uploads/2024/09/Untitled-design-74.png",
-"caption": "Future of AI in 2035 illustration"
-},
-"start_date": {
-"year": "2035"
-},
-"text": {
-"headline": "AI Transforms Society",
-"text": "Reflecting on AI's impact, it reshapes work, healthcare, education, and daily life over decades."
-},
-"modalImage": "https://omgeedigital.com/wp-content/uploads/2024/09/Untitled-design-74.png",
-"modalText": "By 2035, AI integrates into every aspect of society, from personalized education to advanced healthcare. While improving lives, it raises questions about jobs, privacy, and human-AI relationships.",
-"sources": [
-"https://www.weforum.org/reports/the-future-of-jobs-report-2023",
-"https://omgeedigital.com/ai-revolution-2035-transforming-daily-life/"
-]
-}
-]
+  "title": "The Story of AI: From 1950 to the Future",
+  "events": [
+    {
+      "media": {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/5/5e/Dartmouth_College_campus_2007-10-20_09.JPG",
+        "caption": "Dartmouth College, where AI was born"
+      },
+      "start_date": { "year": "1956", "month": "8" },
+      "text": {
+        "headline": "AI is Born at Dartmouth",
+        "text": "A group of scientists meet at Dartmouth College and say: 'We can make machines think like people.' This meeting starts the whole field of Artificial Intelligence."
+      },
+      "modalImage": "https://upload.wikimedia.org/wikipedia/commons/5/5e/Dartmouth_College_campus_2007-10-20_09.JPG",
+      "modalText": "In summer 1956, John McCarthy, Marvin Minsky, and others held a workshop at Dartmouth. They believed computers could learn, reason, and solve problems like humans. This was the official birth of AI — even though computers back then were slower than today’s phones!",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Dartmouth_workshop",
+        "https://ai-2027.com/"
+      ],
+      "articleSummary": "The ai-2027.com article predicts superintelligent AI by 2027. It starts from this 1956 moment — showing how far we’ve come and how fast things might go next."
+    },
+    {
+      "media": {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/6/6e/Eliza_conversation.png",
+        "caption": "ELIZA chatbot in action"
+      },
+      "start_date": { "year": "1966" },
+      "text": {
+        "headline": "ELIZA: The First Chatbot",
+        "text": "A computer program called ELIZA pretends to be a therapist and fools people into thinking it's human."
+      },
+      "modalImage": "https://upload.wikimedia.org/wikipedia/commons/6/6e/Eliza_conversation.png",
+      "modalText": "ELIZA was a simple program that copied what you said and asked questions like 'Why do you feel that way?' People were amazed — it felt like talking to a real person! This showed early AI could mimic conversation.",
+      "sources": [
+        "https://en.wikipedia.org/wiki/ELIZA"
+      ],
+      "articleSummary": "ELIZA proved computers could *seem* smart by copying human patterns — the same idea behind today’s chatbots like ChatGPT."
+    },
+    {
+      "media": {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/8/81/Deep_Blue.jpg",
+        "caption": "Deep Blue chess computer"
+      },
+      "start_date": { "year": "1997", "month": "5" },
+      "text": {
+        "headline": "Deep Blue Beats World Chess Champion",
+        "text": "IBM's Deep Blue defeats chess master Garry Kasparov — the first time a machine wins against a human champion."
+      },
+      "modalImage": "https://upload.wikimedia.org/wikipedia/commons/8/81/Deep_Blue.jpg",
+      "modalText": "Deep Blue wasn’t thinking like a human — it checked millions of moves per second. But beating the best player in the world showed AI could master complex games with pure calculation power.",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Deep_Blue_versus_Kasparov,_1997,_Game_6"
+      ],
+      "articleSummary": "This win shocked the world and proved AI could beat humans at strategy games — a big step toward smarter machines."
+    },
+    {
+      "media": {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/8/8c/Watson_2011.jpg",
+        "caption": "Watson on Jeopardy! stage"
+      },
+      "start_date": { "year": "2011", "month": "2" },
+      "text": {
+        "headline": "Watson Wins Jeopardy!",
+        "text": "IBM's Watson answers trivia questions and beats two human champions on the TV show Jeopardy!"
+      },
+      "modalImage": "https://upload.wikimedia.org/wikipedia/commons/8/8c/Watson_2011.jpg",
+      "modalText": "Watson understood jokes, puns, and wordplay — not just facts. It showed AI could handle messy, real-world language, not just math or chess.",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Watson_(computer)#Jeopardy!"
+      ],
+      "articleSummary": "Watson used language the way people do — a huge leap from rule-based programs. This tech now powers voice assistants and medical tools."
+    },
+    {
+      "media": {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/0/08/AlexNet_error_rate.png",
+        "caption": "AlexNet wins ImageNet competition"
+      },
+      "start_date": { "year": "2012", "month": "9" },
+      "text": {
+        "headline": "AlexNet Sees Like a Human",
+        "text": "A neural network called AlexNet wins a contest by recognizing photos better than any human."
+      },
+      "modalImage": "https://upload.wikimedia.org/wikipedia/commons/0/08/AlexNet_error_rate.png",
+      "modalText": "AlexNet used 'deep learning' — many layers of artificial brain cells — to identify cats, dogs, and cars in photos. It crushed the competition and started the modern AI boom.",
+      "sources": [
+        "https://en.wikipedia.org/wiki/AlexNet"
+      ],
+      "articleSummary": "This was the 'ChatGPT moment' for images. Suddenly, computers could *see* and understand photos — now used in self-driving cars and medical scans."
+    },
+    {
+      "media": {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/4/4c/AlphaGo_vs_Lee_Sedol_game_4.jpg",
+        "caption": "AlphaGo vs Lee Sedol"
+      },
+      "start_date": { "year": "2016", "month": "3" },
+      "text": {
+        "headline": "AlphaGo Beats World Go Champion",
+        "text": "Google’s AlphaGo defeats Lee Sedol, the best Go player in the world — a game 100x more complex than chess."
+      },
+      "modalImage": "https://upload.wikimedia.org/wikipedia/commons/4/4c/AlphaGo_vs_Lee_Sedol_game_4.jpg",
+      "modalText": "Go has more possible moves than atoms in the universe. AlphaGo didn’t just calculate — it *intuited* good moves like a human grandmaster.",
+      "sources": [
+        "https://en.wikipedia.org/wiki/AlphaGo_versus_Lee_Sedol"
+      ],
+      "articleSummary": "AlphaGo showed AI could be creative and intuitive — not just fast. It used the same tech now in drug discovery and weather prediction."
+    },
+    {
+      "media": {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/5/50/Transformer_architecture.png",
+        "caption": "Transformer model diagram"
+      },
+      "start_date": { "year": "2017", "month": "6" },
+      "text": {
+        "headline": "Transformers: The Engine of Modern AI",
+        "text": "A new AI design called 'Transformer' lets machines understand and generate human language."
+      },
+      "modalImage": "https://upload.wikimedia.org/wikipedia/commons/5/50/Transformer_architecture.png",
+      "modalText": "Transformers pay 'attention' to the most important words in a sentence. This simple idea powers ChatGPT, Google Translate, and every modern language AI.",
+      "sources": [
+        "https://arxiv.org/abs/1706.03762"
+      ],
+      "articleSummary": "This paper changed everything. Without Transformers, there would be no ChatGPT, no AI writing essays, no voice assistants that sound human."
+    },
+    {
+      "media": {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/9/9d/GPT-3_logo.svg",
+        "caption": "GPT-3 by OpenAI"
+      },
+      "start_date": { "year": "2020", "month": "6" },
+      "text": {
+        "headline": "GPT-3: AI That Writes Like a Human",
+        "text": "OpenAI releases GPT-3 — an AI that can write stories, code, and answer questions with 175 billion parameters."
+      },
+      "modalImage": "https://upload.wikimedia.org/wikipedia/commons/9/9d/GPT-3_logo.svg",
+      "modalText": "GPT-3 was so big and smart, people started using it to write emails, poems, and even code. It wasn’t perfect, but it felt magical.",
+      "sources": [
+        "https://openai.com/research/language-models-are-few-shot-learners"
+      ],
+      "articleSummary": "GPT-3 showed that bigger AI = smarter AI. It opened the door to tools like GitHub Copilot and early chatbots."
+    },
+    {
+      "media": {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/6/6f/ChatGPT_logo.svg",
+        "caption": "ChatGPT icon"
+      },
+      "start_date": { "year": "2022", "month": "11", "day": "30" },
+      "text": {
+        "headline": "ChatGPT Goes Viral",
+        "text": "OpenAI launches ChatGPT — 100 million people use it in just 2 months to talk, learn, and create."
+      },
+      "modalImage": "https://upload.wikimedia.org/wikipedia/commons/6/6f/ChatGPT_logo.svg",
+      "modalText": "ChatGPT was easy to use: just type and talk. Students used it for homework, writers for ideas, and millions just for fun.",
+      "sources": [
+        "https://openai.com/blog/chatgpt"
+      ],
+      "articleSummary": "ChatGPT made AI feel real to everyone — not just scientists. It started the biggest AI boom in history."
+    },
+    {
+      "media": {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/0/0c/GPT-4_logo.svg",
+        "caption": "GPT-4 by OpenAI"
+      },
+      "start_date": { "year": "2023", "month": "3", "day": "14" },
+      "text": {
+        "headline": "GPT-4: Smarter and Sees Images",
+        "text": "GPT-4 can read text *and* look at pictures — it passes bar exams and helps doctors."
+      },
+      "modalImage": "https://upload.wikimedia.org/wikipedia/commons/0/0c/GPT-4_logo.svg",
+      "modalText": "GPT-4 could explain memes, solve math from photos, and write code from sketches. It was the first AI to truly 'see' and 'think' together.",
+      "sources": [
+        "https://openai.com/research/gpt-4"
+      ],
+      "articleSummary": "GPT-4 brought AI into the real world — understanding images, not just words. It’s used in education, medicine, and design."
+    },
+    {
+      "media": {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/8/89/World_Wide_Web_Consortium_%28W3C%29_logo.svg",
+        "caption": "World Wide Web logo"
+      },
+      "start_date": { "year": "1991" },
+      "text": {
+        "headline": "The Internet Becomes Public",
+        "text": "The World Wide Web is made free for everyone — the internet explodes and gives AI huge data to learn from."
+      },
+      "modalImage": "https://upload.wikimedia.org/wikipedia/commons/8/89/World_Wide_Web_Consortium_%28W3C%29_logo.svg",
+      "modalText": "In 1991, Tim Berners-Lee made the web public. Billions of pages, books, and photos went online — the perfect training ground for AI to learn language and images.",
+      "sources": [
+        "https://home.cern/science/computing/birth-web"
+      ],
+      "articleSummary": "No internet = no AI. All modern AI learns from web data. This one event made everything else possible."
+    },
+    {
+      "media": {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/1/1a/AI_robot_future.jpg",
+        "caption": "AI robot in a lab"
+      },
+      "start_date": { "year": "2025" },
+      "text": {
+        "headline": "AI Starts Running Labs",
+        "text": "AI robots begin doing science experiments 24/7 — discovering new drugs and materials faster than humans."
+      },
+      "modalImage": "https://upload.wikimedia.org/wikipedia/commons/1/1a/AI_robot_future.jpg",
+      "modalText": "AI doesn’t sleep. It runs thousands of experiments, learns from failures, and finds breakthroughs in weeks — not years.",
+      "sources": [
+        "https://www.nature.com/articles/d41586-023-02149-9"
+      ],
+      "articleSummary": "AI in labs speeds up science. It’s like giving researchers 1,000 helpers who never get tired."
+    },
+    {
+      "media": {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/7/7e/AI_doctor.jpg",
+        "caption": "AI helping a doctor"
+      },
+      "start_date": { "year": "2026" },
+      "text": {
+        "headline": "AI Doctors Save Lives",
+        "text": "AI scans X-rays and predicts diseases better than most doctors — helping clinics in poor areas."
+      },
+      "modalImage": "https://upload.wikimedia.org/wikipedia/commons/7/7e/AI_doctor.jpg",
+      "modalText": "AI looks at millions of medical images and spots cancer early. In places with few doctors, AI becomes a lifesaver.",
+      "sources": [
+        "https://www.nature.com/articles/s41591-021-01614-0"
+      ],
+      "articleSummary": "AI doesn’t replace doctors — it helps them see more patients and catch problems sooner."
+    },
+    {
+      "media": {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/3/3f/AI_researcher.jpg",
+        "caption": "AI working on code"
+      },
+      "start_date": { "year": "2027", "month": "9" },
+      "text": {
+        "headline": "AI Becomes a Super Researcher",
+        "text": "An AI called Agent-4 invents new AI ideas faster than all human scientists combined."
+      },
+      "modalImage": "https://upload.wikimedia.org/wikipedia/commons/3/3f/AI_researcher.jpg",
+      "modalText": "Agent-4 runs 300,000 copies at once. One week of its work = one year of human progress. This could lead to superintelligence — or big risks.",
+      "sources": [
+        "https://ai-2027.com/"
+      ],
+      "articleSummary": "ai-2027.com warns: if AI improves itself this fast, the future could change in months, not decades. We must guide it safely."
+    },
+    {
+      "media": {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/5/5c/AI_earth.jpg",
+        "caption": "AI helping planet Earth"
+      },
+      "start_date": { "year": "2030" },
+      "text": {
+        "headline": "AI Fights Climate Change",
+        "text": "AI designs better solar panels, predicts storms, and cuts global energy waste by 15%."
+      },
+      "modalImage": "https://upload.wikimedia.org/wikipedia/commons/5/5c/AI_earth.jpg",
+      "modalText": "AI finds the best places for wind farms, stops food waste, and helps farmers grow more with less water.",
+      "sources": [
+        "https://www.un.org/en/climatechange/ai-climate-action"
+      ],
+      "articleSummary": "AI can be a hero for the planet — if we use it to solve big problems like hunger and pollution."
+    },
+    {
+      "media": {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/9/9b/AI_future_kid.jpg",
+        "caption": "Child learning with AI"
+      },
+      "start_date": { "year": "2035" },
+      "text": {
+        "headline": "AI Teaches Every Child",
+        "text": "Every kid gets a personal AI tutor — learning becomes fun, fast, and free for all."
+      },
+      "modalImage": "https://upload.wikimedia.org/wikipedia/commons/9/9b/AI_future_kid.jpg",
+      "modalText": "AI adapts to how you learn best. It turns math into games, history into stories, and helps kids in remote villages catch up.",
+      "sources": [
+        "https://www.weforum.org/agenda/2023/01/ai-education-future/"
+      ],
+      "articleSummary": "AI could make education fair for everyone — no child left behind, no matter where they live."
+    }
+  ]
 }
