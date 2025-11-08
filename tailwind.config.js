@@ -10,7 +10,7 @@ module.exports = {
     extend: {
       colors: {
         dark: '#0a0a1a',
-        cyan: '#00ffff',
+        cyan: '#f8f8f8',
         gold: '#f3f6f4',
       },
       backgroundImage: {
@@ -20,6 +20,7 @@ module.exports = {
   },
   plugins: [],
 }
+
 
 
 
