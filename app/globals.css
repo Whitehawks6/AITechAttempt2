@@ -4,7 +4,7 @@
 
 :root {
   --dark-bg: #0a0a1a;
-  --cyan: #00ffff;
+  --cyan: #f8f8f8;
   --gold: #ffd700;
 }
 
@@ -24,8 +24,8 @@ body {
 
 body {
   background-image: 
-    radial-gradient(circle at 20% 50%, rgba(0, 255, 255, 0.1) 0%, transparent 50%),
-    radial-gradient(circle at 80% 80%, rgba(255, 215, 0, 0.1) 0%, transparent 50%),
+    radial-gradient(circle at 30% 50%, rgba(0, 255, 255, 0.1) 0%, transparent 50%),
+    radial-gradient(circle at 60% 80%, rgba(255, 215, 0, 0.1) 0%, transparent 50%),
     url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%23ffffff' fill-opacity='0.03'%3E%3Ccircle cx='30' cy='30' r='1'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
   background-color: var(--dark-bg);
   min-height: 100vh;
@@ -45,8 +45,8 @@ body {
   }
   
   .glow-gold {
-    text-shadow: 0 0 20px var(--gold), 0 0 40px var(--gold), 0 0 60px var(--gold);
-    animation: pulse-glow 2s ease-in-out infinite;
+    text-shadow: 0 0 10px var(--gold), 0 0 40px var(--gold), 0 0 30px var(--gold);
+   
   }
   
   @keyframes pulse-glow {
@@ -71,5 +71,6 @@ body {
     }
   }
 }
+
 
 
