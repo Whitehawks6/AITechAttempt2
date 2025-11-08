@@ -12,18 +12,26 @@ export default function TimelineEmbed() {
   const [paused, setPaused] = useState(false);
   const [modalOpen, setModalOpen] = useState(false);
   const bar = useRef<HTMLDivElement>(null);
-  let timer: NodeJS.Timeout;
+  const timer = useRef<NodeJS.Timeout | null>(null);
 
   useEffect(() => {
     fetch('/timeline.json').then(r => r.json()).then(setData);
   }, []);
 
+  // Auto-scroll with pause
   useEffect(() => {
-    if (!data) return;
-    const tick = () => !paused && setCurrent(c => (c + 1) % data.events.length);
-    timer = setInterval(tick, 9000);
-    return () => clearInterval(timer);
+    if (!data || paused) {
+      if (timer.current) clearInterval(timer.current);
+      return;
+    }
+    timer.current = setInterval(() => {
+      setCurrent(c => (c + 1) % data.events.length);
+    }, 9000);
+    return () => { if (timer.current) clearInterval(timer.current); };
   }, [data, paused]);
+
+  // Stop auto-scroll on any interaction
+  const stopAuto = () => setPaused(true);
 
   if (!data) return <div className="py-32 text-center text-cyan text-3xl">Loading…</div>;
 
@@ -48,8 +56,7 @@ export default function TimelineEmbed() {
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
         className="group mb-20 overflow-hidden rounded-3xl bg-dark/90 shadow-2xl backdrop-blur-3xl"
-        onMouseEnter={() => setPaused(true)}
-        onMouseLeave={() => setPaused(false)}
+        onMouseEnter={stopAuto}
       >
         <div className="flex flex-col md:flex-row">
           <div className="relative h-96 md:h-auto md:w-1/2">
@@ -65,62 +72,89 @@ export default function TimelineEmbed() {
             <p className="absolute bottom-8 left-8 text-2xl font-bold text-gold">{ev.media.caption}</p>
           </div>
           <div className="p-12 md:w-1/2">
-            <p className="mb-4 text-sm font-mono text-gold/80">{ev.start_date.year}</p>
+            <p className="mb-4 text-sm font-mono text-gold/80">
+              {ev.start_date.year}
+              {ev.start_date.month && ` • ${new Date(`${ev.start_date.month}/1/${ev.start_date.year}`).toLocaleString('default', { month: 'short' })}${ev.start_date.day ? ` ${ev.start_date.day}` : ''}`}
+            </p>
             <h2 className="mb-8 text-5xl font-black text-cyan md:text-7xl">{ev.text.headline}</h2>
             <p className="mb-10 text-xl text-gray-200">{ev.text.text}</p>
             <button
-              onClick={() => setModalOpen(true)}
+              onClick={() => { stopAuto(); setModalOpen(true); }}
               className="rounded-full bg-gradient-to-r from-cyan to-gold px-10 py-5 font-bold text-dark shadow-lg shadow-cyan/50 transition hover:scale-105"
             >
-              Read Full Story →
+              Read Full Story
             </button>
           </div>
         </div>
       </motion.div>
 
-      {/* TIMELINE — ONLY EVENT YEARS */}
+      {/* TIMELINE — FLAGS + CLICKABLE YEARS */}
       <div className="rounded-3xl bg-dark/70 p-10 shadow-2xl backdrop-blur-3xl">
         <div className="relative">
           <div className="absolute left-0 right-0 top-12 h-1 bg-cyan/30" />
           <div
             ref={bar}
-            className="scrollbar-hide flex gap-16 overflow-x-auto py-8"
+            className="scrollbar-hide flex gap-20 overflow-x-auto py-8 px-4"
+            style={{ scrollBehavior: 'smooth' }}
           >
             {data.events.map((e: any, i: number) => {
               const active = i === current;
+              const hasMonth = e.start_date.month;
               return (
-                <motion.div
+                <div
                   key={i}
                   className="relative flex flex-col items-center"
-                  whileHover={{ scale: 1.1 }}
+                  style={{ minWidth: '120px' }}
                 >
                   {/* FLAG */}
-                  <motion.button
-                    onClick={() => setCurrent(i)}
-                    className={`absolute -top-28 w-64 -translate-x-1/2 rounded-t-2xl p-4 text-center text-sm font-bold shadow-2xl transition-all
-                      ${active ? 'bg-cyan text-dark scale-110' : 'bg-gray-200/90 text-dark hover:bg-cyan/80'}`}
+                  <button
+                    onClick={() => { stopAuto(); setCurrent(i); }}
+                    className={`absolute -top-32 left-1/2 w-64 -translate-x-1/2 rounded-t-2xl p-4 text-center text-sm font-bold shadow-2xl transition-all
+                      ${active 
+                        ? 'bg-cyan text-dark scale-110 shadow-cyan/70' 
+                        : 'bg-gray-200/90 text-dark hover:bg-cyan/80 hover:scale-105'
+                      }`}
                   >
-                    {e.text.headline}
-                  </motion.button>
+                    <div className="truncate px-2">{e.text.headline}</div>
+                  </button>
 
                   {/* DOT */}
-                  <motion.div
-                    animate={{ scale: active ? 1.5 : 1 }}
-                    className={`h-6 w-6 rounded-full border-4 ${active ? 'border-cyan bg-cyan' : 'border-gray-500 bg-gray-600'}`}
+                  <button
+                    onClick={() => { stopAuto(); setCurrent(i); }}
+                    className={`z-10 h-6 w-6 rounded-full border-4 transition-all
+                      ${active 
+                        ? 'border-cyan bg-cyan shadow-lg shadow-cyan/50 scale-150' 
+                        : 'border-gray-500 bg-gray-600 hover:border-cyan/70'
+                      }`}
                   />
 
-                  {/* YEAR */}
-                  <p className={`mt-4 text-lg font-bold ${active ? 'text-cyan' : 'text-gray-400'}`}>
+                  {/* YEAR + MONTH */}
+                  <p className={`mt-4 text-lg font-bold transition-all
+                    ${active ? 'text-cyan scale-125' : 'text-gray-400'}
+                  `}>
                     {e.start_date.year}
+                    {hasMonth && (
+                      <span className="block text-xs font-normal text-cyan/80">
+                        {new Date(`${e.start_date.month}/1/${e.start_date.year}`).toLocaleString('default', { month: 'short' })}
+                      </span>
+                    )}
                   </p>
-                </motion.div>
+                </div>
               );
             })}
           </div>
-          <button onClick={() => bar.current?.scrollBy({ left: -400, behavior: 'smooth' })} className="absolute left-4 top-1/2 -translate-y-1/2 rounded-full bg-cyan/20 p-4">
+
+          {/* ARROWS */}
+          <button
+            onClick={() => { stopAuto(); bar.current?.scrollBy({ left: -400, behavior: 'smooth' }); }}
+            className="absolute left-4 top-1/2 -translate-y-1/2 rounded-full bg-cyan/20 p-4 backdrop-blur-sm transition hover:bg-cyan/40"
+          >
             <ChevronLeft className="h-6 w-6" />
           </button>
-          <button onClick={() => bar.current?.scrollBy({ left: 400, behavior: 'smooth' })} className="absolute right-4 top-1/2 -translate-y-1/2 rounded-full bg-cyan/20 p-4">
+          <button
+            onClick={() => { stopAuto(); bar.current?.scrollBy({ left: 400, behavior: 'smooth' }); }}
+            className="absolute right-4 top-1/2 -translate-y-1/2 rounded-full bg-cyan/20 p-4 backdrop-blur-sm transition hover:bg-cyan/40"
+          >
             <ChevronRight className="h-6 w-6" />
           </button>
         </div>
@@ -133,7 +167,7 @@ export default function TimelineEmbed() {
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             exit={{ opacity: 0 }}
-            className="fixed inset-0 z-50 flex items-center justify-center bg-black/90 backdrop-blur-xl"
+            className="fixed inset-0 z-50 flex items-center justify-center bg-black/90 backdrop-blur-xl p-4"
             onClick={() => setModalOpen(false)}
           >
             <motion.div
@@ -151,7 +185,7 @@ export default function TimelineEmbed() {
                 <h4 className="mb-6 text-2xl font-bold text-gold">Sources</h4>
                 <div className="grid gap-4 md:grid-cols-2">
                   {ev.sources.map((s: string, i: number) => (
-                    <a key={i} href={s} target="_blank" className="flex items-center gap-3 rounded-xl bg-dark/50 p-4 text-cyan hover:bg-cyan/10">
+                    <a key={i} href={s} target="_blank" rel="noopener noreferrer" className="flex items-center gap-3 rounded-xl bg-dark/50 p-4 text-cyan hover:bg-cyan/10">
                       <span className="font-mono">[ {i + 1} ]</span>
                       <span className="truncate">{s.replace(/^https?:\/\//, '')}</span>
                       <ExternalLink className="h-4 w-4" />
@@ -163,6 +197,13 @@ export default function TimelineEmbed() {
           </motion.div>
         )}
       </AnimatePresence>
+
+      {/* COUNTER */}
+      <div className="fixed bottom-8 left-1/2 -translate-x-1/2 rounded-full bg-dark/80 px-6 py-3 backdrop-blur-xl">
+        <p className="text-sm font-mono text-cyan">
+          Event <span className="text-gold">{current + 1}</span> / {data.events.length}
+        </p>
+      </div>
     </>
   );
 }
