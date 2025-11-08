@@ -1,408 +1,533 @@
 {
-  "title": "AI History Timeline (1995-2035)",
-  "events": [
-    {
-      "media": {
-        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/7d/Deep_Blue.jpg/300px-Deep_Blue.jpg",
-        "caption": "Deep Blue chess computer"
-      },
-      "start_date": {
-        "year": "1997",
-        "month": "5",
-        "day": "11"
-      },
-      "text": {
-        "headline": "Deep Blue defeats Garry Kasparov",
-        "text": "IBM's Deep Blue supercomputer becomes the first computer to defeat a reigning world chess champion in a match under standard tournament time controls. This marked a major milestone in artificial intelligence, demonstrating that computers could compete with and beat humans at complex strategic games."
-      },
-      "modalImage": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/7d/Deep_Blue.jpg/800px-Deep_Blue.jpg",
-      "modalText": "Deep Blue's victory over world chess champion Garry Kasparov in 1997 was a watershed moment for artificial intelligence. The IBM supercomputer used advanced search algorithms and parallel processing to evaluate up to 200 million chess positions per second. This event proved that computers could master complex strategic thinking and marked the beginning of AI's journey into competitive intellectual domains. The match received worldwide attention and sparked public debate about the future of human intelligence versus machine intelligence.",
-      "sources": [
-        "https://www.ibm.com/ibm/history/ibm100/us/en/icons/deepblue/",
-        "https://www.chess.com/article/view/deep-blue-vs-kasparov"
-      ]
-    },
-    {
-      "media": {
-        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8d/Google_logo_%282010-2013%29.svg/200px-Google_logo_%282010-2013%29.svg.png",
-        "caption": "Google search"
-      },
-      "start_date": {
-        "year": "1998",
-        "month": "9"
-      },
-      "text": {
-        "headline": "Google launches with PageRank algorithm",
-        "text": "Google's founding introduces the PageRank algorithm, which uses AI techniques to rank web pages by importance. This revolutionary approach to search would eventually power the world's most used search engine and demonstrate the practical value of machine learning in everyday applications."
-      },
-      "modalImage": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/2f/Google_2015_logo.svg/800px-Google_2015_logo.svg.png",
-      "modalText": "Google's PageRank algorithm, developed by Larry Page and Sergey Brin, was one of the first major applications of machine learning to solve real-world problems at scale. The algorithm analyzes the link structure of the web to determine page importance, effectively using collective human judgment embedded in hyperlinks. This innovation transformed how people access information and demonstrated that AI could power products used by billions of people. Google's success with PageRank paved the way for modern search engines and established the foundation for machine learning's integration into consumer technology.",
-      "sources": [
-        "https://en.wikipedia.org/wiki/PageRank",
-        "https://www.google.com/about/our-story/"
-      ]
-    },
-    {
-      "media": {
-        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f0/Jeopardy_logo.svg/200px-Jeopardy_logo.svg.png",
-        "caption": "Jeopardy game show"
-      },
-      "start_date": {
-        "year": "2011",
-        "month": "2"
-      },
-      "text": {
-        "headline": "IBM Watson wins Jeopardy!",
-        "text": "IBM's Watson defeats former Jeopardy! champions Ken Jennings and Brad Rutter, showcasing natural language processing and question-answering capabilities. Watson demonstrated that AI could understand complex questions, search vast knowledge bases, and respond in natural language."
-      },
-      "modalImage": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/52/Watson_jeopardy.jpg/800px-Watson_jeopardy.jpg",
-      "modalText": "IBM Watson's victory on Jeopardy! in 2011 represented a breakthrough in natural language processing and question-answering systems. Unlike chess, which involves structured rules, Jeopardy! requires understanding puns, wordplay, and contextual clues in natural language. Watson processed information from 200 million pages of content, including encyclopedias, dictionaries, and news articles, in just three seconds. The system's ability to parse questions, generate hypotheses, and rank confidence levels demonstrated that AI could handle the ambiguity and complexity of human language. This achievement opened new possibilities for AI applications in healthcare, customer service, and knowledge management.",
-      "sources": [
-        "https://www.ibm.com/watson",
-        "https://www.nytimes.com/2011/02/17/science/17jeopardy-watson.html"
-      ]
-    },
-    {
-      "media": {
-        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4d/Cat_in_2012.jpg/200px-Cat_in_2012.jpg",
-        "caption": "Cat recognition"
-      },
-      "start_date": {
-        "year": "2012",
-        "month": "10"
-      },
-      "text": {
-        "headline": "Deep Learning breakthrough: ImageNet",
-        "text": "Google's deep neural network achieves a dramatic reduction in image classification error on ImageNet, cutting the error rate in half. This breakthrough, led by Geoffrey Hinton's team, demonstrated the power of deep learning and convolutional neural networks for visual recognition tasks."
-      },
-      "modalImage": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4d/Cat_in_2012.jpg/800px-Cat_in_2012.jpg",
-      "modalText": "The 2012 ImageNet competition marked a turning point in computer vision and deep learning. Google's neural network, using a deep convolutional architecture, reduced the image classification error rate from 26% to 15%, a breakthrough that stunned the AI research community. This success validated deep learning approaches that had been largely ignored for decades and sparked a renaissance in neural network research. The technique of using multiple layers to learn hierarchical features from raw pixels became the foundation for modern computer vision systems. This achievement directly led to advances in facial recognition, autonomous vehicles, medical imaging, and countless other applications that rely on visual understanding.",
-      "sources": [
-        "https://papers.nips.cc/paper/4824-imagenet-classification-with-deep-convolutional-neural-networks",
-        "https://www.image-net.org/"
-      ]
-    },
-    {
-      "media": {
-        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/04/ChatGPT_logo.svg/200px-ChatGPT_logo.svg.png",
-        "caption": "ChatGPT interface"
-      },
-      "start_date": {
-        "year": "2022",
-        "month": "11",
-        "day": "30"
-      },
-      "text": {
-        "headline": "ChatGPT launches, reaches 100M users",
-        "text": "OpenAI releases ChatGPT, a conversational AI based on GPT-3.5. The chatbot gains 100 million users in just two months, making it the fastest-growing consumer application in history. ChatGPT demonstrates the power of large language models for general-purpose conversation and task completion."
-      },
-      "modalImage": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/04/ChatGPT_logo.svg/800px-ChatGPT_logo.svg.png",
-      "modalText": "ChatGPT's launch in November 2022 marked the moment when artificial intelligence became accessible to the general public. Built on OpenAI's GPT-3.5 language model, ChatGPT could engage in natural conversation, answer questions, write code, create content, and assist with various tasks. The rapid adoption—reaching 100 million users in just two months—demonstrated that AI had reached a level of usefulness that resonated with everyday users. This event triggered a global AI race, with major tech companies rushing to release their own conversational AI systems. ChatGPT's success showed that AI was no longer confined to research labs but had become a practical tool that could transform how people work, learn, and create.",
-      "sources": [
-        "https://openai.com/blog/chatgpt",
-        "https://www.reuters.com/technology/chatgpt-sets-record-fastest-growing-user-base-analyst-note-2023-02-01/"
-      ]
-    },
-    {
-      "media": {
-        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a7/React-icon.svg/200px-React-icon.svg.png",
-        "caption": "AI integration"
-      },
-      "start_date": {
-        "year": "2023",
-        "month": "3"
-      },
-      "text": {
-        "headline": "GPT-4 released with multimodal capabilities",
-        "text": "OpenAI launches GPT-4, a more powerful language model that can process both text and images. GPT-4 performs significantly better on standardized tests and professional benchmarks, demonstrating improved reasoning, creativity, and safety compared to previous models."
-      },
-      "modalImage": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a7/React-icon.svg/800px-React-icon.svg.png",
-      "modalText": "GPT-4's release in March 2023 represented a significant leap forward in AI capabilities. Unlike its predecessors, GPT-4 could process both text and images, enabling it to understand and describe visual content, analyze graphs and charts, and work with multimodal inputs. The model demonstrated superior performance across a wide range of tasks, scoring in the 90th percentile on the Uniform Bar Exam and achieving high scores on various professional and academic assessments. GPT-4 also showed improved safety measures and reduced hallucination rates compared to GPT-3.5. This advancement expanded the potential applications of AI, enabling more sophisticated analysis of documents, medical imaging, scientific research, and creative projects that combine visual and textual understanding.",
-      "sources": [
-        "https://openai.com/research/gpt-4",
-        "https://www.nytimes.com/2023/03/14/technology/openai-gpt4-chatgpt.html"
-      ]
-    },
-    {
-      "media": {
-        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8a/Old_School_Robot.jpg/200px-Old_School_Robot.jpg",
-        "caption": "Robot development"
-      },
-      "start_date": {
-        "year": "2024",
-        "month": "1"
-      },
-      "text": {
-        "headline": "AI agents become mainstream",
-        "text": "Major tech companies release AI agent frameworks that can autonomously complete multi-step tasks. These agents can browse the web, use software tools, make decisions, and complete complex workflows without constant human supervision, representing a shift toward more autonomous AI systems."
-      },
-      "modalImage": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8a/Old_School_Robot.jpg/800px-Old_School_Robot.jpg",
-      "modalText": "2024 marked the year when AI agents transitioned from research prototypes to practical tools used by millions. These autonomous systems could perform multi-step tasks like researching topics, making travel reservations, writing and executing code, managing email workflows, and coordinating complex projects. Unlike simple chatbots that respond to individual prompts, AI agents maintain context across extended interactions and can use various software tools and APIs to accomplish goals. Companies like OpenAI, Anthropic, and Google released agent frameworks that developers could integrate into their applications. This shift toward autonomous AI assistants promised to transform productivity, but also raised important questions about reliability, safety, and the future of work as AI systems become capable of handling increasingly complex responsibilities without direct human oversight.",
-      "sources": [
-        "https://openai.com/index/introducing-gpts",
-        "https://www.anthropic.com/news/agents"
-      ]
-    },
-    {
-      "media": {
-        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9a/Synthetic_media.jpg/200px-Synthetic_media.jpg",
-        "caption": "Video generation"
-      },
-      "start_date": {
-        "year": "2024",
-        "month": "2"
-      },
-      "text": {
-        "headline": "AI video generation reaches production quality",
-        "text": "OpenAI's Sora and other video generation models produce high-quality, realistic video clips from text prompts. These systems can generate coherent scenes with proper physics, lighting, and motion, opening new possibilities for content creation, filmmaking, and visual storytelling."
-      },
-      "modalImage": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9a/Synthetic_media.jpg/800px-Synthetic_media.jpg",
-      "modalText": "The emergence of high-quality AI video generation in 2024 represented a major milestone in synthetic media creation. Models like OpenAI's Sora could generate realistic video clips up to a minute long from simple text descriptions, maintaining consistent characters, proper physics, and coherent storytelling throughout. These systems demonstrated an understanding of spatial relationships, object permanence, and cause-and-effect that previous video generation models lacked. The technology opened new possibilities for independent filmmakers, marketers, educators, and content creators who could now produce professional-quality videos without expensive equipment or large production teams. However, this capability also raised concerns about deepfakes, misinformation, and the need for better media authentication systems as synthetic video becomes indistinguishable from real footage.",
-      "sources": [
-        "https://openai.com/sora",
-        "https://www.theverge.com/2024/2/15/24073438/openai-sora-text-to-video-generator-announcement"
-      ]
-    },
-    {
-      "media": {
-        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/1b/Quantum_computer.jpg/200px-Quantum_computer.jpg",
-        "caption": "Quantum computing"
-      },
-      "start_date": {
-        "year": "2025",
-        "month": "6"
-      },
-      "text": {
-        "headline": "Quantum AI achieves practical applications",
-        "text": "Quantum computing systems begin solving optimization and machine learning problems that were previously intractable for classical computers. Early quantum AI applications emerge in drug discovery, financial modeling, and logistics optimization, demonstrating quantum advantage in specific domains."
-      },
-      "modalImage": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/1b/Quantum_computer.jpg/800px-Quantum_computer.jpg",
-      "modalText": "By 2025, quantum computing reached a point where it could meaningfully accelerate certain AI applications. Quantum algorithms for machine learning, optimization, and simulation began solving real-world problems faster than classical computers could manage. In drug discovery, quantum systems could model molecular interactions with unprecedented accuracy, leading to faster identification of potential treatments. Financial institutions used quantum AI for portfolio optimization and risk analysis, finding solutions to complex problems in minutes rather than days. Logistics companies applied quantum optimization to route planning and supply chain management, reducing costs and improving efficiency. While quantum computers remained expensive and specialized, these practical applications demonstrated that the quantum era of computing had arrived. However, significant challenges remained in error correction, scalability, and making quantum systems accessible to broader applications.",
-      "sources": [
-        "https://www.ibm.com/quantum",
-        "https://www.nature.com/articles/s41586-023-06096-3"
-      ]
-    },
-    {
-      "media": {
-        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d5/Robot_arm.jpg/200px-Robot_arm.jpg",
-        "caption": "Robotic automation"
-      },
-      "start_date": {
-        "year": "2026",
-        "month": "3"
-      },
-      "text": {
-        "headline": "AI-powered robotics automate 30% of manufacturing",
-        "text": "Advanced robotics systems with AI vision and manipulation capabilities become standard in manufacturing facilities worldwide. These robots can adapt to new tasks, learn from demonstrations, and work alongside humans safely, leading to significant productivity gains and cost reductions in production."
-      },
-      "modalImage": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d5/Robot_arm.jpg/800px-Robot_arm.jpg",
-      "modalText": "By 2026, AI-powered robotics had transformed manufacturing, with intelligent robots handling approximately 30% of production tasks globally. These systems combined computer vision, natural language understanding, and advanced manipulation to perform complex assembly, quality control, and logistics operations. Unlike earlier industrial robots that required extensive programming and fixed workflows, AI-enabled robots could adapt to variations in products, learn new tasks through demonstration, and collaborate safely with human workers. The technology enabled factories to produce customized products at scale, respond quickly to design changes, and maintain consistent quality. While this automation increased productivity and reduced costs, it also accelerated discussions about job displacement, retraining programs, and the future of work in manufacturing. Companies that successfully integrated AI robotics gained significant competitive advantages, while others struggled to adapt to the new industrial landscape.",
-      "sources": [
-        "https://www.mckinsey.com/capabilities/operations/our-insights/the-future-of-work-in-manufacturing",
-        "https://www.weforum.org/reports/the-future-of-jobs-report-2023"
-      ]
-    },
-    {
-      "media": {
-        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/52/Healthcare_AI.jpg/200px-Healthcare_AI.jpg",
-        "caption": "Medical AI"
-      },
-      "start_date": {
-        "year": "2027",
-        "month": "9"
-      },
-      "text": {
-        "headline": "AI diagnoses match expert physicians",
-        "text": "AI diagnostic systems achieve accuracy rates equal to or exceeding board-certified physicians across multiple medical specialties. These systems assist doctors in identifying diseases, recommending treatments, and predicting patient outcomes, leading to improved healthcare access and outcomes worldwide."
-      },
-      "modalImage": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/52/Healthcare_AI.jpg/800px-Healthcare_AI.jpg",
-      "modalText": "By 2027, AI diagnostic systems had reached a level of accuracy that matched or exceeded expert physicians in numerous medical specialties. These systems analyzed medical images, lab results, patient histories, and symptoms to identify diseases, recommend treatments, and predict outcomes with remarkable precision. In radiology, AI could detect cancers and other abnormalities in X-rays, MRIs, and CT scans with accuracy rates exceeding 95%. Dermatology AI systems identified skin conditions from photographs, making specialized diagnostic expertise available in underserved areas. AI tools for pathology analyzed tissue samples faster and more consistently than human pathologists. These advances improved healthcare access globally, especially in regions with limited medical resources. However, the integration of AI diagnostics required careful validation, physician training, and regulatory oversight to ensure patient safety and maintain trust in medical AI systems.",
-      "sources": [
-        "https://www.nature.com/articles/s41591-021-01614-0",
-        "https://www.who.int/news/item/28-06-2021-who-issues-first-global-report-on-ai-in-health"
-      ]
-    },
-    {
-      "media": {
-        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/87/Autonomous_vehicle.jpg/200px-Autonomous_vehicle.jpg",
-        "caption": "Self-driving car"
-      },
-      "start_date": {
-        "year": "2028",
-        "month": "5"
-      },
-      "text": {
-        "headline": "Fully autonomous vehicles approved for public roads",
-        "text": "Regulatory approval is granted for level 5 autonomous vehicles to operate on public roads without human drivers. These vehicles use advanced AI for perception, decision-making, and navigation, promising to reduce accidents, improve traffic flow, and transform transportation systems."
-      },
-      "modalImage": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/87/Autonomous_vehicle.jpg/800px-Autonomous_vehicle.jpg",
-      "modalText": "The approval of fully autonomous vehicles for public roads in 2028 marked a turning point in transportation. Level 5 autonomous vehicles, capable of operating without any human intervention, used sophisticated AI systems combining computer vision, sensor fusion, and decision-making algorithms to navigate complex traffic situations. These vehicles processed data from cameras, lidar, radar, and other sensors to understand their environment, predict other road users' behavior, and make split-second decisions. Early deployments showed significant safety improvements, with autonomous vehicles involved in far fewer accidents than human-driven cars. The technology promised to reduce traffic congestion, lower transportation costs, and provide mobility for people unable to drive. However, the transition raised questions about job displacement for drivers, infrastructure requirements, cybersecurity concerns, and ethical decisions in unavoidable accident scenarios.",
-      "sources": [
-        "https://www.nhtsa.gov/technology-innovation/automated-vehicles-safety",
-        "https://www.rand.org/pubs/research_reports/RR1478.html"
-      ]
-    },
-    {
-      "media": {
-        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a4/Education_technology.jpg/200px-Education_technology.jpg",
-        "caption": "Personalized learning"
-      },
-      "start_date": {
-        "year": "2029",
-        "month": "1"
-      },
-      "text": {
-        "headline": "Personalized AI tutors reach 1 billion students",
-        "text": "AI-powered educational systems provide personalized tutoring to over 1 billion students worldwide. These systems adapt to individual learning styles, provide instant feedback, and help bridge educational gaps, making high-quality education accessible regardless of geographic or economic barriers."
-      },
-      "modalImage": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a4/Education_technology.jpg/800px-Education_technology.jpg",
-      "modalText": "By 2029, AI-powered personalized tutors had reached over 1 billion students globally, transforming education accessibility and effectiveness. These intelligent systems adapted to each student's learning pace, style, and needs, providing customized explanations, practice problems, and feedback. The AI tutors could identify knowledge gaps, adjust difficulty levels in real-time, and provide emotional support and encouragement. Students in remote areas gained access to high-quality instruction that matched what was available in well-funded schools. The systems supported multiple languages, accommodated different learning disabilities, and worked 24/7 without fatigue. Early results showed significant improvements in learning outcomes, especially for students who struggled with traditional classroom settings. However, concerns emerged about reduced human interaction, data privacy, and ensuring that AI tutors promoted critical thinking rather than just memorization.",
-      "sources": [
-        "https://www.unesco.org/en/digital-education",
-        "https://www.brookings.edu/articles/how-artificial-intelligence-is-transforming-the-world/"
-      ]
-    },
-    {
-      "media": {
-        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6b/Climate_AI.jpg/200px-Climate_AI.jpg",
-        "caption": "Climate solutions"
-      },
-      "start_date": {
-        "year": "2030",
-        "month": "7"
-      },
-      "text": {
-        "headline": "AI optimizes global climate solutions",
-        "text": "AI systems help optimize renewable energy grids, improve carbon capture technologies, and model climate interventions at unprecedented scales. These applications contribute significantly to global efforts to combat climate change and transition to sustainable energy systems."
-      },
-      "modalImage": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6b/Climate_AI.jpg/800px-Climate_AI.jpg",
-      "modalText": "By 2030, AI had become essential to global climate solutions, optimizing renewable energy systems, improving carbon capture, and modeling climate interventions. AI algorithms managed smart grids, balancing supply and demand for solar and wind energy in real-time, reducing waste and improving efficiency. Machine learning models optimized carbon capture technologies, identifying the most effective materials and processes for removing CO2 from the atmosphere. Climate scientists used AI to run thousands of simulations, exploring different scenarios and interventions to predict outcomes and guide policy decisions. These applications helped accelerate the transition to renewable energy, improve energy storage systems, and develop more effective climate mitigation strategies. The integration of AI into climate solutions demonstrated that technology could be a powerful force for addressing humanity's greatest challenges, though success required coordination between governments, industries, and research institutions.",
-      "sources": [
-        "https://www.un.org/en/climatechange",
-        "https://www.nature.com/articles/s41586-021-03854-1"
-      ]
-    },
-    {
-      "media": {
-        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3e/Brain_computer_interface.jpg/200px-Brain_computer_interface.jpg",
-        "caption": "Brain-computer interface"
-      },
-      "start_date": {
-        "year": "2031",
-        "month": "4"
-      },
-      "text": {
-        "headline": "Brain-computer interfaces enable thought-controlled devices",
-        "text": "Non-invasive brain-computer interfaces allow people to control computers, prosthetic limbs, and other devices using only their thoughts. These systems use AI to interpret neural signals and translate them into commands, restoring function for people with disabilities and creating new ways to interact with technology."
-      },
-      "modalImage": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3e/Brain_computer_interface.jpg/800px-Brain_computer_interface.jpg",
-      "modalText": "By 2031, brain-computer interfaces (BCIs) had advanced to the point where people could control devices through thought alone. Non-invasive systems using AI to interpret neural signals enabled individuals with paralysis to operate computers, robotic prosthetics, and smart home devices. The AI algorithms learned to decode specific thought patterns, translating brain activity into commands with increasing accuracy. These systems restored independence for people with spinal cord injuries, ALS, and other conditions that limited movement. Beyond medical applications, BCIs opened new possibilities for human-computer interaction, allowing users to type, navigate interfaces, and control devices without physical input. However, the technology raised important questions about privacy, security, and the ethical implications of reading and interpreting human thoughts. Concerns about brain data protection and the potential for unauthorized access to neural information led to new regulations and security measures.",
-      "sources": [
-        "https://www.nature.com/articles/s41586-021-03506-2",
-        "https://www.fda.gov/medical-devices/brain-computer-interfaces"
-      ]
-    },
-    {
-      "media": {
-        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9f/AGI_concept.jpg/200px-AGI_concept.jpg",
-        "caption": "Artificial general intelligence"
-      },
-      "start_date": {
-        "year": "2032",
-        "month": "11"
-      },
-      "text": {
-        "headline": "First claims of artificial general intelligence",
-        "text": "Several research organizations claim to have achieved artificial general intelligence (AGI), systems that can perform any intellectual task a human can do. While definitions and benchmarks remain debated, these systems demonstrate unprecedented versatility, creativity, and problem-solving across diverse domains."
-      },
-      "modalImage": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9f/AGI_concept.jpg/800px-AGI_concept.jpg",
-      "modalText": "Claims of achieving artificial general intelligence (AGI) emerged around 2032, though the definition and verification of AGI remained subjects of intense debate. These systems demonstrated the ability to perform well across a wide range of tasks that previously required specialized AI models, from scientific research to artistic creation to complex problem-solving. Unlike narrow AI systems designed for specific tasks, these AGI candidates could learn new skills, adapt to unfamiliar situations, and apply knowledge across domains. However, experts disagreed about whether true AGI had been achieved, with some arguing that the systems were merely very advanced narrow AI, while others believed they represented a fundamental breakthrough. The emergence of these systems triggered urgent discussions about safety, control, and the future of humanity in an age of superintelligent machines. Governments and international organizations scrambled to establish frameworks for AGI governance and safety standards.",
-      "sources": [
-        "https://openai.com/research/planning-for-agi",
-        "https://www.anthropic.com/research/when-will-we-get-agi"
-      ]
-    },
-    {
-      "media": {
-        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/7a/Space_exploration.jpg/200px-Space_exploration.jpg",
-        "caption": "Space AI"
-      },
-      "start_date": {
-        "year": "2033",
-        "month": "6"
-      },
-      "text": {
-        "headline": "AI systems autonomously explore Mars",
-        "text": "Autonomous AI systems on Mars make independent discoveries and decisions about scientific exploration without direct Earth control. These systems analyze data, prioritize research goals, and adapt exploration strategies, demonstrating AI's potential for space exploration in environments where communication delays make remote control impractical."
-      },
-      "modalImage": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/7a/Space_exploration.jpg/800px-Space_exploration.jpg",
-      "modalText": "By 2033, AI systems on Mars had achieved a level of autonomy that allowed them to conduct scientific exploration independently. With communication delays of up to 22 minutes between Earth and Mars, these AI systems needed to make real-time decisions about where to explore, what samples to collect, and how to respond to unexpected discoveries. The systems analyzed geological formations, detected signs of past water activity, and identified promising locations for further investigation. They could prioritize scientific objectives, manage resources, and adapt their exploration strategies based on new findings. This autonomy proved crucial for maximizing the scientific value of Mars missions, as the AI systems could react immediately to discoveries rather than waiting for instructions from Earth. The success of autonomous AI explorers on Mars demonstrated the potential for AI to extend human scientific capabilities to distant worlds and harsh environments.",
-      "sources": [
-        "https://www.nasa.gov/mars",
-        "https://www.jpl.nasa.gov/news/nasa-mars-helicopter-ingenuity"
-      ]
-    },
-    {
-      "media": {
-        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b5/Ethics_AI.jpg/200px-Ethics_AI.jpg",
-        "caption": "AI governance"
-      },
-      "start_date": {
-        "year": "2034",
-        "month": "3"
-      },
-      "text": {
-        "headline": "Global AI governance framework established",
-        "text": "International agreement on AI governance establishes standards for safety, ethics, and human rights in AI development and deployment. This framework addresses concerns about AI safety, bias, privacy, and the need for human oversight in critical decision-making systems."
-      },
-      "modalImage": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b5/Ethics_AI.jpg/800px-Ethics_AI.jpg",
-      "modalText": "By 2034, after years of debate and negotiation, the international community established a comprehensive global framework for AI governance. This agreement addressed critical issues including AI safety standards, algorithmic bias, privacy protection, and the requirement for human oversight in high-stakes applications. The framework established protocols for testing and validating AI systems before deployment, requirements for transparency and explainability, and mechanisms for accountability when AI systems cause harm. It also addressed concerns about AI arms races, the concentration of AI power, and the need for equitable access to AI benefits. While implementation varied by country and region, the framework provided a common foundation for responsible AI development. The agreement represented a recognition that AI's transformative power required corresponding governance mechanisms to ensure that the technology served humanity's best interests and protected fundamental rights and values.",
-      "sources": [
-        "https://www.un.org/en/ai-advisory-body",
-        "https://www.oecd.org/digital/artificial-intelligence/"
-      ]
-    },
-    {
-      "media": {
-        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4f/Future_AI.jpg/200px-Future_AI.jpg",
-        "caption": "Future of AI"
-      },
-      "start_date": {
-        "year": "2035",
-        "month": "12"
-      },
-      "text": {
-        "headline": "AI transforms society: 40 years of progress",
-        "text": "Looking back from 2035, AI has fundamentally transformed nearly every aspect of human society over four decades. From chess-playing computers to AGI systems, AI has reshaped work, healthcare, education, transportation, and daily life, while raising ongoing questions about the future relationship between humans and intelligent machines."
-      },
-      "modalImage": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4f/Future_AI.jpg/800px-Future_AI.jpg",
-      "modalText": "By 2035, reflecting on four decades of AI development from 1995, it became clear that artificial intelligence had fundamentally transformed human society. What began with specialized systems like Deep Blue had evolved into AI that permeated every aspect of daily life, from personalized education and healthcare to autonomous transportation and scientific discovery. The journey from narrow AI to claims of general intelligence represented one of humanity's most significant technological achievements. AI had improved living standards, extended human capabilities, and addressed global challenges like climate change and disease. However, this transformation also brought profound questions about work, privacy, human agency, and the nature of intelligence itself. The relationship between humans and AI had become a central theme of the 21st century, requiring ongoing dialogue, adaptation, and governance. As AI continued to advance, humanity faced the challenge of steering this powerful technology toward beneficial outcomes while maintaining human values, autonomy, and dignity in an increasingly intelligent world.",
-      "sources": [
-        "https://www.weforum.org/reports/the-future-of-jobs-report-2023",
-        "https://www.mckinsey.com/capabilities/quantumblack/our-insights/the-state-of-ai"
-      ]
-    },
-    {
-      "media": {
-        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/ea/AI_Research.jpg/200px-AI_Research.jpg",
-        "caption": "AI research publications"
-      },
-      "start_date": {
-        "year": "2025",
-        "month": "1"
-      },
-      "text": {
-        "headline": "AI research papers exceed 1 million publications",
-        "text": "The total number of AI research papers published reaches over 1 million, demonstrating the explosive growth of AI research and development. This milestone reflects the global interest in AI and the rapid pace of innovation in the field."
-      },
-      "modalImage": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/ea/AI_Research.jpg/800px-AI_Research.jpg",
-      "modalText": "By early 2025, the total number of AI research papers published worldwide exceeded one million, marking a significant milestone in the field's growth. This achievement reflected three decades of accelerating research activity, with publication rates increasing dramatically since the deep learning renaissance of the 2010s. The milestone demonstrated both the global nature of AI research and the collaborative efforts of researchers worldwide. Universities, tech companies, and research institutions contributed to this vast body of knowledge, covering topics from fundamental algorithms to applications in healthcare, climate science, and beyond. This explosion of research accelerated AI progress but also created challenges in keeping up with new developments and ensuring research quality. The million-paper milestone symbolized AI's transition from an academic curiosity to a central field of scientific inquiry with profound implications for society.",
-      "sources": [
-        "https://www.nature.com/articles/s41586-021-03854-1",
-        "https://www.mckinsey.com/capabilities/quantumblack/our-insights/the-state-of-ai"
-      ]
-    }
-  ]
+"title": "Evolution of Internet and AI: From the 1990s to the Future",
+"events": [
+{
+"media": {
+"url": "https://static.scientificamerican.com/sciam/cache/file/B5FBB89E-6314-478B-80496FBE53AF8591_source.jpg",
+"caption": "Tim Berners-Lee with early web browser"
+},
+"start_date": {
+"year": "1989",
+"month": "3",
+"day": "12"
+},
+"text": {
+"headline": "Tim Berners-Lee Proposes the World Wide Web",
+"text": "At CERN, physicist Tim Berners-Lee submits a proposal for an information management system that would become the World Wide Web, laying the foundation for the modern internet."
+},
+"modalImage": "https://static.scientificamerican.com/sciam/cache/file/B5FBB89E-6314-478B-80496FBE53AF8591_source.jpg",
+"modalText": "In March 1989, British computer scientist Tim Berners-Lee proposed a system to manage information at CERN, the European Organization for Nuclear Research. This proposal outlined a hypertext system that allowed users to link and access information across a network of computers. This idea evolved into the World Wide Web, revolutionizing how people share and access information globally. The WWW made the internet user-friendly and accessible to non-experts, sparking the digital age.",
+"sources": [
+"https://en.wikipedia.org/wiki/History_of_the_World_Wide_Web",
+"https://www.scientificamerican.com/article/day-the-web-was-born/"
+]
+},
+{
+"media": {
+"url": "https://static.scientificamerican.com/sciam/cache/file/B5FBB89E-6314-478B-80496FBE53AF8591_source.jpg",
+"caption": "First web browser by Tim Berners-Lee"
+},
+"start_date": {
+"year": "1990",
+"month": "12",
+"day": "25"
+},
+"text": {
+"headline": "First Web Browser: WorldWideWeb",
+"text": "Tim Berners-Lee develops the first web browser and editor, called WorldWideWeb (later renamed Nexus), on a NeXT computer at CERN."
+},
+"modalImage": "https://static.scientificamerican.com/sciam/cache/file/B5FBB89E-6314-478B-80496FBE53AF8591_source.jpg",
+"modalText": "On Christmas Day 1990, Tim Berners-Lee created the world's first web browser, which also served as an editor. This tool allowed users to view and create web pages, marking the beginning of interactive web content. It was a crucial step in making the internet practical for everyday use, paving the way for the explosion of online information sharing.",
+"sources": [
+"https://en.wikipedia.org/wiki/WorldWideWeb",
+"https://www.wired.com/story/tim-berners-lee-world-wide-web-browser/"
+]
+},
+{
+"media": {
+"url": "https://static.scientificamerican.com/sciam/cache/file/B5FBB89E-6314-478B-80496FBE53AF8591_source.jpg",
+"caption": "World Wide Web goes public"
+},
+"start_date": {
+"year": "1991",
+"month": "8",
+"day": "6"
+},
+"text": {
+"headline": "World Wide Web Becomes Public",
+"text": "CERN releases the World Wide Web to the public domain, making it freely available for anyone to use and build upon."
+},
+"modalImage": "https://static.scientificamerican.com/sciam/cache/file/B5FBB89E-6314-478B-80496FBE53AF8591_source.jpg",
+"modalText": "On August 6, 1991, the World Wide Web was made publicly available. This meant that the technology behind the web was no longer proprietary, allowing developers worldwide to create websites and browsers. This openness led to rapid growth of the internet, transforming it from a research tool into a global communication platform.",
+"sources": [
+"https://en.wikipedia.org/wiki/History_of_the_World_Wide_Web",
+"https://home.cern/science/computing/birth-web/short-history-web"
+]
+},
+{
+"media": {
+"url": "https://media.wired.com/photos/59344b215321273fc0f91cd1/3:2/w_2560%2Cc_limit/mos-10.jpg",
+"caption": "Mosaic web browser interface"
+},
+"start_date": {
+"year": "1993",
+"month": "1"
+},
+"text": {
+"headline": "Mosaic Web Browser Released",
+"text": "The Mosaic browser, developed at NCSA, introduces inline images and makes the web more accessible and visually appealing."
+},
+"modalImage": "https://media.wired.com/photos/59344b215321273fc0f91cd1/3:2/w_2560%2Cc_limit/mos-10.jpg",
+"modalText": "In 1993, the National Center for Supercomputing Applications released Mosaic, the first popular web browser that supported images displayed alongside text. This innovation made the web more engaging and user-friendly, leading to a surge in internet usage among the general public and businesses alike.",
+"sources": [
+"https://en.wikipedia.org/wiki/Mosaic_(web_browser)",
+"https://www.wired.com/2010/04/0422mosaic-web-browser/"
+]
+},
+{
+"media": {
+"url": "https://static0.xdaimages.com/wordpress/wp-content/uploads/2023/12/netscape-navigator-header.jpg?w=1600&h=900&fit=crop",
+"caption": "Netscape Navigator browser"
+},
+"start_date": {
+"year": "1994",
+"month": "12",
+"day": "15"
+},
+"text": {
+"headline": "Netscape Navigator Launched",
+"text": "Netscape releases Navigator, a commercial web browser that popularizes the internet for home users."
+},
+"modalImage": "https://static0.xdaimages.com/wordpress/wp-content/uploads/2023/12/netscape-navigator-header.jpg?w=1600&h=900&fit=crop",
+"modalText": "Netscape Navigator, released in December 1994, was one of the first commercial web browsers. It introduced features like progressive rendering and JavaScript support, making web browsing faster and more interactive. Netscape's success accelerated the commercialization of the internet.",
+"sources": [
+"https://en.wikipedia.org/wiki/Netscape_Navigator",
+"https://www.xda-developers.com/on-this-day-1994-netscape-navigator/"
+]
+},
+{
+"media": {
+"url": "https://www.webdesignmuseum.org/uploaded/timeline/yahoo/yahoo-1994.png",
+"caption": "Early Yahoo homepage"
+},
+"start_date": {
+"year": "1994",
+"month": "1"
+},
+"text": {
+"headline": "Yahoo Founded",
+"text": "Jerry Yang and David Filo create Yahoo as a directory of websites, helping users navigate the growing web."
+},
+"modalImage": "https://www.webdesignmuseum.org/uploaded/timeline/yahoo/yahoo-1994.png",
+"modalText": "In January 1994, Stanford students Jerry Yang and David Filo launched 'Jerry and David's Guide to the World Wide Web,' which became Yahoo. As a human-edited directory, it organized the chaotic early web, becoming one of the first major internet portals and search tools.",
+"sources": [
+"https://en.wikipedia.org/wiki/History_of_Yahoo!",
+"https://www.webdesignmuseum.org/gallery/yahoo-1994"
+]
+},
+{
+"media": {
+"url": "https://media.assettype.com/outlookindia/import/uploadimage/library/16_9/16_9_5/IMAGE_1693867273.webp?w=801&auto=format%2Ccompress&fit=max&format=webp&dpr=1.0",
+"caption": "Google founders Larry Page and Sergey Brin"
+},
+"start_date": {
+"year": "1998",
+"month": "9",
+"day": "4"
+},
+"text": {
+"headline": "Google Founded",
+"text": "Larry Page and Sergey Brin incorporate Google, introducing the PageRank algorithm for better search results."
+},
+"modalImage": "https://media.assettype.com/outlookindia/import/uploadimage/library/16_9/16_9_5/IMAGE_1693867273.webp?w=801&auto=format%2Ccompress&fit=max&format=webp&dpr=1.0",
+"modalText": "Google was founded in September 1998 by Stanford PhD students Larry Page and Sergey Brin. Their PageRank algorithm ranked pages based on links, revolutionizing search accuracy. Google quickly became the dominant search engine, shaping how we find information online.",
+"sources": [
+"https://en.wikipedia.org/wiki/Google",
+"https://www.outlookindia.com/international/us/google-was-founded-today-celebrating-25-years-of-changing-the-way-we-access-information-news-315767"
+]
+},
+{
+"media": {
+"url": "https://i.insider.com/513cbd916bb3f76c45000019?width=800&format=jpeg&auto=webp",
+"caption": "Early Facebook profile page"
+},
+"start_date": {
+"year": "2004",
+"month": "2",
+"day": "4"
+},
+"text": {
+"headline": "Facebook Launched",
+"text": "Mark Zuckerberg launches TheFacebook at Harvard, which evolves into the world's largest social network."
+},
+"modalImage": "https://i.insider.com/513cbd916bb3f76c45000019?width=800&format=jpeg&auto=webp",
+"modalText": "Initially called TheFacebook, the site was created by Mark Zuckerberg in February 2004 for Harvard students. It expanded to other universities and the public, connecting people globally. Facebook (now Meta) transformed social interaction, news sharing, and online communities.",
+"sources": [
+"https://en.wikipedia.org/wiki/Facebook",
+"https://www.businessinsider.com/facebooks-first-8-features-from-2004-2014-8"
+]
+},
+{
+"media": {
+"url": "https://res.cloudinary.com/aenetworks/image/upload/c_fill,w_1200,h_630,g_auto/dpr_auto/f_auto/q_auto:eco/v1/tdih-twitter-gettyimages-1151289639",
+"caption": "Twitter app icon"
+},
+"start_date": {
+"year": "2006",
+"month": "7",
+"day": "15"
+},
+"text": {
+"headline": "Twitter Launched",
+"text": "Jack Dorsey, Biz Stone, and Evan Williams launch Twitter, a microblogging platform for short messages."
+},
+"modalImage": "https://res.cloudinary.com/aenetworks/image/upload/c_fill,w_1200,h_630,g_auto/dpr_auto/f_auto/q_auto:eco/v1/tdih-twitter-gettyimages-1151289639",
+"modalText": "Twitter (now X) was launched in July 2006 as a platform for 140-character 'tweets.' It became a key tool for real-time news, public discourse, and social movements, influencing global communication and politics.",
+"sources": [
+"https://en.wikipedia.org/wiki/Twitter",
+"https://www.history.com/this-day-in-history/july-15/twitter-launches"
+]
+},
+{
+"media": {
+"url": "https://media.wired.com/photos/5952d4ef13c51068e4907791/3:2/w_2560%2Cc_limit/iPhone-AP_070109070253.jpg",
+"caption": "Steve Jobs presenting the iPhone"
+},
+"start_date": {
+"year": "2007",
+"month": "6",
+"day": "29"
+},
+"text": {
+"headline": "Apple iPhone Released",
+"text": "Steve Jobs unveils the iPhone, combining phone, iPod, and internet device, sparking the smartphone revolution."
+},
+"modalImage": "https://media.wired.com/photos/5952d4ef13c51068e4907791/3:2/w_2560%2Cc_limit/iPhone-AP_070109070253.jpg",
+"modalText": "The iPhone, released in June 2007, introduced touch-screen technology and app ecosystems. It transformed mobile computing, making the internet portable and leading to the app economy, social media on-the-go, and AI integration in devices.",
+"sources": [
+"https://en.wikipedia.org/wiki/IPhone_(1st_generation)",
+"https://www.wired.com/story/iphone-history-dogfight/"
+]
+},
+{
+"media": {
+"url": "https://media.licdn.com/dms/image/v2/D4D12AQFVtjnnEgxI-g/article-cover_image-shrink_720_1280/article-cover_image-shrink_720_1280/0/1680247808438?e=2147483647&v=beta&t=eJtgc6ndgV-EdFvq7yGtFwamt-sPHYle4hgKQTT05SQ",
+"caption": "Evolution of Instagram logos"
+},
+"start_date": {
+"year": "2010",
+"month": "10",
+"day": "6"
+},
+"text": {
+"headline": "Instagram Launched",
+"text": "Kevin Systrom and Mike Krieger release Instagram, a photo-sharing app that popularizes visual social media."
+},
+"modalImage": "https://media.licdn.com/dms/image/v2/D4D12AQFVtjnnEgxI-g/article-cover_image-shrink_720_1280/article-cover_image-shrink_720_1280/0/1680247808438?e=2147483647&v=beta&t=eJtgc6ndgV-EdFvq7yGtFwamt-sPHYle4hgKQTT05SQ",
+"modalText": "Instagram launched in October 2010 as a mobile app for sharing filtered photos. It grew rapidly, emphasizing visual storytelling and influencing social trends, influencer culture, and e-commerce through images.",
+"sources": [
+"https://en.wikipedia.org/wiki/Instagram",
+"https://www.linkedin.com/pulse/snapshot-success-story-instagram-stefan-tudor-murariu"
+]
+},
+{
+"media": {
+"url": "https://theamericangenius.com/wp-content/uploads/2012/04/instagram-facebook.jpg",
+"caption": "Facebook acquiring Instagram illustration"
+},
+"start_date": {
+"year": "2012",
+"month": "4",
+"day": "9"
+},
+"text": {
+"headline": "Facebook Acquires Instagram",
+"text": "Facebook buys Instagram for $1 billion, integrating photo-sharing into its social ecosystem."
+},
+"modalImage": "https://theamericangenius.com/wp-content/uploads/2012/04/instagram-facebook.jpg",
+"modalText": "In April 2012, Facebook acquired Instagram for $1 billion. This merger enhanced Facebook's mobile presence and visual content capabilities, leading to features like Stories and Reels, further dominating social media.",
+"sources": [
+"https://en.wikipedia.org/wiki/Instagram#Facebook,_Inc.acquisition(2012%E2%80%93present)",
+"https://theamericangenius.com/facebook-buys-instagram-for-1-billion/"
+]
+},
+{
+"media": {
+"url": "https://assets.rbl.ms/26145031/origin.jpg",
+"caption": "Garry Kasparov vs Deep Blue"
+},
+"start_date": {
+"year": "1997",
+"month": "5",
+"day": "11"
+},
+"text": {
+"headline": "Deep Blue Defeats Garry Kasparov",
+"text": "IBM's Deep Blue becomes the first computer to beat a world chess champion, showcasing AI's strategic capabilities."
+},
+"modalImage": "https://assets.rbl.ms/26145031/origin.jpg",
+"modalText": "In May 1997, IBM's Deep Blue supercomputer defeated chess grandmaster Garry Kasparov in a six-game match. This victory demonstrated AI's ability to handle complex strategy, marking a milestone in computing power and algorithms.",
+"sources": [
+"https://en.wikipedia.org/wiki/Deep_Blue_versus_Kasparov,_1997,Game_6",
+"https://spectrum.ieee.org/how-ibms-deep-blue-beat-world-champion-chess-player-garry-kasparov"
+]
+},
+{
+"media": {
+"url": "https://static01.nyt.com/images/2011/02/17/us/17jeopardy_337-span/17jeopardy_337-span-articleLarge.jpg?year=2011&h=330&w=600&s=67b146b0e4f98b10d2de31057fec3d7d60199c6f46f813aee3fa095b4bd6746d&k=ZQJBKqZ0VN&tw=1",
+"caption": "Watson on Jeopardy stage"
+},
+"start_date": {
+"year": "2011",
+"month": "2"
+},
+"text": {
+"headline": "IBM Watson Wins Jeopardy!",
+"text": "Watson defeats human champions on Jeopardy, highlighting advances in natural language processing."
+},
+"modalImage": "https://static01.nyt.com/images/2011/02/17/us/17jeopardy_337-span/17jeopardy_337-span-articleLarge.jpg?year=2011&h=330&w=600&s=67b146b0e4f98b10d2de31057fec3d7d60199c6f46f813aee3fa095b4bd6746d&k=ZQJBKqZ0VN&tw=1",
+"modalText": "In February 2011, IBM's Watson AI system won against Jeopardy champions Ken Jennings and Brad Rutter. Watson's ability to understand and answer natural language questions showcased breakthroughs in question-answering technology, with applications in healthcare and customer service.",
+"sources": [
+"https://en.wikipedia.org/wiki/Watson(computer)#Jeopardy!",
+"https://www.nytimes.com/2011/02/17/science/17jeopardy-watson.html"
+]
+},
+{
+"media": {
+"url": "https://cdn.sanity.io/images/vr8gru94/production/f6648b494b511cf1869973ca59dc2b39813f35e8-597x455.png",
+"caption": "ImageNet 2012 results graph"
+},
+"start_date": {
+"year": "2012",
+"month": "9"
+},
+"text": {
+"headline": "AlexNet Wins ImageNet",
+"text": "AlexNet's victory in the ImageNet challenge marks the deep learning revolution in computer vision."
+},
+"modalImage": "https://cdn.sanity.io/images/vr8gru94/production/f6648b494b511cf1869973ca59dc2b39813f35e8-597x455.png",
+"modalText": "In 2012, the AlexNet neural network, developed by Alex Krizhevsky, Ilya Sutskever, and Geoffrey Hinton, won the ImageNet competition by a large margin. This success proved the power of deep convolutional neural networks, kickstarting the AI boom in image recognition and beyond.",
+"sources": [
+"https://en.wikipedia.org/wiki/AlexNet",
+"https://www.pinecone.io/learn/series/image-search/imagenet/"
+]
+},
+{
+"media": {
+"url": "http://c.files.bbci.co.uk/0D9B/production/_88738430_pic1go.jpg",
+"caption": "AlphaGo match against Lee Sedol"
+},
+"start_date": {
+"year": "2016",
+"month": "3"
+},
+"text": {
+"headline": "AlphaGo Defeats Lee Sedol",
+"text": "Google DeepMind's AlphaGo beats Go champion Lee Sedol, advancing AI in complex strategy games."
+},
+"modalImage": "http://c.files.bbci.co.uk/0D9B/production/_88738430_pic1go.jpg",
+"modalText": "In March 2016, AlphaGo defeated world Go champion Lee Sedol 4-1. Go's complexity required intuitive play, and AlphaGo's use of deep neural networks and reinforcement learning demonstrated AI's growing ability to handle uncertainty and strategy.",
+"sources": [
+"https://en.wikipedia.org/wiki/AlphaGo_versus_Lee_Sedol",
+"https://www.bbc.com/news/technology-35785875"
+]
+},
+{
+"media": {
+"url": "https://miro.medium.com/0376uJu_fc_uR8H3X.png",
+"caption": "Transformer model architecture diagram"
+},
+"start_date": {
+"year": "2017",
+"month": "6"
+},
+"text": {
+"headline": "Transformer Architecture Introduced",
+"text": "Google's 'Attention Is All You Need' paper introduces Transformers, revolutionizing natural language processing."
+},
+"modalImage": "https://miro.medium.com/0376uJu_fc_uR8H3X.png",
+"modalText": "The 2017 paper by Vaswani et al. introduced the Transformer model, using self-attention mechanisms. This architecture became the foundation for modern language models like GPT, enabling efficient processing of sequences and advancing AI in text generation and understanding.",
+"sources": [
+"https://arxiv.org/abs/1706.03762",
+"https://medium.com/@minh.hoque/a-comprehensive-overview-of-transformer-based-models-encoders-decoders-and-more-e9bc0644a4e5"
+]
+},
+{
+"media": {
+"url": "https://i0.wp.com/syncedreview.com/wp-content/uploads/2020/05/bn-5_29.png?fit=1834%2C981&ssl=1",
+"caption": "OpenAI GPT-3 announcement"
+},
+"start_date": {
+"year": "2020",
+"month": "6"
+},
+"text": {
+"headline": "OpenAI Releases GPT-3",
+"text": "GPT-3, with 175 billion parameters, demonstrates impressive language generation capabilities."
+},
+"modalImage": "https://i0.wp.com/syncedreview.com/wp-content/uploads/2020/05/bn-5_29.png?fit=1834%2C981&ssl=1",
+"modalText": "Released in June 2020, GPT-3 was a massive language model capable of generating human-like text across various tasks. It showcased the potential of scaling up neural networks, influencing future AI developments in content creation and conversation.",
+"sources": [
+"https://openai.com/research/language-models-are-few-shot-learners",
+"https://syncedreview.com/2020/05/29/openai-unveils-175-billion-parameter-gpt-3-language-model/"
+]
+},
+{
+"media": {
+"url": "https://miro.medium.com/v2/resize:fit:1400/1tHlKH-pR4a6ica0TCm8S3Q.png",
+"caption": "ChatGPT launch page"
+},
+"start_date": {
+"year": "2022",
+"month": "11",
+"day": "30"
+},
+"text": {
+"headline": "OpenAI Launches ChatGPT",
+"text": "ChatGPT brings conversational AI to the masses, gaining 100 million users in two months."
+},
+"modalImage": "https://miro.medium.com/v2/resize:fit:1400/1tHlKH-pR4a6ica0TCm8S3Q.png",
+"modalText": "Launched in November 2022, ChatGPT used GPT-3.5 to enable natural conversations. Its rapid adoption highlighted AI's accessibility, sparking widespread interest and applications in education, customer service, and creativity.",
+"sources": [
+"https://openai.com/blog/chatgpt",
+"https://medium.com/aimonks/google-bard-9126747fbc95"
+]
+},
+{
+"media": {
+"url": "https://www.searchenginejournal.com/wp-content/uploads/2023/03/chagpt-gpt4-6410b6078d3af-sej.png",
+"caption": "GPT-4 announcement"
+},
+"start_date": {
+"year": "2023",
+"month": "3",
+"day": "14"
+},
+"text": {
+"headline": "OpenAI Releases GPT-4",
+"text": "GPT-4 introduces multimodal capabilities, processing text and images with superior performance."
+},
+"modalImage": "https://www.searchenginejournal.com/wp-content/uploads/2023/03/chagpt-gpt4-6410b6078d3af-sej.png",
+"modalText": "GPT-4, released in March 2023, could handle images alongside text, excelling in reasoning and creativity. It set new benchmarks in AI, enabling advanced applications in vision and language understanding.",
+"sources": [
+"https://openai.com/research/gpt-4",
+"https://www.searchenginejournal.com/openai-releases-gpt-4-now-available-in-chatgpt/482199/"
+]
+},
+{
+"media": {
+"url": "https://imageio.forbes.com/specials-images/imageserve/678b0f85c2ca807e3e60f4cf/Scholz-at-the-opening-of-the-IBM-Quantum-Computing-Center/0x0.jpg?format=jpg&crop=1284,722,x0,y64,safe&width=960",
+"caption": "Quantum computer system"
+},
+"start_date": {
+"year": "2025"
+},
+"text": {
+"headline": "Quantum AI Achieves Practical Applications",
+"text": "Quantum systems solve complex problems in drug discovery and optimization faster than classical computers."
+},
+"modalImage": "https://imageio.forbes.com/specials-images/imageserve/678b0f85c2ca807e3e60f4cf/Scholz-at-the-opening-of-the-IBM-Quantum-Computing-Center/0x0.jpg?format=jpg&crop=1284,722,x0,y64,safe&width=960",
+"modalText": "By 2025, quantum AI begins practical use in fields like drug discovery and finance. These systems model complex interactions accurately, accelerating innovations and demonstrating quantum advantage.",
+"sources": [
+"https://www.ibm.com/quantum",
+"https://www.forbes.com/sites/luisromero/2025/01/18/quantum-computing-could-achieve-singularity-in-2025-a-chatgpt-moment/"
+]
+},
+{
+"media": {
+"url": "https://www.convergine.com/images/3.-Manufacturing-%E2%80%94-Automation-That-Never-Stops.png",
+"caption": "AI robots in factory"
+},
+"start_date": {
+"year": "2026"
+},
+"text": {
+"headline": "AI Automates 30% of Manufacturing",
+"text": "AI-powered robots handle 30% of production tasks, improving efficiency and adaptability in factories."
+},
+"modalImage": "https://www.convergine.com/images/3.-Manufacturing-%E2%80%94-Automation-That-Never-Stops.png",
+"modalText": "In 2026, AI robotics transform manufacturing with vision and manipulation. Robots adapt to tasks, learn from demos, and collaborate with humans, boosting productivity but raising job concerns.",
+"sources": [
+"https://www.mckinsey.com/capabilities/operations/our-insights/the-future-of-work-in-manufacturing",
+"https://www.convergine.com/blog/5-industries-ai-will-take-over-by-2026-and-how-to-prepare/"
+]
+},
+{
+"media": {
+"url": "https://appkodes.com/wp-content/uploads/2025/04/AI-in-medical-diagnosis.webp",
+"caption": "AI robot analyzing medical scans"
+},
+"start_date": {
+"year": "2027"
+},
+"text": {
+"headline": "AI Diagnoses Match Expert Physicians",
+"text": "AI systems achieve physician-level accuracy in diagnostics across specialties, improving healthcare access."
+},
+"modalImage": "https://appkodes.com/wp-content/uploads/2025/04/AI-in-medical-diagnosis.webp",
+"modalText": "By 2027, AI diagnostics match or exceed experts in accuracy for radiology, dermatology, and more. This enhances global healthcare, especially in underserved areas, but requires validation and oversight.",
+"sources": [
+"https://www.nature.com/articles/s41591-021-01614-0",
+"https://appkodes.com/blog/ai-in-medical-diagnosis/"
+]
+},
+{
+"media": {
+"url": "https://media.licdn.com/dms/image/v2/D4D12AQH4nELwuMS60Q/article-cover_image-shrink_720_1280/B4DZfyFjheHMAM-/0/1752113242200?e=2147483647&v=beta&t=_8KypVWymGGsthQVNliWkmxM7d9MIJyqJuC4mvVdUas",
+"caption": "Illustration of superhuman AI researchers"
+},
+"start_date": {
+"year": "2027",
+"month": "9"
+},
+"text": {
+"headline": "Superhuman AI Researcher Emerges",
+"text": "AI systems like Agent-4 surpass humans in AI research, accelerating technological progress."
+},
+"modalImage": "https://media.licdn.com/dms/image/v2/D4D12AQH4nELwuMS60Q/article-cover_image-shrink_720_1280/B4DZfyFjheHMAM-/0/1752113242200?e=2147483647&v=beta&t=_8KypVWymGGsthQVNliWkmxM7d9MIJyqJuC4mvVdUas",
+"modalText": "In a predicted 2027 scenario, Agent-4 becomes a superhuman AI researcher, running thousands of instances to achieve rapid advancements. This could lead to an intelligence explosion but raises alignment and control concerns.",
+"sources": [
+"https://ai-2027.com/",
+"https://www.linkedin.com/pulse/ai-2027-summary-erik-saelens-40ygf"
+]
+},
+{
+"media": {
+"url": "https://carboncredits.com/wp-content/uploads/2025/06/AI-for-climate-control-reduce-emissions-2030-300x174.webp",
+"caption": "AI for climate solutions infographic"
+},
+"start_date": {
+"year": "2030"
+},
+"text": {
+"headline": "AI Optimizes Global Climate Solutions",
+"text": "AI manages renewable grids and models climate interventions to combat global warming."
+},
+"modalImage": "https://carboncredits.com/wp-content/uploads/2025/06/AI-for-climate-control-reduce-emissions-2030-300x174.webp",
+"modalText": "By 2030, AI optimizes energy systems, carbon capture, and simulations for climate strategies. This accelerates renewable transitions and mitigation, demonstrating AI's role in addressing environmental challenges.",
+"sources": [
+"https://www.un.org/en/climatechange",
+"https://carboncredits.com/the-top-6-ai-powered-companies-and-how-they-transform-climate-nature-and-carbon-solutions/"
+]
+},
+{
+"media": {
+"url": "https://omgeedigital.com/wp-content/uploads/2024/09/Untitled-design-74.png",
+"caption": "Future of AI in 2035 illustration"
+},
+"start_date": {
+"year": "2035"
+},
+"text": {
+"headline": "AI Transforms Society",
+"text": "Reflecting on AI's impact, it reshapes work, healthcare, education, and daily life over decades."
+},
+"modalImage": "https://omgeedigital.com/wp-content/uploads/2024/09/Untitled-design-74.png",
+"modalText": "By 2035, AI integrates into every aspect of society, from personalized education to advanced healthcare. While improving lives, it raises questions about jobs, privacy, and human-AI relationships.",
+"sources": [
+"https://www.weforum.org/reports/the-future-of-jobs-report-2023",
+"https://omgeedigital.com/ai-revolution-2035-transforming-daily-life/"
+]
 }
-
+]
+}
