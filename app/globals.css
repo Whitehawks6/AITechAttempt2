@@ -5,7 +5,7 @@
 :root {
   --dark-bg: #0a0a1a;
   --cyan: #f8f8f8;
-  --gold: #ffd700;
+  --gold: #f3f6f4;
 }
 
 * {
@@ -45,7 +45,7 @@ body {
   }
   
   .glow-gold {
-    text-shadow: 0 0 10px var(--gold), 0 0 40px var(--gold), 0 0 30px var(--gold);
+    text-shadow: 0 0 10px var(--gold), 0 0 15px var(--gold), 0 0 20px var(--gold);
    
   }
   
@@ -71,6 +71,7 @@ body {
     }
   }
 }
+
 
 
 
