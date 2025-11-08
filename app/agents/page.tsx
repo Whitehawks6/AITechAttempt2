@@ -1,5 +1,3 @@
-tsx// app/agents/page.tsx
-
 export default function Agents() {
   const agents = [
     {
