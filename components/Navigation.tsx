@@ -14,10 +14,10 @@ export default function Navigation() {
     { href: '/sources', label: 'Sources' },
   ]
   return (
-    <nav className="sticky top-0 z-50 glass-strong bg-gradient-to-r from-spaceBlack to-nebulaDark/80">
+    <nav className="sticky top-0 z-50 glass-strong">
       <div className="container mx-auto px-4 py-4">
         <div className="flex flex-col md:flex-row items-center justify-between gap-4">
-          <Link href="/" className="text-xl font-bold text-silverWhite hover:text-fireOrange transition-colors text-shadow">
+          <Link href="/" className="text-xl font-bold text-silverWhite hover-minimal transition-colors">
             AITechExplained.com
           </Link>
           <div className="flex flex-wrap gap-4 md:gap-6 justify-center">
@@ -25,10 +25,10 @@ export default function Navigation() {
               <Link
                 key={link.href}
                 href={link.href}
-                className={`transition-colors text-sm md:text-base pulse-flare ${
+                className={`transition-colors text-sm md:text-base hover-minimal ${
                   pathname === link.href
-                    ? 'text-fireOrange font-semibold text-shadow'
-                    : 'text-silverWhite hover:text-fireOrange'
+                    ? 'text-subtleBlue font-semibold'
+                    : 'text-silverWhite hover:text-subtlePurple'
                 }`}
               >
                 {link.label}
