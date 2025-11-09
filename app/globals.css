@@ -38,17 +38,15 @@ html {
   --subtle-blue: #1e40af; /* Subtle blue */
 }
 
-/* BACKGROUND - Smooth smoky gradient: Blurred radials for smoke, subtle colors */
 body {
   background:
-    radial-gradient(circle at center, rgba(var(--subtle-purple), 0.04) 0%, transparent 70%), /* Smoky purple */
-    radial-gradient(circle at bottom, rgba(var(--subtle-blue), 0.04) 0%, transparent 70%), /* Smoky blue */
-    linear-gradient(to bottom, #0a0a1a 0%, #000000 100%); /* Base fade */
+    linear-gradient(to bottom, #0a0a1a 0%, #000000 100%),
+    radial-gradient(circle at center, rgba(var(--subtle-blue), 0.05) 0%, transparent 70%),
+    radial-gradient(circle at bottom, rgba(var(--subtle-purple), 0.05) 0%, transparent 70%);
   background-attachment: fixed;
-  background-size: 200% 200%, 200% 200%, cover;
+  background-size: cover, 200% 200%, 200% 200%;
   background-color: #000000;
   min-height: 100vh;
-  filter: blur(1px); /* Subtle smoky blur on bg layers */
   transition: background-position 0.5s ease;
 }
 
@@ -104,40 +102,42 @@ p, a, li, td, th {
   overflow: hidden;
   pointer-events: none;
   z-index: -1;
-  mix-blend-mode: screen; /* Blends with text for hue shifts */
+  mix-blend-mode: screen;
+  mask-image: linear-gradient(to top, transparent 0%, rgba(0,0,0,1) 20%, rgba(0,0,0,1) 80%, transparent 100%); /* Fade at top/bottom */
 }
 
 .smoke-layer {
   position: absolute;
-  width: 200%;
-  height: 200%;
-  left: -50%;
-  bottom: -200%; /* Start below */
-  background: radial-gradient(circle, rgba(109, 40, 217, 0.1) 0%, transparent 70%); /* Purple base */
-  filter: blur(50px); /* Smoky haze */
-  animation: rise-flow 20s linear infinite;
-  opacity: 0.4;
+  width: 30%; /* Smaller */
+  height: 150%;
+  bottom: -150%; /* Start below */
+  background: radial-gradient(ellipse at center, rgba(109, 40, 217, 0.08) 0%, transparent 70%); /* Lower opacity */
+  filter: blur(40px); /* Softer blur for wispy */
+  animation: rise-flow 25s linear infinite;
+  opacity: 0.3; /* Subtler */
 }
 
 .smoke-blue {
-  background: radial-gradient(circle, rgba(30, 64, 175, 0.1) 0%, transparent 70%);
-  animation-delay: -5s; /* Stagger */
-  animation-duration: 25s;
+  background: radial-gradient(ellipse at center, rgba(30, 64, 175, 0.08) 0%, transparent 70%);
+  animation-delay: -6s;
+  animation-duration: 28s;
 }
 
 .smoke-mix {
-  background: radial-gradient(circle, rgba(109, 40, 217, 0.05) 0%, rgba(30, 64, 175, 0.05) 50%, transparent 100%);
-  animation-delay: -10s;
-  animation-duration: 22s;
+  background: radial-gradient(ellipse at center, rgba(109, 40, 217, 0.04) 0%, rgba(30, 64, 175, 0.04) 50%, transparent 100%);
+  animation-delay: -12s;
+  animation-duration: 26s;
 }
 
 @keyframes rise-flow {
   0% {
-    transform: translateY(0) rotate(0deg);
+    transform: translateY(0) rotate(0deg) scale(1);
   }
   100% {
-    transform: translateY(-200%) rotate(360deg); /* Rise + slow twist for flow */
+    transform: translateY(-200%) rotate(180deg) scale(1.2); /* Mild twist/scale for flow */
   }
 }
+
+
 
 
