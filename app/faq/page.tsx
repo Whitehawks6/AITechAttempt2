@@ -116,22 +116,22 @@ export default function FAQ() {
   const [openIndex, setOpenIndex] = useState<number | null>(null);
 
   return (
-    <div className="min-h-screen bg-spaceBlack text-crispWhite">
+    <div className="min-h-screen">
       <section className="container mx-auto px-4 py-16">
-        <h1 className="text-4xl font-bold mb-8 text-electricBlue">Frequently Asked Questions</h1>
-        <p className="text-lg mb-12 text-grayText max-w-3xl">Straight answers on AI basics, adaptation, and prep. Based on 2025 facts—no speculation. If not covered, use the AI bot or check timeline/agents/tools.</p>
+        <h1 className="text-4xl font-bold mb-8">Unveil AI Enigmas</h1>
+        <p className="text-lg mb-12 text-silverWhite max-w-3xl text-shadow">Direct revelations on AI essence, evolution, preparation. From 2025 astral records—no veils. If unresolved, summon the AI oracle or traverse timeline/agents/tools.</p>
         <div className="space-y-4">
           {faqs.map((faq, i) => (
-            <div key={i} className="border border-electricBlue/20 rounded-lg">
+            <div key={i} className="border border-fireOrange/20 rounded-lg glass">
               <button
-                className="w-full p-6 text-left flex justify-between items-center text-neonPurple font-medium"
+                className="w-full p-6 text-left flex justify-between items-center font-medium"
                 onClick={() => setOpenIndex(openIndex === i ? null : i)}
               >
                 {faq.question}
-                <span>{openIndex === i ? '-' : '+'}</span>
+                <span className="text-fireOrange">{openIndex === i ? '-' : '+'}</span>
               </button>
               {openIndex === i && (
-                <div className="p-6 pt-0 text-grayText">
+                <div className="p-6 pt-0 text-silverWhite">
                   {faq.answer}
                 </div>
               )}
@@ -142,4 +142,5 @@ export default function FAQ() {
     </div>
   );
 }
+
 
