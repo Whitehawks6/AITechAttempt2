@@ -111,32 +111,32 @@ export default function Tools() {
   ];
 
   return (
-    <div className="min-h-screen bg-spaceBlack text-crispWhite">
+   <div className="min-h-screen">
       <section className="container mx-auto px-4 py-16">
-        <h1 className="text-4xl font-bold mb-8 text-electricBlue">Zero-Code AI Tools</h1>
-        <p className="text-lg mb-12 text-grayText max-w-3xl">These tools let you create, automate, or edit without coding. Pick one, start small (e.g., test on personal tasks), verify results. Based on 2025 accessibility data—no hype, just practical entry points.</p>
+        <h1 className="text-4xl font-bold mb-8">Forge Zero-Code Artifacts</h1>
+        <p className="text-lg mb-12 text-silverWhite max-w-3xl text-shadow">These arcane instruments conjure without incantations. Initiate modestly, affirm creations. From 2025 ethereal forge—no illusions, primal utility.</p>
         <div className="overflow-x-auto">
-          <table className="w-full border-collapse">
+          <table className="w-full border-collapse glass">
             <thead>
               <tr className="bg-nebulaDark/50">
-                <th className="p-4 text-left border border-electricBlue/20">Tool</th>
-                <th className="p-4 text-left border border-electricBlue/20">Use Case</th>
-                <th className="p-4 text-left border border-electricBlue/20">What It Does</th>
-                <th className="p-4 text-left border border-electricBlue/20">How to Start</th>
-                <th className="p-4 text-left border border-electricBlue/20">Free Tier</th>
-                <th className="p-4 text-left border border-electricBlue/20">Link</th>
+                <th className="p-4 text-left border border-fireOrange/20">Artifact</th>
+                <th className="p-4 text-left border border-fireOrange/20">Domain</th>
+                <th className="p-4 text-left border border-fireOrange/20">Essence</th>
+                <th className="p-4 text-left border border-fireOrange/20">Invocation</th>
+                <th className="p-4 text-left border border-fireOrange/20">Astral Tier</th>
+                <th className="p-4 text-left border border-fireOrange/20">Portal</th>
               </tr>
             </thead>
             <tbody>
               {tools.map((tool, i) => (
-                <tr key={i} className="hover:bg-nebulaDark/30">
-                  <td className="p-4 border border-electricBlue/20 text-neonPurple font-medium">{tool.name}</td>
-                  <td className="p-4 border border-electricBlue/20">{tool.useCase}</td>
-                  <td className="p-4 border border-electricBlue/20">{tool.description}</td>
-                  <td className="p-4 border border-electricBlue/20">{tool.howTo}</td>
-                  <td className="p-4 border border-electricBlue/20">{tool.freeTier}</td>
-                  <td className="p-4 border border-electricBlue/20">
-                    <a href={tool.link} className="text-electricBlue hover:underline">Go →</a>
+                <tr key={i} className="hover:bg-nebulaDark/30 hover:pulse-flare">
+                  <td className="p-4 border border-fireOrange/20 font-medium">{tool.name}</td>
+                  <td className="p-4 border border-fireOrange/20 text-silverWhite">{tool.useCase}</td>
+                  <td className="p-4 border border-fireOrange/20 text-silverWhite">{tool.description}</td>
+                  <td className="p-4 border border-fireOrange/20 text-silverWhite">{tool.howTo}</td>
+                  <td className="p-4 border border-fireOrange/20 text-silverWhite">{tool.freeTier}</td>
+                  <td className="p-4 border border-fireOrange/20">
+                    <a href={tool.link} className="text-fireOrange hover:text-silverWhite hover:underline">Traverse →</a>
                   </td>
                 </tr>
               ))}
@@ -147,5 +147,6 @@ export default function Tools() {
     </div>
   );
 }
+
 
 
