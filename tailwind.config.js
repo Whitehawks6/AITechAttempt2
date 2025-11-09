@@ -10,10 +10,9 @@ module.exports = {
       colors: {
         spaceBlack: '#000000',
         nebulaDark: '#0a0a1a',
-        crispWhite: '#ffffff',
-        silverWhite: '#f0f0f0',
-        subtleBlue: '#0ea5e9',
-        subtlePurple: '#a855f7',
+        brightWhite: '#ffffff',
+        subtleBlue: '#1e40af',
+        subtlePurple: '#6d28d9',
         grayText: '#d1d5db',
       },
       backgroundImage: {
