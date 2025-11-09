@@ -29,129 +29,66 @@ html {
   scroll-behavior: smooth;
 }
 
-/* DYNAMIC VARS - For evolves, flares */
+/* DYNAMIC VARS */
 :root {
-  --bg-hue: 220; /* Base blue */
+  --bg-hue: 220; /* Base blue-purple */
   --bg-opacity: 1;
-  --flare-orange: #ff6600; /* Fire orange */
-  --silver-white: #e0e0e0; /* Silver tint */
-  --glow-intensity: 0.3;
+  --silver-white: #f0f0f0; /* Clean silver */
+  --subtle-blue: #0ea5e9;
+  --subtle-purple: #a855f7;
 }
 
-/* BACKGROUND - Multi-layer cosmic masterpiece: Nebulae gradients, fire flares, twinkling stars */
+/* BACKGROUND - Dynamic gradients: Subtle blue-purple fades, scroll shifts */
 body {
   background:
-    /* Layer 1: Deep space base */
-    radial-gradient(circle at center, #0a0a1a 0%, #000000 100%),
-    /* Layer 2: Nebula glows with fire orange mix */
-    radial-gradient(circle at 20% 30%, rgba(14, 165, 233, 0.08) 0%, rgba(255, 102, 0, 0.05) 50%, transparent 100%),
-    radial-gradient(circle at 80% 70%, rgba(168, 85, 247, 0.08) 0%, rgba(255, 102, 0, 0.05) 50%, transparent 100%),
-    /* Layer 3: Dynamic fire flare overlay */
-    radial-gradient(circle at 50% 50%, rgba(255, 102, 0, 0.03) 0%, transparent 70%),
-    /* Layer 4: Twinkling star field with animation */
-    url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%23ffffff' fill-opacity='0.03'%3E%3Ccircle cx='30' cy='30' r='1'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
-  background-attachment: fixed, fixed, fixed, fixed, fixed;
-  background-size: cover, 200% 200%, 200% 200%, 150% 150%, auto;
+    linear-gradient(to bottom, #0a0a1a 0%, #000000 100%), /* Vertical space fade */
+    radial-gradient(circle at center, rgba(var(--subtle-blue), 0.05) 0%, rgba(var(--subtle-purple), 0.05) 50%, transparent 100%);
+  background-attachment: fixed;
+  background-size: cover, 150% 150%;
   background-color: #000000;
   min-height: 100vh;
-  animation: nebula-drift 60s linear infinite; /* Slow cosmic drift */
-  transition: background 0.8s ease, filter 0.5s ease; /* Smooth page shifts */
+  transition: background-position 0.5s ease; /* Smooth scroll shift */
 }
 
-/* Twinkling stars animation */
-@keyframes twinkle {
-  0%, 100% { opacity: 1; }
-  50% { opacity: 0.4; }
-}
-body::after {
-  content: '';
-  position: fixed;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  background: url("data:image/svg+xml,%3Csvg width='100' height='100' viewBox='0 0 100 100' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' stroke='%23ffffff' stroke-width='0.5' opacity='0.02'%3E%3Ccircle cx='50' cy='50' r='1'/%3E%3Ccircle cx='20' cy='80' r='1'/%3E%3Ccircle cx='70' cy='30' r='1'/%3E%3C/g%3E%3C/svg%3E");
-  background-repeat: repeat;
-  animation: twinkle 5s ease-in-out infinite alternate;
-  pointer-events: none;
-  z-index: -2;
-}
-
-/* Nebula drift for dynamic background evolve */
-@keyframes nebula-drift {
-  0% { background-position: center, 0% 0%, 100% 100%, 50% 50%, center; }
-  50% { background-position: center, 100% 100%, 0% 0%, 0% 100%, center; }
-  100% { background-position: center, 0% 0%, 100% 100%, 100% 0%, center; }
-}
-
-/* Scroll/fire overlay - Evolve with vars */
-body::before {
-  content: '';
-  position: fixed;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  background: radial-gradient(circle, hsla(var(--bg-hue), 20%, 5%, var(--bg-opacity)) 0%, rgba(var(--flare-orange), 0.02) 50%, transparent 100%);
-  pointer-events: none;
-  z-index: -1;
-  animation: fire-pulse 10s ease-in-out infinite;
-}
-
-/* Fire pulse animation */
-@keyframes fire-pulse {
-  0%, 100% { opacity: 0.8; filter: blur(20px); }
-  50% { opacity: 1; filter: blur(30px); }
-}
-
-/* Text enhancements - Silver/white mixes, gradients, glows */
+/* Text - Clean white/silver, gradient on headers (blue/purple to silver R to L) */
 h1, h2 {
-  background: linear-gradient(to right, #0ea5e9, #ff6600, #a855f7); /* Blue-orange-purple flare */
+  background: linear-gradient(to left, var(--silver-white), var(--subtle-purple), var(--subtle-blue));
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
-  text-shadow: 0 0 8px rgba(255, 102, 0, 0.4), 0 0 4px rgba(255, 255, 255, 0.2); /* Fire glow + silver sheen */
+  color: transparent; /* Fallback */
 }
 
-/* Accents with silver/white */
-.text-silverWhite {
-  color: #e0e0e0;
-  text-shadow: 0 0 4px rgba(224, 224, 224, 0.3);
-}
-a:hover {
-  color: #ff6600; /* Fire orange on hover */
-  text-shadow: 0 0 6px rgba(255, 102, 0, 0.5);
+/* Base text silver-white */
+p, a, li, td, th {
+  color: var(--silver-white);
 }
 
-/* GLASS UPGRADE - With fire reflections */
+/* GLASS - Transparent for nav/header */
 @layer utilities {
   .glass {
-    background: linear-gradient(135deg, rgba(255, 255, 255, 0.05), rgba(255, 102, 0, 0.03));
-    backdrop-filter: blur(15px) saturate(180%);
-    border: 1px solid rgba(255, 102, 0, 0.1); /* Orange tint */
-    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1), inset 0 0 20px rgba(255, 102, 0, 0.05);
+    background: rgba(255, 255, 255, 0.05);
+    backdrop-filter: blur(12px);
+    border: 1px solid rgba(255, 255, 255, 0.1);
   }
   .glass-strong {
-    background: linear-gradient(135deg, rgba(255, 255, 255, 0.1), rgba(255, 102, 0, 0.08));
-    backdrop-filter: blur(25px) saturate(200%);
-    border: 1px solid rgba(255, 102, 0, 0.2);
-    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.2), inset 0 0 30px rgba(255, 102, 0, 0.1);
+    background: rgba(255, 255, 255, 0.08);
+    backdrop-filter: blur(18px);
+    border: 1px solid rgba(255, 255, 255, 0.15);
   }
-  .pulse-flare {
-    animation: pulse-flare 4s ease-in-out infinite;
+  /* Minimal hover pulse - Subtle scale only */
+  .hover-minimal {
+    transition: transform 0.2s ease;
+  }
+  .hover-minimal:hover {
+    transform: scale(1.02);
   }
 }
 
-/* Pulse with fire orange */
-@keyframes pulse-flare {
-  0%, 80% { box-shadow: 0 0 25px #ff6600; }
-  50% { box-shadow: 0 0 50px #ff6600, 0 0 75px #ff6600; }
-}
-
-/* ANIMATIONS - Enhanced fade with glow */
+/* ANIMATIONS - Minimal fade, no pulse */
 .animate-in {
-  animation: fadeInGlow 0.8s ease-out;
+  animation: fadeIn 0.6s ease-out;
 }
-@keyframes fadeInGlow {
-  from { opacity: 0; transform: translateY(30px); text-shadow: 0 0 0 transparent; }
-  to { opacity: 1; transform: translateY(0); text-shadow: 0 0 8px rgba(255, 102, 0, 0.4); }
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(20px); }
+  to { opacity: 1; transform: translateY(0); }
 }
