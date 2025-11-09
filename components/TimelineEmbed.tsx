@@ -79,6 +79,7 @@ export default function TimelineEmbed() {
               sizes="50vw"
               className="object-cover transition-transform group-hover:scale-105"
               priority
+              unoptimized // Add this for external URLs to bypass optimization
             />
             <div className="absolute inset-0 bg-gradient-to-t from-spaceBlack/90" />
             <p className="absolute bottom-8 left-8 text-2xl font-bold text-neonPurple">{ev.media.caption}</p>
@@ -213,3 +214,36 @@ export default function TimelineEmbed() {
     </>
   );
 }
+ 
+--- File: app/timeline/page.tsx ---
+import TimelineEmbed from '@/components/TimelineEmbed'
+export default function Timeline() {
+  return (
+    <div className="min-h-screen">
+      <section className="container mx-auto px-4 py-16">
+        <h1 className="text-4xl font-bold mb-8">AI Timeline (1995-2035)</h1>
+        <p className="text-lg mb-12 text-silverWhite max-w-3xl">Learn about artificial intelligence through a comprehensive timeline of major milestones, breakthroughs, and future predictions. Every fact is cited. Every source is verified.</p>
+        <TimelineEmbed />
+      </section>
+    </div>
+  )
+} 
+
+No need for the rest since they don't seem relevant. Let me know if you need more.```js
+// next.config.js - Add to root if missing
+/** @type {import('next').NextConfig} */
+const nextConfig = {
+  images: {
+    remotePatterns: [
+      {
+        protocol: 'https',
+        hostname: 'upload.wikimedia.org',
+        port: '',
+        pathname: '/**',
+      },
+      // Add for any other external domains if needed
+    ],
+  },
+};
+
+module.exports = nextConfig;
