@@ -1,5 +1,15 @@
-module.exports = {
+/** @type {import('next').NextConfig} */
+const nextConfig = {
   images: {
-    domains: ['upload.wikimedia.org'], // Legacy way if remotePatterns not working
+    remotePatterns: [
+      {
+        protocol: 'https',
+        hostname: 'upload.wikimedia.org',
+        pathname: '/**',
+      },
+    ],
+    unoptimized: true, // Global unoptimized for all external - fixes Wikimedia
   },
-}
+};
+
+module.exports = nextConfig;
