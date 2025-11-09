@@ -1,8 +1,10 @@
+// app/layout.tsx
 import type { Metadata } from 'next'
 import './globals.css'
 import Navigation from '@/components/Navigation'
 import AIBot from '@/components/AIBot'
 import Background from '@/components/Background'
+import Smoke from '@/components/Smoke' // Add this
 
 export const metadata: Metadata = {
   title: 'AITechExplained.com - Learn AI with Facts, Not Hype',
@@ -19,6 +21,7 @@ export default function RootLayout({
       <body>
         <Navigation />
         <Background>
+          <Smoke />
           <main>{children}</main>
         </Background>
         <AIBot />
