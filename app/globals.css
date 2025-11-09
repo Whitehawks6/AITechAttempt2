@@ -52,7 +52,7 @@ body {
 
 /* Text - Clean white/silver, gradient on headers (blue/purple to silver R to L) */
 h1, h2 {
-  background: linear-gradient(to left, var(--silver-white) 100%, var(--subtle-purple) 30%, var(--subtle-blue) 10%);
+  background: linear-gradient(to left, var(--silver-white) 60%, var(--subtle-purple) 30%, var(--subtle-blue) 10%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   color: transparent; /* Fallback */
@@ -92,4 +92,5 @@ p, a, li, td, th {
   from { opacity: 0; transform: translateY(20px); }
   to { opacity: 1; transform: translateY(0); }
 }
+
 
