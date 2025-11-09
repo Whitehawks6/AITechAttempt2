@@ -102,41 +102,30 @@ p, a, li, td, th {
   overflow: hidden;
   pointer-events: none;
   z-index: -1;
-  mix-blend-mode: screen;
-  mask-image: linear-gradient(to top, transparent 0%, rgba(0,0,0,1) 20%, rgba(0,0,0,1) 80%, transparent 100%); /* Fade at top/bottom */
+  mix-blend-mode: screen; /* Hue shifts on text */
+  opacity: 0.8; /* Overall subtlety */
 }
 
 .smoke-layer {
   position: absolute;
-  width: 30%; /* Smaller */
-  height: 150%;
-  bottom: -150%; /* Start below */
-  background: radial-gradient(ellipse at center, rgba(109, 40, 217, 0.08) 0%, transparent 70%); /* Lower opacity */
-  filter: blur(40px); /* Softer blur for wispy */
-  animation: rise-flow 25s linear infinite;
-  opacity: 0.3; /* Subtler */
+  height: 200%;
+  bottom: -200%; /* Start from bottom */
+  filter: blur(50px); /* Wispy, no haze on page */
+  animation: rise-waft 25s linear infinite;
+  transform-origin: center;
 }
 
-.smoke-blue {
-  background: radial-gradient(ellipse at center, rgba(30, 64, 175, 0.08) 0%, transparent 70%);
-  animation-delay: -6s;
-  animation-duration: 28s;
-}
-
-.smoke-mix {
-  background: radial-gradient(ellipse at center, rgba(109, 40, 217, 0.04) 0%, rgba(30, 64, 175, 0.04) 50%, transparent 100%);
-  animation-delay: -12s;
-  animation-duration: 26s;
-}
-
-@keyframes rise-flow {
+@keyframes rise-waft {
   0% {
-    transform: translateY(0) rotate(0deg) scale(1);
+    bottom: -200%;
+    transform: rotate(0deg) scale(1);
   }
   100% {
-    transform: translateY(-200%) rotate(180deg) scale(1.2); /* Mild twist/scale for flow */
+    bottom: 100%; /* Rise to top */
+    transform: rotate(20deg) scale(1.1); /* Gentle waft/twist */
   }
 }
+
 
 
 
