@@ -1,5 +1,3 @@
-// tailwind.config.js
-/** @type {import('tailwindcss').Config} */
 module.exports = {
   content: [
     './pages/**/*.{js,ts,jsx,tsx,mdx}',
@@ -10,24 +8,40 @@ module.exports = {
   theme: {
     extend: {
       colors: {
-        spaceBlack: '#000000', // Deep space bg
-        nebulaDark: '#0a0a1a', // Subtle variant
+        spaceBlack: '#000000',
+        nebulaDark: '#0a0a1a',
         crispWhite: '#ffffff',
-        electricBlue: '#0ea5e9', // Main accent, like xAI buttons
-        neonPurple: '#a855f7', // Subtle secondary for highlights/hovers
-        grayText: '#d1d5db', // Softer grays for body
+        electricBlue: '#0ea5e9',
+        neonPurple: '#a855f7',
+        fireOrange: '#ff6600', // Bright fire flare
+        silverWhite: '#e0e0e0', // Silver tint
+        grayText: '#d1d5db',
       },
       backgroundImage: {
         'space-gradient': 'radial-gradient(circle at top, #0a0a1a 0%, #000000 100%)',
-        'star-field': "url(\"data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%23ffffff' fill-opacity='0.03'%3E%3Ccircle cx='30' cy='30' r='1'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E\")",
+        'flare-gradient': 'linear-gradient(135deg, #0ea5e9, #ff6600, #a855f7)',
       },
-      fontFamily: {
-        sans: ['Inter', 'system-ui', '-apple-system', 'sans-serif'], // Clean, futuristic
+      animation: {
+        'nebula-drift': 'nebula-drift 60s linear infinite',
+        'fire-pulse': 'fire-pulse 10s ease-in-out infinite',
+        'twinkle': 'twinkle 5s ease-in-out infinite alternate',
+      },
+      keyframes: {
+        'nebula-drift': {
+          '0%': { backgroundPosition: 'center, 0% 0%, 100% 100%, 50% 50%, center' },
+          '50%': { backgroundPosition: 'center, 100% 100%, 0% 0%, 0% 100%, center' },
+          '100%': { backgroundPosition: 'center, 0% 0%, 100% 100%, 100% 0%, center' },
+        },
+        'fire-pulse': {
+          '0%, 100%': { opacity: '0.8', filter: 'blur(20px)' },
+          '50%': { opacity: '1', filter: 'blur(30px)' },
+        },
+        'twinkle': {
+          '0%, 100%': { opacity: '1' },
+          '50%': { opacity: '0.4' },
+        },
       },
     },
   },
   plugins: [],
 }
-
-
-
