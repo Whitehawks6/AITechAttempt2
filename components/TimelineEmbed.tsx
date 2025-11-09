@@ -14,9 +14,21 @@ export default function TimelineEmbed() {
   const bar = useRef<HTMLDivElement>(null);
   const timer = useRef<NodeJS.Timeout | null>(null);
 
-  useEffect(() => {
-    fetch('/timeline.json').then(r => r.json()).then(setData);
-  }, []);
+useEffect(() => {
+  fetch('/timeline.json')
+    .then(r => {
+      if (!r.ok) throw new Error('Failed to load timeline.json');
+      return r.json();
+    })
+    .then(setData)
+    .catch(err => {
+      console.error(err);
+      setData({ title: 'Timeline Load Error', events: [] }); // Fallback empty
+    });
+}, []);
+
+if (!data) return <div className="py-32 text-center text-electricBlue text-3xl">Loading timeline... (Check console if stuck)</div>;
+  
 
   // Auto-scroll with pause
   useEffect(() => {
