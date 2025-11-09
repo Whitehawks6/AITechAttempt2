@@ -56,6 +56,8 @@ h1, h2 {
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   color: transparent;
+  line-height: 1.1;
+  padding-bottom: 0.1em; 
 }
 
 /* Base text bright white */
@@ -125,6 +127,7 @@ p, a, li, td, th {
     transform: rotate(20deg) scale(1.1); /* Gentle waft/twist */
   }
 }
+
 
 
 
