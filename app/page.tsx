@@ -4,6 +4,7 @@ export default function Home() {
       <section className="container mx-auto px-4 py-16 md:py-32 text-center">
         <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-8">
           AI for Everyone
+          
         </h1>
         <p className="text-xl md:text-2xl text-silverWhite max-w-4xl mx-auto mb-12">
           We believe AI education should be accessible to everyone—not just computer scientists. Every fact on this site is backed by citable sources. We don't use hype, we don't have paywalls, and we don't sell anything. Our goal is simple: help 2.5 billion people understand AI, from its humble beginnings to its potential future.
