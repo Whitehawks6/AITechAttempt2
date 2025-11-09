@@ -31,39 +31,41 @@ html {
 
 /* DYNAMIC VARS */
 :root {
-  --bg-hue: 220; /* Base blue-purple */
+  --bg-hue: 220; /* Base */
   --bg-opacity: 1;
-  --silver-white: #f0f0f0; /* Clean silver */
-  --subtle-blue: #0013de;
-  --subtle-purple: #a855f7;
+  --bright-white: #ffffff; /* Bright white */
+  --subtle-purple: #6d28d9; /* Subtle purple */
+  --subtle-blue: #1e40af; /* Subtle blue */
 }
 
-/* BACKGROUND - Dynamic gradients: Subtle blue-purple fades, scroll shifts */
+/* BACKGROUND - Smooth smoky gradient: Blurred radials for smoke, subtle colors */
 body {
   background:
-    linear-gradient(to bottom, #0a0a1a 0%, #000000 100%), /* Vertical space fade */
-    radial-gradient(circle at center, rgba(var(--subtle-blue), 0.05) 0%, rgba(var(--subtle-purple), 0.05) 50%, transparent 100%);
+    radial-gradient(circle at center, rgba(var(--subtle-purple), 0.04) 0%, transparent 70%), /* Smoky purple */
+    radial-gradient(circle at bottom, rgba(var(--subtle-blue), 0.04) 0%, transparent 70%), /* Smoky blue */
+    linear-gradient(to bottom, #0a0a1a 0%, #000000 100%); /* Base fade */
   background-attachment: fixed;
-  background-size: cover, 150% 150%;
+  background-size: 200% 200%, 200% 200%, cover;
   background-color: #000000;
   min-height: 100vh;
-  transition: background-position 0.5s ease; /* Smooth scroll shift */
+  filter: blur(1px); /* Subtle smoky blur on bg layers */
+  transition: background-position 0.5s ease;
 }
 
-/* Text - Clean white/silver, gradient on headers (blue/purple to silver R to L) */
+/* Text - Bright white, clean gradient L to R (purple/blue to white sooner) */
 h1, h2 {
-  background: linear-gradient(to left, var(--silver-white), var(--silver-white), var(--subtle-purple), var(--subtle-blue));
+  background: linear-gradient(to right, var(--subtle-purple) 0%, var(--subtle-blue) 20%, var(--bright-white) 50%, var(--bright-white) 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
-  color: transparent; /* Fallback */
+  color: transparent;
 }
 
-/* Base text silver-white */
+/* Base text bright white */
 p, a, li, td, th {
-  color: var(--silver-white);
+  color: var(--bright-white);
 }
 
-/* GLASS - Transparent for nav/header */
+/* GLASS - For header, subtle smoke */
 @layer utilities {
   .glass {
     background: rgba(255, 255, 255, 0.05);
@@ -75,7 +77,7 @@ p, a, li, td, th {
     backdrop-filter: blur(18px);
     border: 1px solid rgba(255, 255, 255, 0.15);
   }
-  /* Minimal hover pulse - Subtle scale only */
+  /* Minimal hover - Scale only */
   .hover-minimal {
     transition: transform 0.2s ease;
   }
@@ -84,7 +86,7 @@ p, a, li, td, th {
   }
 }
 
-/* ANIMATIONS - Minimal fade, no pulse */
+/* ANIMATIONS - Clean fade */
 .animate-in {
   animation: fadeIn 0.6s ease-out;
 }
@@ -92,7 +94,3 @@ p, a, li, td, th {
   from { opacity: 0; transform: translateY(20px); }
   to { opacity: 1; transform: translateY(0); }
 }
-
-
-
-
