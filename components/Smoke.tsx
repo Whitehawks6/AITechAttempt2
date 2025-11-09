@@ -8,39 +8,45 @@ export default function Smoke() {
     const smoke = smokeRef.current;
     if (!smoke) return;
 
-    // Clone layers for continuous flow
-    const layers = smoke.children;
-    const cloneLayers = () => {
-      for (let i = 0; i < 5; i++) { // Increased to 5 for finer density
-        const clone = layers[i].cloneNode(true) as HTMLElement;
-        clone.style.animationDelay = `${-Math.random() * 30}s`; // Longer random start
-        clone.style.left = `${Math.random() * 100}%`; // Random horizontal spread
-        clone.style.width = `${20 + Math.random() * 30}%`; // Smaller widths
-        smoke.appendChild(clone);
+    // Create multiple fine layers for wispy density
+    const createLayer = (color: string, delay: number, duration: number, size: string, left: string) => {
+      const layer = document.createElement('div');
+      layer.className = 'smoke-layer';
+      layer.style.background = `radial-gradient(ellipse at center, ${color} 0%, transparent 70%)`;
+      layer.style.animationDelay = `${delay}s`;
+      layer.style.animationDuration = `${duration}s`;
+      layer.style.width = size;
+      layer.style.left = left;
+      smoke.appendChild(layer);
+      return layer;
+    };
+
+    // Generate 8-10 layers with random vars for natural flow
+    const generateLayers = () => {
+      for (let i = 0; i < 8; i++) {
+        const isPurple = i % 2 === 0;
+        const color = isPurple ? 'rgba(109, 40, 217, 0.25)' : 'rgba(30, 64, 175, 0.25)';
+        const delay = -Math.random() * 30;
+        const duration = 20 + Math.random() * 10;
+        const size = `${40 + Math.random() * 40}%`; // Smaller, variable
+        const left = `${Math.random() * 100}%`; // Spread across
+        createLayer(color, delay, duration, size, left);
       }
     };
-    cloneLayers();
+    generateLayers();
 
-    // Clean old layers
+    // Clean and replenish off-screen layers
     const interval = setInterval(() => {
       Array.from(smoke.children).forEach(child => {
-        if (parseFloat(getComputedStyle(child).top) < -window.innerHeight) {
+        if (parseFloat(getComputedStyle(child).bottom) > window.innerHeight) { // Bottom-up check
           child.remove();
-          cloneLayers();
         }
       });
-    }, 5000);
+      if (smoke.children.length < 8) generateLayers(); // Keep density
+    }, 2000);
 
     return () => clearInterval(interval);
   }, []);
 
-  return (
-    <div ref={smokeRef} className="smoke-container">
-      <div className="smoke-layer smoke-purple"></div>
-      <div className="smoke-layer smoke-blue"></div>
-      <div className="smoke-layer smoke-mix"></div>
-      <div className="smoke-layer smoke-purple"></div>
-      <div className="smoke-layer smoke-blue"></div>
-    </div>
-  );
+  return <div ref={smokeRef} className="smoke-container" />;
 }
