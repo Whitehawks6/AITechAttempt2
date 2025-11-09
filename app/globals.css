@@ -34,7 +34,7 @@ html {
   --bg-hue: 220; /* Base blue-purple */
   --bg-opacity: 1;
   --silver-white: #f0f0f0; /* Clean silver */
-  --subtle-blue: #0ea5e9;
+  --subtle-blue: #0013de;
   --subtle-purple: #a855f7;
 }
 
@@ -92,6 +92,7 @@ p, a, li, td, th {
   from { opacity: 0; transform: translateY(20px); }
   to { opacity: 1; transform: translateY(0); }
 }
+
 
 
 
