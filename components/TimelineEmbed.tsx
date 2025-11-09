@@ -80,6 +80,8 @@ export default function TimelineEmbed() {
               className="object-cover transition-transform group-hover:scale-105"
               priority
               unoptimized // Bypass optimization for external URLs
+              width={800}
+              height={600}
             />
             <div className="absolute inset-0 bg-gradient-to-t from-spaceBlack/90" />
             <p className="absolute bottom-8 left-8 text-2xl font-bold text-neonPurple">{ev.media.caption}</p>
