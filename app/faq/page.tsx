@@ -118,17 +118,17 @@ export default function FAQ() {
   return (
     <div className="min-h-screen">
       <section className="container mx-auto px-4 py-16">
-        <h1 className="text-4xl font-bold mb-8">Unveil AI Enigmas</h1>
-        <p className="text-lg mb-12 text-silverWhite max-w-3xl text-shadow">Direct revelations on AI essence, evolution, preparation. From 2025 astral records—no veils. If unresolved, summon the AI oracle or traverse timeline/agents/tools.</p>
+        <h1 className="text-4xl font-bold mb-8">Frequently Asked Questions</h1>
+        <p className="text-lg mb-12 text-silverWhite max-w-3xl">Straight answers on AI basics, adaptation, and prep. Based on 2025 facts—no speculation. If not covered, use the AI bot or check timeline/agents/tools.</p>
         <div className="space-y-4">
           {faqs.map((faq, i) => (
-            <div key={i} className="border border-fireOrange/20 rounded-lg glass">
+            <div key={i} className="border border-subtleBlue/20 rounded-lg">
               <button
-                className="w-full p-6 text-left flex justify-between items-center font-medium"
+                className="w-full p-6 text-left flex justify-between items-center font-medium hover-minimal"
                 onClick={() => setOpenIndex(openIndex === i ? null : i)}
               >
                 {faq.question}
-                <span className="text-fireOrange">{openIndex === i ? '-' : '+'}</span>
+                <span>{openIndex === i ? '-' : '+'}</span>
               </button>
               {openIndex === i && (
                 <div className="p-6 pt-0 text-silverWhite">
@@ -142,5 +142,3 @@ export default function FAQ() {
     </div>
   );
 }
-
-
