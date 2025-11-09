@@ -22,8 +22,8 @@ export default function Navigation() {
             <Image
               src="/AITechExplainedLogo.png" // Path to your uploaded image
               alt="AITech Explained Logo"
-              width={200} // Adjust based on your image size - test for responsiveness
-              height={50}
+              width={80} // Adjust based on your image size - test for responsiveness
+              height={20}
               className="hover-minimal"
             />
           </Link>
