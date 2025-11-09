@@ -65,15 +65,15 @@ export default function Agents() {
   return (
     <div className="min-h-screen">
       <section className="container mx-auto px-4 py-16">
-        <h1 className="text-4xl font-bold mb-8">Summon AI Companions</h1>
-        <p className="text-lg mb-12 text-silverWhite max-w-3xl text-shadow">These ethereal entities command tasks from ether: Forge summaries, ignite ideas. Commence humbly, affirm manifestations. Drawn from 2025 astral alignments—no illusions, pure utility.</p>
+        <h1 className="text-4xl font-bold mb-8">AI Agents for Everyday Use</h1>
+        <p className="text-lg mb-12 text-silverWhite max-w-3xl">These are free or low-cost AIs that handle tasks like summarizing docs or brainstorming ideas. Start simple, verify outputs. Every entry here is based on 2025 usage data from public benchmarks.</p>
         <div className="space-y-8">
           {agents.map((agent, i) => (
-            <div key={i} className="p-6 rounded-lg glass-strong border border-fireOrange/20 hover:pulse-flare">
+            <div key={i} className="p-6 rounded-lg glass border border-subtleBlue/20 hover-minimal">
               <h2 className="text-2xl font-semibold mb-4">{agent.name}</h2>
               <p className="mb-4 text-silverWhite">{agent.description}</p>
-              <p className="mb-4 font-medium text-silverWhite">Invocation: {agent.howTo}</p>
-              <a href={agent.link} className="text-fireOrange hover:text-silverWhite hover:underline">Manifest →</a>
+              <p className="mb-4 font-medium text-silverWhite">How to adapt: {agent.howTo}</p>
+              <a href={agent.link} className="text-subtleBlue hover:text-subtlePurple hover:underline">Try it →</a>
             </div>
           ))}
         </div>
