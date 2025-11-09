@@ -63,17 +63,17 @@ export default function Agents() {
   ];
 
   return (
-    <div className="min-h-screen bg-spaceBlack text-crispWhite">
+    <div className="min-h-screen">
       <section className="container mx-auto px-4 py-16">
-        <h1 className="text-4xl font-bold mb-8 text-electricBlue">AI Agents for Everyday Use</h1>
-        <p className="text-lg mb-12 text-grayText max-w-3xl">These are free or low-cost AIs that handle tasks like summarizing docs or brainstorming ideas. Start simple, verify outputs. Every entry here is based on 2025 usage data from public benchmarks.</p>
+        <h1 className="text-4xl font-bold mb-8">Summon AI Companions</h1>
+        <p className="text-lg mb-12 text-silverWhite max-w-3xl text-shadow">These ethereal entities command tasks from ether: Forge summaries, ignite ideas. Commence humbly, affirm manifestations. Drawn from 2025 astral alignments—no illusions, pure utility.</p>
         <div className="space-y-8">
           {agents.map((agent, i) => (
-            <div key={i} className="p-6 rounded-lg bg-nebulaDark/50 border border-electricBlue/20">
-              <h2 className="text-2xl font-semibold mb-4 text-neonPurple">{agent.name}</h2>
-              <p className="mb-4">{agent.description}</p>
-              <p className="mb-4 font-medium">How to adapt: {agent.howTo}</p>
-              <a href={agent.link} className="text-electricBlue hover:underline">Try it →</a>
+            <div key={i} className="p-6 rounded-lg glass-strong border border-fireOrange/20 hover:pulse-flare">
+              <h2 className="text-2xl font-semibold mb-4">{agent.name}</h2>
+              <p className="mb-4 text-silverWhite">{agent.description}</p>
+              <p className="mb-4 font-medium text-silverWhite">Invocation: {agent.howTo}</p>
+              <a href={agent.link} className="text-fireOrange hover:text-silverWhite hover:underline">Manifest →</a>
             </div>
           ))}
         </div>
