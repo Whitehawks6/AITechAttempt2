@@ -20,7 +20,7 @@ export default function Navigation() {
         <div className="flex flex-col md:flex-row items-center justify-between gap-4">
           <Link href="/">
             <Image
-              src="/logo.png" // Path to your uploaded image
+              src="/AITechExplainedLogo.png" // Path to your uploaded image
               alt="AITech Explained Logo"
               width={200} // Adjust based on your image size - test for responsiveness
               height={50}
