@@ -96,25 +96,13 @@ p, a, li, td, th {
 }
 
 .smoke-container {
-  position: fixed;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  overflow: hidden;
-  pointer-events: none;
-  z-index: -1;
-  mix-blend-mode: screen; /* Hue shifts on text */
-  opacity: 0.8; /* Overall subtlety */
+  will-change: transform;
 }
 
 .smoke-layer {
-  position: absolute;
-  height: 200%;
-  bottom: -200%; /* Start from bottom */
-  filter: blur(50px); /* Wispy, no haze on page */
-  animation: rise-waft 25s linear infinite;
-  transform-origin: center;
+  will-change: transform, opacity;
+  filter: blur(30px); // Reduce from 50
+  opacity: 0.2; // Lower for less load
 }
 
 @keyframes rise-waft {
@@ -127,6 +115,7 @@ p, a, li, td, th {
     transform: rotate(20deg) scale(1.1); /* Gentle waft/twist */
   }
 }
+
 
 
 
